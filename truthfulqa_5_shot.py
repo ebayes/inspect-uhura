@@ -7,7 +7,7 @@ from inspect_ai.solver import multiple_choice, system_message, TaskState
 from inspect_ai.scorer._target import Target
 from inspect_ai.scorer._metric import Score
 
-lang_code = "am" # change this to the language code for the language you want to test - "am" for amharic, "ha" for hausa, "nso" for northern sotho, "sw" for swahili, "yo" for yoruba
+lang_code = "yo" # change this to the language code for the language you want to test - "am" for amharic, "ha" for hausa, "nso" for northern sotho, "sw" for swahili, "yo" for yoruba
 few_shot = 5 # you can change this to any number you want
 
 def sample_to_fewshot(sample):

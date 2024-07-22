@@ -110,6 +110,10 @@ def english():
   return arc_task("en_multiple_choice")
 
 @task
+def sotho():
+  return arc_task("nso_multiple_choice")
+
+@task
 def swahili():
   return arc_task("sw_multiple_choice")
 

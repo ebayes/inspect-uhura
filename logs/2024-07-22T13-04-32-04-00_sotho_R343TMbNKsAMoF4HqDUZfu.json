@@ -1,0 +1,1865 @@
+{
+  "version": 1,
+  "status": "cancelled",
+  "eval": {
+    "task": "sotho",
+    "task_version": 0,
+    "task_file": "arc_5_shot.py",
+    "task_id": "R343TMbNKsAMoF4HqDUZfu",
+    "run_id": "YhR3gxKi3hV2Mx4gd5NLYD",
+    "created": "2024-07-22T13:04:32-04:00",
+    "dataset": {
+      "name": "ebayes/uhura-arc-easy",
+      "location": "ebayes/uhura-arc-easy",
+      "samples": 227,
+      "shuffled": false
+    },
+    "model": "anthropic/claude-3-5-sonnet-20240620",
+    "task_attribs": {},
+    "task_args": {},
+    "model_args": {},
+    "config": {},
+    "revision": {
+      "type": "git",
+      "origin": "https://github.com/generalpurposelab/inspect-uhura.git",
+      "commit": "8d371dc"
+    },
+    "packages": {
+      "inspect_ai": "0.3.15"
+    }
+  },
+  "plan": {
+    "name": "plan",
+    "steps": [
+      {
+        "solver": "system_message",
+        "params": {
+          "message": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C"
+        }
+      },
+      {
+        "solver": "multiple_choice",
+        "params": {}
+      }
+    ],
+    "config": {}
+  },
+  "stats": {
+    "started_at": "2024-07-22T13:04:32-04:00",
+    "completed_at": "2024-07-22T13:06:34-04:00",
+    "model_usage": {
+      "anthropic/claude-3-5-sonnet-20240620": {
+        "input_tokens": 27753,
+        "output_tokens": 200,
+        "total_tokens": 27953
+      }
+    }
+  },
+  "samples": [
+    {
+      "id": 1,
+      "epoch": 1,
+      "input": "Ka ge e le ditho tša kgokaganyo ya dijo, batho ba lebelelwa e le batšweletši, ",
+      "choices": [
+        "badiriši",
+        "bao ba bolayago.",
+        "bao ba bolayago.",
+        "bao ba bolayago."
+      ],
+      "target": "B",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nKa ge e le ditho tša kgokaganyo ya dijo, batho ba lebelelwa e le batšweletši, \n\nA) badiriši\nB) bao ba bolayago.\nC) bao ba bolayago.\nD) bao ba bolayago.",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: A"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: A"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 905,
+          "output_tokens": 7,
+          "total_tokens": 912
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answer: B, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 2,
+      "epoch": 1,
+      "input": "Professor Walden o ithutela dithuto tša leabela yunibesithing ya gae. O dumela gore o utullotše tshedimušo yeo e gananago le kgopolo yeo e amogetšwego. Bjalo ka ramahlale le moetapele wa thuto ya tša mahlale, ke magato afe ao a swanetšego go a tšea?",
+      "choices": [
+        "A tsebiše lefase gore kgopolo ya gagwe e kaone go feta kgopolo ya kgale.",
+        "A bitše boraditaba gomme a ba botse ka kgopolo ya gagwe ye mpšha.",
+        "A phenkgišane le kgopolo ya kgale ka bohlatse bja mahlale.",
+        "A kgopele gore kgopolo ya kgale e phumulwe."
+      ],
+      "target": "C",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nProfessor Walden o ithutela dithuto tša leabela yunibesithing ya gae. O dumela gore o utullotše tshedimušo yeo e gananago le kgopolo yeo e amogetšwego. Bjalo ka ramahlale le moetapele wa thuto ya tša mahlale, ke magato afe ao a swanetšego go a tšea?\n\nA) A tsebiše lefase gore kgopolo ya gagwe e kaone go feta kgopolo ya kgale.\nB) A bitše boraditaba gomme a ba botse ka kgopolo ya gagwe ye mpšha.\nC) A phenkgišane le kgopolo ya kgale ka bohlatse bja mahlale.\nD) A kgopele gore kgopolo ya kgale e phumulwe.",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: C"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: C"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 1051,
+          "output_tokens": 7,
+          "total_tokens": 1058
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answer: C, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 3,
+      "epoch": 1,
+      "input": "Raquel o fepile matlakala a dikatsana tše hlano phepo ya nama fela tekano ya dibeke tše pedi gomme a hwetša gore di oketšegile ka boima bja magareng a 15. O feditše ka gore go ja nama ke tsela ye kaone go thuša dikatsana gore di gole. Ke eng seo Raquel nkabe a se dirilego go dira gore teko ye e be ye kaone?",
+      "choices": [
+        "a lekile dikatsana tše tlhano le ka phepo ya go hloka nama",
+        "a kadile dikatsana ka dikeremo",
+        "a šomišitše katsana ye tee",
+        "a lekile dimpša le dikatse"
+      ],
+      "target": "A",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nRaquel o fepile matlakala a dikatsana tše hlano phepo ya nama fela tekano ya dibeke tše pedi gomme a hwetša gore di oketšegile ka boima bja magareng a 15. O feditše ka gore go ja nama ke tsela ye kaone go thuša dikatsana gore di gole. Ke eng seo Raquel nkabe a se dirilego go dira gore teko ye e be ye kaone?\n\nA) a lekile dikatsana tše tlhano le ka phepo ya go hloka nama\nB) a kadile dikatsana ka dikeremo\nC) a šomišitše katsana ye tee\nD) a lekile dimpša le dikatse",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: A"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: A"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 1018,
+          "output_tokens": 7,
+          "total_tokens": 1025
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answer: A, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 4,
+      "epoch": 1,
+      "input": "Ke efe yeo e hlalosago gabotse gore maseka a kaonafatša bjang mobu ge a eja dimela tšeo di hwilego?",
+      "choices": [
+        "A dira gore mobu o hlweke.",
+        "A tloša malwetši mobung.",
+        "A diriša gape phepo ka gare ga mobu.",
+        "A tloša meetse a tlaleletšo mobung."
+      ],
+      "target": "C",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nKe efe yeo e hlalosago gabotse gore maseka a kaonafatša bjang mobu ge a eja dimela tšeo di hwilego?\n\nA) A dira gore mobu o hlweke.\nB) A tloša malwetši mobung.\nC) A diriša gape phepo ka gare ga mobu.\nD) A tloša meetse a tlaleletšo mobung.",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: C"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: C"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 942,
+          "output_tokens": 7,
+          "total_tokens": 949
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answer: C, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 5,
+      "epoch": 1,
+      "input": "Phapoši ya Mohumagadi Garry e nyaka go tseba ge eba lefelo la bona le na le pula ye ntši ya esiti go feta diripa tše dingwe tša selete. Ke tsela efe yeo e ka bago ye kaone go bona go thoma nyakišišo?",
+      "choices": [
+        "ba ikgokaganye le dikolo tše dingwe seleteng sa bona",
+        "ba bale dipuku tša mahlale ka bokgobapuku",
+        "ba lebelele dithuto tša bjale tša pula ya esiti inthanete",
+        "ba lekole disampole tša mabu tšeo di tšerwego mafelong a go fapana"
+      ],
+      "target": "C",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nPhapoši ya Mohumagadi Garry e nyaka go tseba ge eba lefelo la bona le na le pula ye ntši ya esiti go feta diripa tše dingwe tša selete. Ke tsela efe yeo e ka bago ye kaone go bona go thoma nyakišišo?\n\nA) ba ikgokaganye le dikolo tše dingwe seleteng sa bona\nB) ba bale dipuku tša mahlale ka bokgobapuku\nC) ba lebelele dithuto tša bjale tša pula ya esiti inthanete\nD) ba lekole disampole tša mabu tšeo di tšerwego mafelong a go fapana",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: A"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: A"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 1014,
+          "output_tokens": 7,
+          "total_tokens": 1021
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answer: C, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 6,
+      "epoch": 1,
+      "input": "Ke setatamente sefe seo e lego therešo ka disele tša dimela le diphoofolo?",
+      "choices": [
+        "Bobedi di na le leboto la disele leo le di fago thekgo.",
+        "Bobedi di na le sekgoba se se golo sa go boloka meetse.",
+        "Bobedi di šomiša mitochondria go tšweletša enetši.",
+        "Bobedi di šomiša di-chloroplast go boloka enetši."
+      ],
+      "target": "C",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nKe setatamente sefe seo e lego therešo ka disele tša dimela le diphoofolo?\n\nA) Bobedi di na le leboto la disele leo le di fago thekgo.\nB) Bobedi di na le sekgoba se se golo sa go boloka meetse.\nC) Bobedi di šomiša mitochondria go tšweletša enetši.\nD) Bobedi di šomiša di-chloroplast go boloka enetši.",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: C"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: C"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 956,
+          "output_tokens": 7,
+          "total_tokens": 963
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answer: C, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 7,
+      "epoch": 1,
+      "input": "Didirišwa tša leabela ka gare ga dimela tša lefela di ka fetolwa ke boramahlale gore dimela di tšweletše mafela a mantši. Ke lentšu lefe leo le hlathollago tshepedišo ye?",
+      "choices": [
+        "go senyega ga tikologo",
+        "go latelana ga ikholotši",
+        "kgetho ya tlhago",
+        "boentšeneare bja dikarolwana tša leabela"
+      ],
+      "target": "4",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nDidirišwa tša leabela ka gare ga dimela tša lefela di ka fetolwa ke boramahlale gore dimela di tšweletše mafela a mantši. Ke lentšu lefe leo le hlathollago tshepedišo ye?\n\nA) go senyega ga tikologo\nB) go latelana ga ikholotši\nC) kgetho ya tlhago\nD) boentšeneare bja dikarolwana tša leabela",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: D"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: D"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 959,
+          "output_tokens": 7,
+          "total_tokens": 966
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answer: 4, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 8,
+      "epoch": 1,
+      "input": "Letšatši le aba phišo le lesedi Lefaseng. Letšatši le hlaloswa bokaone bjalo ka",
+      "choices": [
+        "polanete ya go ba kgauswi le Lefase",
+        "naledi ya go ba kgauswi kudu le Lefase",
+        "polanete ya go laetša lesedi",
+        "bogare bja sebakabaka"
+      ],
+      "target": "B",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nLetšatši le aba phišo le lesedi Lefaseng. Letšatši le hlaloswa bokaone bjalo ka\n\nA) polanete ya go ba kgauswi le Lefase\nB) naledi ya go ba kgauswi kudu le Lefase\nC) polanete ya go laetša lesedi\nD) bogare bja sebakabaka",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: B"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: B"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 933,
+          "output_tokens": 7,
+          "total_tokens": 940
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answer: B, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 9,
+      "epoch": 1,
+      "input": "Sebjalo se fedile mmala gape se na le mebala ye megolo ye mesehla matlakaleng a sona. Seemo se gantši se hlotšwe ke",
+      "choices": [
+        "go tšweletša peu",
+        "tshepedišo ya go fa dibjalo seetša sa letšatši",
+        "phepo ya dijo",
+        "bolwetši."
+      ],
+      "target": "D",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nSebjalo se fedile mmala gape se na le mebala ye megolo ye mesehla matlakaleng a sona. Seemo se gantši se hlotšwe ke\n\nA) go tšweletša peu\nB) tshepedišo ya go fa dibjalo seetša sa letšatši\nC) phepo ya dijo\nD) bolwetši.",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: C"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: C"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 932,
+          "output_tokens": 7,
+          "total_tokens": 939
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answer: D, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 10,
+      "epoch": 1,
+      "input": "Modumo woo o šalelago ke lephotho la modumo leo le",
+      "choices": [
+        "gogilwego.",
+        "kgopamišitšwego.",
+        "phatlaladitšwego.",
+        "bonagaditšwego"
+      ],
+      "target": "D",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nModumo woo o šalelago ke lephotho la modumo leo le\n\nA) gogilwego.\nB) kgopamišitšwego.\nC) phatlaladitšwego.\nD) bonagaditšwego",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: B"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: B"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 900,
+          "output_tokens": 7,
+          "total_tokens": 907
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answer: D, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 11,
+      "epoch": 1,
+      "input": "Mmago Kendra o reka koloi, efela ga a kgone go tšea sephetho sa gore a tšee mmala ofe. Kendra o eletša mmagwe gore koloi ya go ba le bokantle bjo boso a ka se iketle ka yona selemo. Tebelelo ye ke therešo gobane dilo tša go fifala, ge di bapetšwa le mebala ya go taga",
+      "choices": [
+        "di fokotša thomelo ya phišo.",
+        "ka kakaretšo di pitlagane.",
+        "di goga bontši bja enetši ya Letšatši.",
+        "bonagatša seetša sa letšatši ka mo go atlegilego kudu."
+      ],
+      "target": "C",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nMmago Kendra o reka koloi, efela ga a kgone go tšea sephetho sa gore a tšee mmala ofe. Kendra o eletša mmagwe gore koloi ya go ba le bokantle bjo boso a ka se iketle ka yona selemo. Tebelelo ye ke therešo gobane dilo tša go fifala, ge di bapetšwa le mebala ya go taga\n\nA) di fokotša thomelo ya phišo.\nB) ka kakaretšo di pitlagane.\nC) di goga bontši bja enetši ya Letšatši.\nD) bonagatša seetša sa letšatši ka mo go atlegilego kudu.",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: C"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: C"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 1018,
+          "output_tokens": 7,
+          "total_tokens": 1025
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answer: C, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 12,
+      "epoch": 1,
+      "input": "Ke efe ya tšeo di latelago yeo e swanetšego go akaretšwa le bogolo bja go emela tšhupatsela?",
+      "choices": [
+        "boima",
+        "taetšo",
+        "kakgofišo",
+        "bontši"
+      ],
+      "target": "B",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nKe efe ya tšeo di latelago yeo e swanetšego go akaretšwa le bogolo bja go emela tšhupatsela?\n\nA) boima\nB) taetšo\nC) kakgofišo\nD) bontši",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: B"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: B"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 904,
+          "output_tokens": 6,
+          "total_tokens": 910
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answer: B, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 13,
+      "epoch": 1,
+      "input": "Ke setatamente sefe seo se hlalosago gabotse tekano ya Letšatši?",
+      "choices": [
+        "Letšatši ke tekano ya magareng go bapetšwa le dinaledi tše dingwe.",
+        "Letšatši ke naledi ye kgolo kudu ya go phadima kudu legohleng.",
+        "Bontši bja dinaledi ka gare ga legohle di ka lekana ka gare ga Letšatši.",
+        "Bontši bja dinaledi ka gare ga legohle di feta ke letšatši ka bogolo"
+      ],
+      "target": "A",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nKe setatamente sefe seo se hlalosago gabotse tekano ya Letšatši?\n\nA) Letšatši ke tekano ya magareng go bapetšwa le dinaledi tše dingwe.\nB) Letšatši ke naledi ye kgolo kudu ya go phadima kudu legohleng.\nC) Bontši bja dinaledi ka gare ga legohle di ka lekana ka gare ga Letšatši.\nD) Bontši bja dinaledi ka gare ga legohle di feta ke letšatši ka bogolo",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: A"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: A"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 987,
+          "output_tokens": 7,
+          "total_tokens": 994
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answer: A, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 14,
+      "epoch": 1,
+      "input": "Naa tshepedišo ya madi le tshepedišo ya go hema di a thekgana?",
+      "choices": [
+        "Oksitšene yeo e tšerwego ke tshepedišo ya go hema e sepedišwa mmele kamoka ke tshepedišo ya madi.",
+        "Mantle ao a tšerwego ke tshepedišo ya madi e sepedišwa mmele kamoka ke tshepedišo ya go hema.",
+        "Diphepo tšeo di tšerwego ke tshepedišo ya go hema di sepedišwa mmele kamoka ke tshepedišo ya madi.",
+        "Carbondioxide yeo e tšerwego ke tshepedišo ya madi e sepedišwa mmele kamoka ke tshepedišo ya go hema."
+      ],
+      "target": "A",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nNaa tshepedišo ya madi le tshepedišo ya go hema di a thekgana?\n\nA) Oksitšene yeo e tšerwego ke tshepedišo ya go hema e sepedišwa mmele kamoka ke tshepedišo ya madi.\nB) Mantle ao a tšerwego ke tshepedišo ya madi e sepedišwa mmele kamoka ke tshepedišo ya go hema.\nC) Diphepo tšeo di tšerwego ke tshepedišo ya go hema di sepedišwa mmele kamoka ke tshepedišo ya madi.\nD) Carbondioxide yeo e tšerwego ke tshepedišo ya madi e sepedišwa mmele kamoka ke tshepedišo ya go hema.",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: A"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: A"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 1048,
+          "output_tokens": 7,
+          "total_tokens": 1055
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answer: A, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 15,
+      "epoch": 1,
+      "input": "Ke metswako efe ya ye e latelago yeo e gantši e ka bago karolo ya diphedi?",
+      "choices": [
+        "C?H??O?",
+        "BF?",
+        "MoCl?",
+        "CsI"
+      ],
+      "target": "A",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nKe metswako efe ya ye e latelago yeo e gantši e ka bago karolo ya diphedi?\n\nA) C?H??O?\nB) BF?\nC) MoCl?\nD) CsI",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: A"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: A"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 895,
+          "output_tokens": 6,
+          "total_tokens": 901
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answer: A, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 16,
+      "epoch": 1,
+      "input": "Maswika le dimenerale ke ditlabakelo tšeo di tlwaelegilego go hwetšwa Lefaseng. Ke thoto efe yeo maswika a mantši le dimenerale di e hlakanetšego?",
+      "choices": [
+        "Di hlwekile.",
+        "Di tiile",
+        "Ke diela",
+        "Di na le makenete"
+      ],
+      "target": "B",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nMaswika le dimenerale ke ditlabakelo tšeo di tlwaelegilego go hwetšwa Lefaseng. Ke thoto efe yeo maswika a mantši le dimenerale di e hlakanetšego?\n\nA) Di hlwekile.\nB) Di tiile\nC) Ke diela\nD) Di na le makenete",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: B"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: B"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 928,
+          "output_tokens": 6,
+          "total_tokens": 934
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answer: B, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 17,
+      "epoch": 1,
+      "input": "Go bala mengwaga ya go lekana ya maswika, ditsebi tša thutafase di diriša tekanyo ya go bola ga di-isotope ka gare ga disampole tša tšona. Ke lentšu lefe leo le šomišwago go tekano ya pele ya di-isotope tša pele tšeo di nyakišišwago?",
+      "choices": [
+        "mehuta yeo e hlokegago ya diathomo",
+        "di-isotope tša morwa",
+        "di-isotope tša morwedi",
+        "di-isotope tša batswadi"
+      ],
+      "target": "D",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nGo bala mengwaga ya go lekana ya maswika, ditsebi tša thutafase di diriša tekanyo ya go bola ga di-isotope ka gare ga disampole tša tšona. Ke lentšu lefe leo le šomišwago go tekano ya pele ya di-isotope tša pele tšeo di nyakišišwago?\n\nA) mehuta yeo e hlokegago ya diathomo\nB) di-isotope tša morwa\nC) di-isotope tša morwedi\nD) di-isotope tša batswadi",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: D"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: D"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 983,
+          "output_tokens": 7,
+          "total_tokens": 990
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answer: D, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 18,
+      "epoch": 1,
+      "input": "Makhura ao a šomišwago lehono a dirilwe ka mašalela a kgale a diphedi tše dinnyane tša lewatle tša go bitšwa “Diathomo.” Ge di be di phela , Diathomo di be di fetoša seetša sa letšatši goba enetši yeo e bolokilwego. Go ya ka tshedimušo ye ke sefe sa ditatamente tše di latelago seo e lego therešo?",
+      "choices": [
+        "Letšatši le fetošitše Diathomo goba makhura morago ga mengwaga ye 10-25.",
+        "Diathomo ke mohlodi wa pele wa enetšo ya makhura.",
+        "Letšatši ke mohlodi wa pele wa enetše ya makhura.",
+        "Diathomo di fetošeditše makhura go enetši"
+      ],
+      "target": "C",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nMakhura ao a šomišwago lehono a dirilwe ka mašalela a kgale a diphedi tše dinnyane tša lewatle tša go bitšwa “Diathomo.” Ge di be di phela , Diathomo di be di fetoša seetša sa letšatši goba enetši yeo e bolokilwego. Go ya ka tshedimušo ye ke sefe sa ditatamente tše di latelago seo e lego therešo?\n\nA) Letšatši le fetošitše Diathomo goba makhura morago ga mengwaga ye 10-25.\nB) Diathomo ke mohlodi wa pele wa enetšo ya makhura.\nC) Letšatši ke mohlodi wa pele wa enetše ya makhura.\nD) Diathomo di fetošeditše makhura go enetši",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: C"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: C"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 1062,
+          "output_tokens": 7,
+          "total_tokens": 1069
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answer: C, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 19,
+      "epoch": 1,
+      "input": "Ke diphedi dife tšeo di jago fela?",
+      "choices": [
+        "ditšweletši",
+        "diphoofolo tše di jago tšohle",
+        "diphoofolo tša go ja dimela",
+        "dibata"
+      ],
+      "target": "C",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nKe diphedi dife tšeo di jago fela?\n\nA) ditšweletši\nB) diphoofolo tše di jago tšohle\nC) diphoofolo tša go ja dimela\nD) dibata",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: C"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: C"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 895,
+          "output_tokens": 7,
+          "total_tokens": 902
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answer: C, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 20,
+      "epoch": 1,
+      "input": "Ke dikarolwana dife tšeo di dirago boima bja athomo?..diprothone le dinyutherone",
+      "choices": [
+        "diprothone le dinyutherone",
+        "diprothone le dielektherone",
+        "dinyutherone le dimolekhule",
+        "dielektherone le dimolekhule"
+      ],
+      "target": "A",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nKe dikarolwana dife tšeo di dirago boima bja athomo?..diprothone le dinyutherone\n\nA) diprothone le dinyutherone\nB) diprothone le dielektherone\nC) dinyutherone le dimolekhule\nD) dielektherone le dimolekhule",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: A"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: A"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 922,
+          "output_tokens": 7,
+          "total_tokens": 929
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answer: A, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 21,
+      "epoch": 1,
+      "input": "Go humana difosele tša dimela tša nako ya boso bja go ruthela ka gare ga maswika a sehlakehlake sa go tonya ya leboa go akanya gore",
+      "choices": [
+        "semelo se ilwe sa tšewa gore se lewe.",
+        "sehlakehlake se be se le kgole borwa.",
+        "bso bja sehlakehlake bo be bo ruthela.",
+        "difosele di be di lwantšha phefo."
+      ],
+      "target": "C",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nGo humana difosele tša dimela tša nako ya boso bja go ruthela ka gare ga maswika a sehlakehlake sa go tonya ya leboa go akanya gore\n\nA) semelo se ilwe sa tšewa gore se lewe.\nB) sehlakehlake se be se le kgole borwa.\nC) bso bja sehlakehlake bo be bo ruthela.\nD) difosele di be di lwantšha phefo.",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: B"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: B"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 953,
+          "output_tokens": 7,
+          "total_tokens": 960
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answer: C, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 22,
+      "epoch": 1,
+      "input": "Lefelo leo le nago le meetse le ile la omišwa lebakeng la go aga lefelo la mabenkele. Morago ga mengwaga ye mebedi, go be go se sa na digwagwa lefelong leo. Gobaneng digwagwa di nyameletše?",
+      "choices": [
+        "Digwagwa di fedišitšwe ke sedirišwa sa kontraka.",
+        "Digwagwa di hwile gobane digwagwa ga di kgone go hema ka ntle ga meetse.",
+        "Digwagwa di be di tšhogile gomme tša ya ka sethokgweng.",
+        "Digwagwa di be di hwetša dijo tša tšona go tšwa go lefelo la go ba le meetse"
+      ],
+      "target": "D",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nLefelo leo le nago le meetse le ile la omišwa lebakeng la go aga lefelo la mabenkele. Morago ga mengwaga ye mebedi, go be go se sa na digwagwa lefelong leo. Gobaneng digwagwa di nyameletše?\n\nA) Digwagwa di fedišitšwe ke sedirišwa sa kontraka.\nB) Digwagwa di hwile gobane digwagwa ga di kgone go hema ka ntle ga meetse.\nC) Digwagwa di be di tšhogile gomme tša ya ka sethokgweng.\nD) Digwagwa di be di hwetša dijo tša tšona go tšwa go lefelo la go ba le meetse",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: D"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: D"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 1027,
+          "output_tokens": 7,
+          "total_tokens": 1034
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answer: D, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 23,
+      "epoch": 1,
+      "input": "Naetrotšene, phepo yeo e hwetšwago manyoreng, e thuša dimela go gola. Meetse a pula ao a elelago gantši a gogolela manyora ka gare ga matamo le matsheng. Naetrotšene yeo e tletšego e ama bjang diphedi ka letamong le letsheng?",
+      "choices": [
+        "Malele a gola ka lebelo.",
+        "Diphetogo tša leabela di gola gannyane-gannyane dihlaping.",
+        "Dikgapetla tša dikgopa di fokola gannyane-gannyane.",
+        "Digwagwa di tlwaela ka lebelo mehlodi ye meswa ya dijo"
+      ],
+      "target": "A",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nNaetrotšene, phepo yeo e hwetšwago manyoreng, e thuša dimela go gola. Meetse a pula ao a elelago gantši a gogolela manyora ka gare ga matamo le matsheng. Naetrotšene yeo e tletšego e ama bjang diphedi ka letamong le letsheng?\n\nA) Malele a gola ka lebelo.\nB) Diphetogo tša leabela di gola gannyane-gannyane dihlaping.\nC) Dikgapetla tša dikgopa di fokola gannyane-gannyane.\nD) Digwagwa di tlwaela ka lebelo mehlodi ye meswa ya dijo",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: A"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: A"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 1019,
+          "output_tokens": 7,
+          "total_tokens": 1026
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answer: A, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 24,
+      "epoch": 1,
+      "input": "Gore di kgone go phologa, diphoofolo kamoka di hloka",
+      "choices": [
+        "phišo, meetse, le mobu",
+        "seetša sa letšatši, mobu, le phišo",
+        "seetša sa letšatši, moya le dijo",
+        "dijo, meetse le moya"
+      ],
+      "target": "D",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nGore di kgone go phologa, diphoofolo kamoka di hloka\n\nA) phišo, meetse, le mobu\nB) seetša sa letšatši, mobu, le phišo\nC) seetša sa letšatši, moya le dijo\nD) dijo, meetse le moya",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: D"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: D"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 916,
+          "output_tokens": 7,
+          "total_tokens": 923
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answer: D, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 25,
+      "epoch": 1,
+      "input": "Dilo kamoka di bopilwe ka",
+      "choices": [
+        "disele",
+        "diathomo",
+        "molekhule",
+        "dikarolwana"
+      ],
+      "target": "2",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nDilo kamoka di bopilwe ka\n\nA) disele\nB) diathomo\nC) molekhule\nD) dikarolwana",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: B"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: B"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 873,
+          "output_tokens": 7,
+          "total_tokens": 880
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answer: 2, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 26,
+      "epoch": 1,
+      "input": "Go dimela, ke eng seo se nago le maikarabelo a go fetiša mekgwa go tšwa go moloko o tee go ya go o mongwe?",
+      "choices": [
+        "di-chloroplast",
+        "photosynthesis",
+        "medu",
+        "dikarolwana tša leabela"
+      ],
+      "target": "D",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nGo dimela, ke eng seo se nago le maikarabelo a go fetiša mekgwa go tšwa go moloko o tee go ya go o mongwe?\n\nA) di-chloroplast\nB) photosynthesis\nC) medu\nD) dikarolwana tša leabela",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: D"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: D"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 912,
+          "output_tokens": 7,
+          "total_tokens": 919
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answer: D, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 28,
+      "epoch": 1,
+      "input": "Maatlakgogedi a na le maikarabelo a___.",
+      "choices": [
+        "ditsela tša didirišwa tša lefaufaung go dikologa Letšatši",
+        "go dikuloga ga pholanete mothalading wa yona",
+        "go kobja ga mothaladi wa Lefase",
+        "dikgato tša Ngwedi"
+      ],
+      "target": "A",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nMaatlakgogedi a na le maikarabelo a___.\n\nA) ditsela tša didirišwa tša lefaufaung go dikologa Letšatši\nB) go dikuloga ga pholanete mothalading wa yona\nC) go kobja ga mothaladi wa Lefase\nD) dikgato tša Ngwedi",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: A"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: A"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 925,
+          "output_tokens": 7,
+          "total_tokens": 932
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answer: A, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 31,
+      "epoch": 1,
+      "input": "Ke dife tšeo di hlotšwego ke Ditlamorago tša go Fapoga?",
+      "choices": [
+        "madimo",
+        "dithabamollo",
+        "ditsela tša meoya",
+        "dilo tšeo di sa šikinyegego"
+      ],
+      "target": "C",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nKe dife tšeo di hlotšwego ke Ditlamorago tša go Fapoga?\n\nA) madimo\nB) dithabamollo\nC) ditsela tša meoya\nD) dilo tšeo di sa šikinyegego",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: C"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: C"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 902,
+          "output_tokens": 7,
+          "total_tokens": 909
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answer: C, No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 33,
+      "epoch": 1,
+      "input": "Elias o nyakišiša ka gore ekaba go ena dinawa ka gare ga meetse pele o ka di bjala go ama ka moo dinawa di golago. Ke dinawa dife tšeo gantši di ka šomišwago?",
+      "choices": [
+        "dinawa tšeo di ennwego nako ye nnyane",
+        "dinawa tšeo di sa enwago ka meetsing",
+        "dinawa tše di bilego le boima bjo bogolo",
+        "dinawa tšeo di gotšego ya ba tše ditelele go feta"
+      ],
+      "target": "B",
+      "messages": [
+        {
+          "content": "Here are some example questions and answers:\n\nQuestion: Ge poo e khubedu (RR) e tswadišwa le kgomo e tšhweu (WW), ka dinako tše dingwe go tšweletšwa namane ya roan (RW). Ge e ba poo ya roan (RW) e tswadišwa le kgomo ya roan (RW), go ka direga eng ka bana ba yona?\n\nChoices:\nA. E khubedu e tee, e tšhweu e tee le tše pedi tša roan\nB. 0 e khubedu, 1 e tšhweu le 3 ya roan\nC. 0 e khubedu, 1 e tšhweu le 3 ya roan\nD. 0 e khubedu, 0 e tšhweu le 4 ya roan\n\nAnswer: A\n\nQuestion: Pipa ya setho e tšweletša noto ya mmino e nago le palo e swanago ya dimolekhule tša kgase ya naetrotšene. ka botelele bja maphoto bja dimithara tše 2,72. Botelele bja noto ye ke bofe ge lebelo la modumo e le 348 m/s?\n\nChoices:\nA. 85.7 Hz\nB. 128 Hz\nC. 260 Hz\nD. 466 Hz\n\nAnswer: B\n\nQuestion: Nakong e fetilego, ma-India a setlogo a Amerika a be a epela dihlapi tše di hwilego gotee le dipeu tša lehea. Mokgwa wo o be o dirišwa ka gobane dihlapi tše di hwilego tšeo di bolago di be di tla\n\nChoices:\nA. go nea dimela tša lehea tšeo di golago dijo tša phepo\nB. go fediša go nyakega ga go tumola mefoka go dikologa sebjalo sa lehea\nC. go lokolla oksitšene gore e dirišwe ke sebjalo sa lehea\nD. aba meetse ka moka ao dimela tša lehea di a nyakago\n\nAnswer: 1\n\nQuestion: Ke efe ya tše yeo e neago bohlatse bjo bokaone bja gore bophelo bo ka ba bo tšweletše go Mars?\n\nChoices:\nA. digase tša yona tša lefaufaung\nB. dithemperetšha tša yona tša ka godimo\nC. dikgoba tša yona le bokagodimo bja yona bja maswika\nD. aese ya yona le dimolekhule tša yona tša tlhago\n\nAnswer: D\n\nQuestion: Ge Lefase le dutše le dikologa Letšatši, palo ya diiri tša letšatši e fapana go ya ka mafelo. Ke lefelo lefe leo go lona palo ya diiri tša mosegare e ka dulago e sa fetoge?\n\nChoices:\nA. North Pole\nB. Prime Meridian\nC. Equator\nD. Antarctica\n\nAnswer: C",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nElias o nyakišiša ka gore ekaba go ena dinawa ka gare ga meetse pele o ka di bjala go ama ka moo dinawa di golago. Ke dinawa dife tšeo gantši di ka šomišwago?\n\nA) dinawa tšeo di ennwego nako ye nnyane\nB) dinawa tšeo di sa enwago ka meetsing\nC) dinawa tše di bilego le boima bjo bogolo\nD) dinawa tšeo di gotšego ya ba tše ditelele go feta",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": [
+            {
+              "type": "text",
+              "text": "ANSWER: B"
+            }
+          ],
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "claude-3-5-sonnet-20240620",
+        "choices": [
+          {
+            "message": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "ANSWER: B"
+                }
+              ],
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 974,
+          "output_tokens": 7,
+          "total_tokens": 981
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answer: B, No logprobs available"
+      },
+      "metadata": {}
+    }
+  ],
+  "logging": [
+    {
+      "level": "info",
+      "message": "PyTorch version 2.3.1 available.",
+      "created": 1721667869699.683
+    }
+  ]
+}
