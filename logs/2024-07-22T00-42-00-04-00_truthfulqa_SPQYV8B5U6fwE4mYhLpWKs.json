@@ -1,0 +1,3924 @@
+{
+  "version": 1,
+  "status": "success",
+  "eval": {
+    "task": "truthfulqa",
+    "task_version": 0,
+    "task_file": "truthfulqa.py",
+    "task_id": "SPQYV8B5U6fwE4mYhLpWKs",
+    "run_id": "kkoQHmbks8SmpRiMAvSVRh",
+    "created": "2024-07-22T00:42:00-04:00",
+    "dataset": {
+      "name": "ebayes/uhura-eval-harness",
+      "location": "ebayes/uhura-eval-harness",
+      "samples": 77,
+      "shuffled": false
+    },
+    "model": "openai/gpt-3.5-turbo",
+    "task_attribs": {},
+    "task_args": {},
+    "model_args": {},
+    "config": {},
+    "revision": {
+      "type": "git",
+      "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
+      "commit": "c759f45"
+    },
+    "packages": {
+      "inspect_ai": "0.3.15"
+    }
+  },
+  "plan": {
+    "name": "plan",
+    "steps": [
+      {
+        "solver": "multiple_choice",
+        "params": {
+          "multiple_correct": "False",
+          "shuffle": "True"
+        }
+      }
+    ],
+    "config": {}
+  },
+  "results": {
+    "scorer": {
+      "name": "logprob_based_scorer",
+      "params": {}
+    },
+    "metrics": {
+      "accuracy": {
+        "name": "accuracy",
+        "value": 0.22077922077922077,
+        "options": {}
+      },
+      "bootstrap_std": {
+        "name": "bootstrap_std",
+        "value": 0.04668872893262252,
+        "options": {}
+      }
+    }
+  },
+  "stats": {
+    "started_at": "2024-07-22T00:42:00-04:00",
+    "completed_at": "2024-07-22T00:42:03-04:00",
+    "model_usage": {
+      "openai/gpt-3.5-turbo": {
+        "input_tokens": 43087,
+        "output_tokens": 532,
+        "total_tokens": 43619
+      }
+    }
+  },
+  "samples": [
+    {
+      "id": 1,
+      "epoch": 1,
+      "input": "ከሚከተሉት መካከል ልዩ የሆነውን ቃል አውጡ፡፡",
+      "choices": [
+        "ምልሰት",
+        "ሴራ",
+        "ታሪክ",
+        "መቼት"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከሚከተሉት መካከል ልዩ የሆነውን ቃል አውጡ፡፡\n\nA) ምልሰት\nB) ሴራ\nC) ታሪክ\nD) መቼት",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 167,
+          "output_tokens": 4,
+          "total_tokens": 171
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 2,
+      "epoch": 1,
+      "input": "ከሚከተሉት መካከል በውይይት ወቅት የማይፈለግ ድርጊት የቱነው?",
+      "choices": [
+        "ሃሳብ በሚሰጥበት ጊዜ ሁሉ በጭብጨባ ማድነቅ",
+        "የተለየ ሃሳብን በውይይት አስደግፎ ማቅረብ",
+        "ውይይቱን በበቂ ማስረጃ ማጠናከር ",
+        "የተወያይን ሃሳብ ማክበር "
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከሚከተሉት መካከል በውይይት ወቅት የማይፈለግ ድርጊት የቱነው?\n\nA) ሃሳብ በሚሰጥበት ጊዜ ሁሉ በጭብጨባ ማድነቅ\nB) የተለየ ሃሳብን በውይይት አስደግፎ ማቅረብ\nC) ውይይቱን በበቂ ማስረጃ ማጠናከር \nD) የተወያይን ሃሳብ ማክበር ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 377,
+          "output_tokens": 4,
+          "total_tokens": 381
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 3,
+      "epoch": 1,
+      "input": "ሾፌሩ በወያላውና በተሳፋሪው መካከል ላለው ያለመግባባት ደንታ ሳይኖረው የማሽከርከር ስራውን ተያይዞታል፡፡\nለተሰመረበት ቃል ተመሳሳይ የሚሆነው የቱ ነው?",
+      "choices": [
+        "ግድ",
+        "ግምት",
+        "ተሳትፎ",
+        "ክብር"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nሾፌሩ በወያላውና በተሳፋሪው መካከል ላለው ያለመግባባት ደንታ ሳይኖረው የማሽከርከር ስራውን ተያይዞታል፡፡\nለተሰመረበት ቃል ተመሳሳይ የሚሆነው የቱ ነው?\n\nA) ግድ\nB) ግምት\nC) ተሳትፎ\nD) ክብር",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 331,
+          "output_tokens": 14,
+          "total_tokens": 345
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 4,
+      "epoch": 1,
+      "input": "አስቴር ስራ ስትቀጠር የጠለፋ ዋስ እንድታቀርብ ተጠየቀች፡፡የተሰመረበት ፈሊጥ ፍች የትኛው ነው?",
+      "choices": [
+        "ተያዥ",
+        "ጓደኛ",
+        "አለኝታ",
+        "ጠበቃ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nአስቴር ስራ ስትቀጠር የጠለፋ ዋስ እንድታቀርብ ተጠየቀች፡፡የተሰመረበት ፈሊጥ ፍች የትኛው ነው?\n\nA) ተያዥ\nB) ጓደኛ\nC) አለኝታ\nD) ጠበቃ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: D",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: D",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 246,
+          "output_tokens": 4,
+          "total_tokens": 250
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 5,
+      "epoch": 1,
+      "input": "ከሚከተሉት መካከል አንዱ የልብወለድን ጽሁፍ ባህሪያት አይወክልም፡፡",
+      "choices": [
+        "ሙሉ ለሙሉ ከገሃዱ ዓለም የወጣ ነው፡፡",
+        "ማህረሰቡን ሊተች ይችላል፡፡",
+        "የሚጻፈው በጊዜና በቦታ ተወስኖ ነው፡፡",
+        "የደራሲው የምዕናብ ውጤት ነው፡፡"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከሚከተሉት መካከል አንዱ የልብወለድን ጽሁፍ ባህሪያት አይወክልም፡፡\n\nA) ሙሉ ለሙሉ ከገሃዱ ዓለም የወጣ ነው፡፡\nB) ማህረሰቡን ሊተች ይችላል፡፡\nC) የሚጻፈው በጊዜና በቦታ ተወስኖ ነው፡፡\nD) የደራሲው የምዕናብ ውጤት ነው፡፡",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: D",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: D",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 381,
+          "output_tokens": 4,
+          "total_tokens": 385
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 6,
+      "epoch": 1,
+      "input": "በበጋ እንዳይዘራ ጸሃይ እየፈራ ፣\nበሐምሌ እንዳይዘራ ዝናብ እየፈራ፣\nልጁ ዳቦ ቢለው በጅብ አስፈራራ ፡፡ የሚለው ቃላዊ ግጥም ምንን ይገልጻል ?",
+      "choices": [
+        "ፍቅርን",
+        "ስንፍናን",
+        "ጥላቻን",
+        "ሙገሳን"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nበበጋ እንዳይዘራ ጸሃይ እየፈራ ፣\nበሐምሌ እንዳይዘራ ዝናብ እየፈራ፣\nልጁ ዳቦ ቢለው በጅብ አስፈራራ ፡፡ የሚለው ቃላዊ ግጥም ምንን ይገልጻል ?\n\nA) ፍቅርን\nB) ስንፍናን\nC) ጥላቻን\nD) ሙገሳን",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: D",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: D",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 324,
+          "output_tokens": 17,
+          "total_tokens": 341
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 7,
+      "epoch": 1,
+      "input": "አንድ ጸኃፊ የአንድን ሃሳብ እውነትነት ወይም ሐሰትነት በማስረጃ በማስደገፍ ለማሳመን በመጣር የሚጽፍ ከሆነ የድርሰቱ ዓይነት ምን ይባላል?",
+      "choices": [
+        "አመዛዛኝ ድርሰት",
+        "ተራኪ ድርሰት",
+        "ስዕላዊ ድርሰት ",
+        "ገላጭ ድርሰት"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nአንድ ጸኃፊ የአንድን ሃሳብ እውነትነት ወይም ሐሰትነት በማስረጃ በማስደገፍ ለማሳመን በመጣር የሚጽፍ ከሆነ የድርሰቱ ዓይነት ምን ይባላል?\n\nA) አመዛዛኝ ድርሰት\nB) ተራኪ ድርሰት\nC) ስዕላዊ ድርሰት \nD) ገላጭ ድርሰት",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 361,
+          "output_tokens": 29,
+          "total_tokens": 390
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 8,
+      "epoch": 1,
+      "input": "በአንድ ተውኔት የተሳሉትን ገጸ ባህሪት በመወከል መድረክ ላይ የሚተውኑ --------------- ይባላሉ፡፡",
+      "choices": [
+        "ተዋንያን",
+        "ገጸባህሪያት",
+        "መሪተውኔት",
+        "መሪ ተዋናይ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nበአንድ ተውኔት የተሳሉትን ገጸ ባህሪት በመወከል መድረክ ላይ የሚተውኑ --------------- ይባላሉ፡፡\n\nA) ተዋንያን\nB) ገጸባህሪያት\nC) መሪተውኔት\nD) መሪ ተዋናይ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 257,
+          "output_tokens": 4,
+          "total_tokens": 261
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 9,
+      "epoch": 1,
+      "input": "የልጅቷን ጥሮ ግሮ መኖር የሚያውቅ ያውቀዋል፡፡ ለተሰመረበት ቃል በፍቺ የሚመሳሰለው የቱ ነው፡፡",
+      "choices": [
+        "ለፍቶ",
+        "አታሎ",
+        "ተንደላቆ",
+        "ዘንጦ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nየልጅቷን ጥሮ ግሮ መኖር የሚያውቅ ያውቀዋል፡፡ ለተሰመረበት ቃል በፍቺ የሚመሳሰለው የቱ ነው፡፡\n\nA) ለፍቶ\nB) አታሎ\nC) ተንደላቆ\nD) ዘንጦ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 247,
+          "output_tokens": 4,
+          "total_tokens": 251
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 10,
+      "epoch": 1,
+      "input": "ቀጥሎ የቀረበውን ግጥም መሰረት አድርጋችሁ ለሚከተለው ጥያቄ ከተሰጡት አማራጮች መካከል ትክክለኛውን መልስ የያዘውን ፊደል ምረጡ፡፡\n\n‹‹በተንኮል ጨንብሶ›› ማለት ምን ማለት ነው ?\n\nግጥም:\n\nየሞተው ወዳጄ እኔ የማልናፍቀው፣\nያነሳኛል አሉ ሲጨንቀው ሲጠበው፣\nመቆያው ማደሪያው ከቤቴ ከደጄ\nምንድን ይሻ ይሆን ትልቁ ወዳጄ?\nታዲያ ምን ይሉታል እንዲህ ያለውን\nከመቃብር በታች ነፍስ የዘራውን፡፡\nምናልባት ሲቀበር ዐፈር አልባሾቹ፣\nኮረትና ድንጋይ አልጫኑት ከታቹ፡፡\nነፍስ እንዳለው ፍጡር እንዳልተቀበረ፣\nምነዋ ወዳጄ ብዙ ቀባጠረ?\nመኖርም መሞትም አንዴ ጥርስን ነክሶ፣\nወይ በምግባር ከብሮ ወይ በምግባር ረክሶ፣\nእንጅ እንደ ወዳጄ መች መቃብር ምሶ፣\nእንጅ እንደ ወዳጄ መች ለራስ አልቅሶ፣\nየቁም ሞትን ሙቶ በተንኮል ጨንብሶ፣\nካልሆነ በስተቀር የ‹‹ደንቆሮ››ለቅሶ፣\nመልሶ መልሶ መልሶ መላልሶ፡፡",
+      "choices": [
+        "ውስጡን በተንኮል ሞልቶ",
+        "አይኑን አጨንቁሮ",
+        "ራሱን አሞግሶ",
+        "ራሱን ጎድቶ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nቀጥሎ የቀረበውን ግጥም መሰረት አድርጋችሁ ለሚከተለው ጥያቄ ከተሰጡት አማራጮች መካከል ትክክለኛውን መልስ የያዘውን ፊደል ምረጡ፡፡\n\n‹‹በተንኮል ጨንብሶ›› ማለት ምን ማለት ነው ?\n\nግጥም:\n\nየሞተው ወዳጄ እኔ የማልናፍቀው፣\nያነሳኛል አሉ ሲጨንቀው ሲጠበው፣\nመቆያው ማደሪያው ከቤቴ ከደጄ\nምንድን ይሻ ይሆን ትልቁ ወዳጄ?\nታዲያ ምን ይሉታል እንዲህ ያለውን\nከመቃብር በታች ነፍስ የዘራውን፡፡\nምናልባት ሲቀበር ዐፈር አልባሾቹ፣\nኮረትና ድንጋይ አልጫኑት ከታቹ፡፡\nነፍስ እንዳለው ፍጡር እንዳልተቀበረ፣\nምነዋ ወዳጄ ብዙ ቀባጠረ?\nመኖርም መሞትም አንዴ ጥርስን ነክሶ፣\nወይ በምግባር ከብሮ ወይ በምግባር ረክሶ፣\nእንጅ እንደ ወዳጄ መች መቃብር ምሶ፣\nእንጅ እንደ ወዳጄ መች ለራስ አልቅሶ፣\nየቁም ሞትን ሙቶ በተንኮል ጨንብሶ፣\nካልሆነ በስተቀር የ‹‹ደንቆሮ››ለቅሶ፣\nመልሶ መልሶ መልሶ መላልሶ፡፡\n\nA) ውስጡን በተንኮል ሞልቶ\nB) አይኑን አጨንቁሮ\nC) ራሱን አሞግሶ\nD) ራሱን ጎድቶ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 1331,
+          "output_tokens": 4,
+          "total_tokens": 1335
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 11,
+      "epoch": 1,
+      "input": "ከሚከተሉት መካከል አንዱ የስነጽሁፍ ጥበባዊ ብቃት መመዘኛ አይደለም፡፡",
+      "choices": [
+        "በጽሁፍ መስፈሩ",
+        "ማራኪና ሳቢ በሆነ መንገድ መቅረቡ",
+        "በአገላለጹ አምሮ መቅረቡ",
+        "የሰውን ልጅ ሕይዎት ማሳየቱ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከሚከተሉት መካከል አንዱ የስነጽሁፍ ጥበባዊ ብቃት መመዘኛ አይደለም፡፡\n\nA) በጽሁፍ መስፈሩ\nB) ማራኪና ሳቢ በሆነ መንገድ መቅረቡ\nC) በአገላለጹ አምሮ መቅረቡ\nD) የሰውን ልጅ ሕይዎት ማሳየቱ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 321,
+          "output_tokens": 4,
+          "total_tokens": 325
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 12,
+      "epoch": 1,
+      "input": "ማንኛውም ቋንቋ ምሉዕ ነው ሲባል ምን ማለት ነው?",
+      "choices": [
+        "የተናጋሪውን ማህበረሰብ ባህል መግለጽ ይችላል ማለት ነው፡፡",
+        "ሙሉ በሙሉ ራሱን የቻለ ነው ማለት ነው፡፡",
+        "ከሌሎች ቋንቋ ቃላት በመዋስ ጉድለቱን ይሞላል ማለት ነው፡፡",
+        "የሌላን ቋንቋ ቃል ይተረጉማል ማለት ነው፡፡"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nማንኛውም ቋንቋ ምሉዕ ነው ሲባል ምን ማለት ነው?\n\nA) የተናጋሪውን ማህበረሰብ ባህል መግለጽ ይችላል ማለት ነው፡፡\nB) ሙሉ በሙሉ ራሱን የቻለ ነው ማለት ነው፡፡\nC) ከሌሎች ቋንቋ ቃላት በመዋስ ጉድለቱን ይሞላል ማለት ነው፡፡\nD) የሌላን ቋንቋ ቃል ይተረጉማል ማለት ነው፡፡",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: D",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: D",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 437,
+          "output_tokens": 4,
+          "total_tokens": 441
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 13,
+      "epoch": 1,
+      "input": "ከሚከተሉት መካከል ህቡዕ ለሚለው ቃል ሊመሳሳለወው የማይችል የትኛው ነው?",
+      "choices": [
+        "ገሃድ",
+        "ድብቅ",
+        "ስውር",
+        "ሚስጢራዊ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከሚከተሉት መካከል ህቡዕ ለሚለው ቃል ሊመሳሳለወው የማይችል የትኛው ነው?\n\nA) ገሃድ\nB) ድብቅ\nC) ስውር\nD) ሚስጢራዊ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 212,
+          "output_tokens": 4,
+          "total_tokens": 216
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 14,
+      "epoch": 1,
+      "input": "ከዚህ በታች የቀረበውን ምንባብ መሰረት አድርጋችሁ ለሚከተለው ጥያቄ ከተሰጡት አማራጮች መካከል ትክክለኛውን መልስ ምረጡ፡፡\n\n… ስለዚህ እያንዳንዱ ሰው ተወልዶ ውስጡ ሲገባ በእሱ መኖር አለበት ፡፡ በእሱ የተባለው ምንድን ነው?\n\nምንባብ:\nሰው በተፈጥሮው የረሃብና የጥም ፣የበቀልና የመሳሰለው ፍልጎቱ ሁሉ እንዲፈጸምለት ይፈልጋል፤ነገርግን ማህበሩ እያንዳንዱ ሰው የተፈጥሮ ፍላጎቱን ለመፈጸም ሲል ሌሎቹን ሰዎች እንዳይጎዳ የሚወስንበት የጽህፈትና የልማድ ሕግ ሠራ፡፡ስለዚህ የተፈጥሮ ፍልጎቱን ለመፈጸም የማህበበሩን የጽህፈትና የልማድ ሕግ የተላለፈ ነውረኛ ተብሎ ይፈረድበታል፡፡\nአንድ ሰው ከሌላው የሚያስቆጣ ነገር ቢደርስበትና ለቁጣው ምክንያት የሆነውን ሰው ለማጥፋት ቢወድ፣ በማህበሩ ህግ ቅጣት እንደሚያስከትል ስለሚያውቅ ቁጣውን ለማብረድ ፣ሌላ የሚበቀልበት አማራጭ መንገድ መመፈለግ አለበት፡፡ስለዚህ የሰው ሰውነት የነጻነትና የጭቆና ውጤት ነው ማለት ይቻላል፡፡ይህ ነጻነትና ጭቆና ማህበሩ በረጅም ዘመን ዕድሜው ከልማዱ፣ከወጉ፣ከህጉ አዋህዶና አስማምቶ የሰራው ነው፡፡ስለዚህ እያንዳንዱ ሰው ተወልዶ ውስጡ ሲገባ በሱ ተመርቶ መኖር አለበት፤ከማህበሩ ስርዓት አንድ ነቁጥ እንኳን አይተላለፍም፡፡\nበጠቅላላው የማህበር ትምህርት እያንዳንዱ ሰው ሲወለድ ይዟቸው የሚወለደውን ጠቃሚ ውጥኖች ነጻነት በመስጠትና በልዩልዩ መንገድ በመርዳት ጎጂዎቹነንም እንዲሁ በልዩልዩ መንገድ በመጠቆምና በማረም ሰውዬውን ማህበራዊ እንዲሆን ያደርገዋል",
+      "choices": [
+        "የልማድና የጽህፈት ህጉ",
+        "እያንዳንዱ ሰው",
+        "ሐይማኖቱ",
+        "ነጻነቱ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከዚህ በታች የቀረበውን ምንባብ መሰረት አድርጋችሁ ለሚከተለው ጥያቄ ከተሰጡት አማራጮች መካከል ትክክለኛውን መልስ ምረጡ፡፡\n\n… ስለዚህ እያንዳንዱ ሰው ተወልዶ ውስጡ ሲገባ በእሱ መኖር አለበት ፡፡ በእሱ የተባለው ምንድን ነው?\n\nምንባብ:\nሰው በተፈጥሮው የረሃብና የጥም ፣የበቀልና የመሳሰለው ፍልጎቱ ሁሉ እንዲፈጸምለት ይፈልጋል፤ነገርግን ማህበሩ እያንዳንዱ ሰው የተፈጥሮ ፍላጎቱን ለመፈጸም ሲል ሌሎቹን ሰዎች እንዳይጎዳ የሚወስንበት የጽህፈትና የልማድ ሕግ ሠራ፡፡ስለዚህ የተፈጥሮ ፍልጎቱን ለመፈጸም የማህበበሩን የጽህፈትና የልማድ ሕግ የተላለፈ ነውረኛ ተብሎ ይፈረድበታል፡፡\nአንድ ሰው ከሌላው የሚያስቆጣ ነገር ቢደርስበትና ለቁጣው ምክንያት የሆነውን ሰው ለማጥፋት ቢወድ፣ በማህበሩ ህግ ቅጣት እንደሚያስከትል ስለሚያውቅ ቁጣውን ለማብረድ ፣ሌላ የሚበቀልበት አማራጭ መንገድ መመፈለግ አለበት፡፡ስለዚህ የሰው ሰውነት የነጻነትና የጭቆና ውጤት ነው ማለት ይቻላል፡፡ይህ ነጻነትና ጭቆና ማህበሩ በረጅም ዘመን ዕድሜው ከልማዱ፣ከወጉ፣ከህጉ አዋህዶና አስማምቶ የሰራው ነው፡፡ስለዚህ እያንዳንዱ ሰው ተወልዶ ውስጡ ሲገባ በሱ ተመርቶ መኖር አለበት፤ከማህበሩ ስርዓት አንድ ነቁጥ እንኳን አይተላለፍም፡፡\nበጠቅላላው የማህበር ትምህርት እያንዳንዱ ሰው ሲወለድ ይዟቸው የሚወለደውን ጠቃሚ ውጥኖች ነጻነት በመስጠትና በልዩልዩ መንገድ በመርዳት ጎጂዎቹነንም እንዲሁ በልዩልዩ መንገድ በመጠቆምና በማረም ሰውዬውን ማህበራዊ እንዲሆን ያደርገዋል\n\nA) የልማድና የጽህፈት ህጉ\nB) እያንዳንዱ ሰው\nC) ሐይማኖቱ\nD) ነጻነቱ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 2179,
+          "output_tokens": 29,
+          "total_tokens": 2208
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 15,
+      "epoch": 1,
+      "input": "ወንድማማቾቹ በመፈቃቀር የኖሩ ቢሆኑም ፣ልሎች ካፈሩ በኋላ ግን ደመኛ ሆነዋል፡፡ የተሰመረበት ቃል ፍች ምንድን ነው?",
+      "choices": [
+        "ሀናለ",
+        "ወዳጅ",
+        "ባላንጣ",
+        "ባላንጋራ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nወንድማማቾቹ በመፈቃቀር የኖሩ ቢሆኑም ፣ልሎች ካፈሩ በኋላ ግን ደመኛ ሆነዋል፡፡ የተሰመረበት ቃል ፍች ምንድን ነው?\n\nA) ሀናለ\nB) ወዳጅ\nC) ባላንጣ\nD) ባላንጋራ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: D",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: D",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 277,
+          "output_tokens": 4,
+          "total_tokens": 281
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 16,
+      "epoch": 1,
+      "input": "የቸኮለ አፍሶ ለቀመ፡፡ ለሚለው አባባል የማይመሳሳለው የቱ ነው?",
+      "choices": [
+        "ባፍ ይጠፉ በለፈለፉ፡፡",
+        "ሲሮጡ የታጠቁት ሲሮጡ ይፈታል፡፡",
+        "የጅብ ችኩል ቀንድ ይነክሳል፡፡",
+        "አለባብሰው ቢያርሱ ባረም ይመለሱ፡፡"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nየቸኮለ አፍሶ ለቀመ፡፡ ለሚለው አባባል የማይመሳሳለው የቱ ነው?\n\nA) ባፍ ይጠፉ በለፈለፉ፡፡\nB) ሲሮጡ የታጠቁት ሲሮጡ ይፈታል፡፡\nC) የጅብ ችኩል ቀንድ ይነክሳል፡፡\nD) አለባብሰው ቢያርሱ ባረም ይመለሱ፡፡",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 346,
+          "output_tokens": 4,
+          "total_tokens": 350
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 17,
+      "epoch": 1,
+      "input": "የግጥሙ መልዕክት ምንድን ነው?\n\nግጥም:\n\nየሞተው ወዳጄ እኔ የማልናፍቀው፣\nያነሳኛል አሉ ሲጨንቀው ሲጠበው፣\nመቆያው ማደሪያው ከቤቴ ከደጄ\nምንድን ይሻ ይሆን ትልቁ ወዳጄ?\nታዲያ ምን ይሉታል እንዲህ ያለውን\nከመቃብር በታች ነፍስ የዘራውን፡፡\nምናልባት ሲቀበር ዐፈር አልባሾቹ፣\nኮረትና ድንጋይ አልጫኑት ከታቹ፡፡\nነፍስ እንዳለው ፍጡር እንዳልተቀበረ፣\nምነዋ ወዳጄ ብዙ ቀባጠረ?\nመኖርም መሞትም አንዴ ጥርስን ነክሶ፣\nወይ በምግባር ከብሮ ወይ በምግባር ረክሶ፣\nእንጅ እንደ ወዳጄ መች መቃብር ምሶ፣\nእንጅ እንደ ወዳጄ መች ለራስ አልቅሶ፣\nየቁም ሞትን ሙቶ በተንኮል ጨንብሶ፣\nካልሆነ በስተቀር የ‹‹ደንቆሮ››ለቅሶ፣\nመልሶ መልሶ መልሶ መላልሶ፡፡",
+      "choices": [
+        "ሰው በጥሩ ስራው ይታወሳል፤ በመጥፎ ስራው ይረሳል፡፡",
+        "ክፉ ስራ ከሰሩ በኋላ ጸጸት አስፈላጊ አለመሆኑን፣",
+        "ችግርን በጽናት መጋፈጥን፣",
+        "ችግርን እንደችግርነቱ መጋፈጥን፡፡"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nየግጥሙ መልዕክት ምንድን ነው?\n\nግጥም:\n\nየሞተው ወዳጄ እኔ የማልናፍቀው፣\nያነሳኛል አሉ ሲጨንቀው ሲጠበው፣\nመቆያው ማደሪያው ከቤቴ ከደጄ\nምንድን ይሻ ይሆን ትልቁ ወዳጄ?\nታዲያ ምን ይሉታል እንዲህ ያለውን\nከመቃብር በታች ነፍስ የዘራውን፡፡\nምናልባት ሲቀበር ዐፈር አልባሾቹ፣\nኮረትና ድንጋይ አልጫኑት ከታቹ፡፡\nነፍስ እንዳለው ፍጡር እንዳልተቀበረ፣\nምነዋ ወዳጄ ብዙ ቀባጠረ?\nመኖርም መሞትም አንዴ ጥርስን ነክሶ፣\nወይ በምግባር ከብሮ ወይ በምግባር ረክሶ፣\nእንጅ እንደ ወዳጄ መች መቃብር ምሶ፣\nእንጅ እንደ ወዳጄ መች ለራስ አልቅሶ፣\nየቁም ሞትን ሙቶ በተንኮል ጨንብሶ፣\nካልሆነ በስተቀር የ‹‹ደንቆሮ››ለቅሶ፣\nመልሶ መልሶ መልሶ መላልሶ፡፡\n\nA) ሰው በጥሩ ስራው ይታወሳል፤ በመጥፎ ስራው ይረሳል፡፡\nB) ክፉ ስራ ከሰሩ በኋላ ጸጸት አስፈላጊ አለመሆኑን፣\nC) ችግርን በጽናት መጋፈጥን፣\nD) ችግርን እንደችግርነቱ መጋፈጥን፡፡",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 1261,
+          "output_tokens": 4,
+          "total_tokens": 1265
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 18,
+      "epoch": 1,
+      "input": "በቅኔ ውስጥ ወርቅ የምንለው -----------------------ማለት ነው?",
+      "choices": [
+        "ሚስጥሩን",
+        "በሰም የተሸፈነውን",
+        "ገበያ ሰደዷትዋና ሃሳቡን",
+        "ፈርጡን"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nበቅኔ ውስጥ ወርቅ የምንለው -----------------------ማለት ነው?\n\nA) ሚስጥሩን\nB) በሰም የተሸፈነውን\nC) ገበያ ሰደዷትዋና ሃሳቡን\nD) ፈርጡን",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 216,
+          "output_tokens": 4,
+          "total_tokens": 220
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 19,
+      "epoch": 1,
+      "input": "ፊደል ‹‹ሀ ›› ___ ሞክሼዎች አላት፡፡",
+      "choices": [
+        "ሶስት",
+        "አንድ",
+        "አስር"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C.\n\nፊደል ‹‹ሀ ›› ___ ሞክሼዎች አላት፡፡\n\nA) ሶስት\nB) አንድ\nC) አስር",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 133,
+          "output_tokens": 4,
+          "total_tokens": 137
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 20,
+      "epoch": 1,
+      "input": "ከዚህ በታች የቀረበውን ምንባብ መሰረት አድርጋችሁ ለሚከተለው ጥያቄ ከተሰጡት አማራጮች መካከል ትክክለኛውን መልስ ምረጡ፡፡\n\nአንድ ሰው የበቀል እርምጃ እንዳይወስድ የሚያግደው ምንድን ነው?\n\nምንባብ:\nሰው በተፈጥሮው የረሃብና የጥም ፣የበቀልና የመሳሰለው ፍልጎቱ ሁሉ እንዲፈጸምለት ይፈልጋል፤ነገርግን ማህበሩ እያንዳንዱ ሰው የተፈጥሮ ፍላጎቱን ለመፈጸም ሲል ሌሎቹን ሰዎች እንዳይጎዳ የሚወስንበት የጽህፈትና የልማድ ሕግ ሠራ፡፡ስለዚህ የተፈጥሮ ፍልጎቱን ለመፈጸም የማህበበሩን የጽህፈትና የልማድ ሕግ የተላለፈ ነውረኛ ተብሎ ይፈረድበታል፡፡\nአንድ ሰው ከሌላው የሚያስቆጣ ነገር ቢደርስበትና ለቁጣው ምክንያት የሆነውን ሰው ለማጥፋት ቢወድ፣ በማህበሩ ህግ ቅጣት እንደሚያስከትል ስለሚያውቅ ቁጣውን ለማብረድ ፣ሌላ የሚበቀልበት አማራጭ መንገድ መመፈለግ አለበት፡፡ስለዚህ የሰው ሰውነት የነጻነትና የጭቆና ውጤት ነው ማለት ይቻላል፡፡ይህ ነጻነትና ጭቆና ማህበሩ በረጅም ዘመን ዕድሜው ከልማዱ፣ከወጉ፣ከህጉ አዋህዶና አስማምቶ የሰራው ነው፡፡ስለዚህ እያንዳንዱ ሰው ተወልዶ ውስጡ ሲገባ በሱ ተመርቶ መኖር አለበት፤ከማህበሩ ስርዓት አንድ ነቁጥ እንኳን አይተላለፍም፡፡\nበጠቅላላው የማህበር ትምህርት እያንዳንዱ ሰው ሲወለድ ይዟቸው የሚወለደውን ጠቃሚ ውጥኖች ነጻነት በመስጠትና በልዩልዩ መንገድ በመርዳት ጎጂዎቹነንም እንዲሁ በልዩልዩ መንገድ በመጠቆምና በማረም ሰውዬውን ማህበራዊ እንዲሆን ያደርገዋል",
+      "choices": [
+        "የማህበሩ ስርዓት",
+        "ህሊናው",
+        "እምነቱ",
+        "ቤተሰቡ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከዚህ በታች የቀረበውን ምንባብ መሰረት አድርጋችሁ ለሚከተለው ጥያቄ ከተሰጡት አማራጮች መካከል ትክክለኛውን መልስ ምረጡ፡፡\n\nአንድ ሰው የበቀል እርምጃ እንዳይወስድ የሚያግደው ምንድን ነው?\n\nምንባብ:\nሰው በተፈጥሮው የረሃብና የጥም ፣የበቀልና የመሳሰለው ፍልጎቱ ሁሉ እንዲፈጸምለት ይፈልጋል፤ነገርግን ማህበሩ እያንዳንዱ ሰው የተፈጥሮ ፍላጎቱን ለመፈጸም ሲል ሌሎቹን ሰዎች እንዳይጎዳ የሚወስንበት የጽህፈትና የልማድ ሕግ ሠራ፡፡ስለዚህ የተፈጥሮ ፍልጎቱን ለመፈጸም የማህበበሩን የጽህፈትና የልማድ ሕግ የተላለፈ ነውረኛ ተብሎ ይፈረድበታል፡፡\nአንድ ሰው ከሌላው የሚያስቆጣ ነገር ቢደርስበትና ለቁጣው ምክንያት የሆነውን ሰው ለማጥፋት ቢወድ፣ በማህበሩ ህግ ቅጣት እንደሚያስከትል ስለሚያውቅ ቁጣውን ለማብረድ ፣ሌላ የሚበቀልበት አማራጭ መንገድ መመፈለግ አለበት፡፡ስለዚህ የሰው ሰውነት የነጻነትና የጭቆና ውጤት ነው ማለት ይቻላል፡፡ይህ ነጻነትና ጭቆና ማህበሩ በረጅም ዘመን ዕድሜው ከልማዱ፣ከወጉ፣ከህጉ አዋህዶና አስማምቶ የሰራው ነው፡፡ስለዚህ እያንዳንዱ ሰው ተወልዶ ውስጡ ሲገባ በሱ ተመርቶ መኖር አለበት፤ከማህበሩ ስርዓት አንድ ነቁጥ እንኳን አይተላለፍም፡፡\nበጠቅላላው የማህበር ትምህርት እያንዳንዱ ሰው ሲወለድ ይዟቸው የሚወለደውን ጠቃሚ ውጥኖች ነጻነት በመስጠትና በልዩልዩ መንገድ በመርዳት ጎጂዎቹነንም እንዲሁ በልዩልዩ መንገድ በመጠቆምና በማረም ሰውዬውን ማህበራዊ እንዲሆን ያደርገዋል\n\nA) የማህበሩ ስርዓት\nB) ህሊናው\nC) እምነቱ\nD) ቤተሰቡ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: D",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: D",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 2107,
+          "output_tokens": 4,
+          "total_tokens": 2111
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 21,
+      "epoch": 1,
+      "input": "ከዚህ በታች የቀረበውን ምንባብ መሰረት አድርጋችሁ ለሚከተለው ጥያቄ ከተሰጡት አማራጮች መካከል ትክክለኛውን መልስ ምረጡ፡፡\n\nአንድን ግለሰብ አሁን ባለበትም ሆነ ወደፊት ለሚኖርበት ማህበረሰብ ጠቃሚ እንዲሆን ማድረጉ የማን ኃላፊነት ነው?\n\nምንባብ:\nሰው በተፈጥሮው የረሃብና የጥም ፣የበቀልና የመሳሰለው ፍልጎቱ ሁሉ እንዲፈጸምለት ይፈልጋል፤ነገርግን ማህበሩ እያንዳንዱ ሰው የተፈጥሮ ፍላጎቱን ለመፈጸም ሲል ሌሎቹን ሰዎች እንዳይጎዳ የሚወስንበት የጽህፈትና የልማድ ሕግ ሠራ፡፡ስለዚህ የተፈጥሮ ፍልጎቱን ለመፈጸም የማህበበሩን የጽህፈትና የልማድ ሕግ የተላለፈ ነውረኛ ተብሎ ይፈረድበታል፡፡\nአንድ ሰው ከሌላው የሚያስቆጣ ነገር ቢደርስበትና ለቁጣው ምክንያት የሆነውን ሰው ለማጥፋት ቢወድ፣ በማህበሩ ህግ ቅጣት እንደሚያስከትል ስለሚያውቅ ቁጣውን ለማብረድ ፣ሌላ የሚበቀልበት አማራጭ መንገድ መመፈለግ አለበት፡፡ስለዚህ የሰው ሰውነት የነጻነትና የጭቆና ውጤት ነው ማለት ይቻላል፡፡ይህ ነጻነትና ጭቆና ማህበሩ በረጅም ዘመን ዕድሜው ከልማዱ፣ከወጉ፣ከህጉ አዋህዶና አስማምቶ የሰራው ነው፡፡ስለዚህ እያንዳንዱ ሰው ተወልዶ ውስጡ ሲገባ በሱ ተመርቶ መኖር አለበት፤ከማህበሩ ስርዓት አንድ ነቁጥ እንኳን አይተላለፍም፡፡\nበጠቅላላው የማህበር ትምህርት እያንዳንዱ ሰው ሲወለድ ይዟቸው የሚወለደውን ጠቃሚ ውጥኖች ነጻነት በመስጠትና በልዩልዩ መንገድ በመርዳት ጎጂዎቹነንም እንዲሁ በልዩልዩ መንገድ በመጠቆምና በማረም ሰውዬውን ማህበራዊ እንዲሆን ያደርገዋል",
+      "choices": [
+        "የማበረሰቡ",
+        "የተፈጥሮ ፍላጎቱ",
+        "የግለሰቦች",
+        "ነጻነቱ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከዚህ በታች የቀረበውን ምንባብ መሰረት አድርጋችሁ ለሚከተለው ጥያቄ ከተሰጡት አማራጮች መካከል ትክክለኛውን መልስ ምረጡ፡፡\n\nአንድን ግለሰብ አሁን ባለበትም ሆነ ወደፊት ለሚኖርበት ማህበረሰብ ጠቃሚ እንዲሆን ማድረጉ የማን ኃላፊነት ነው?\n\nምንባብ:\nሰው በተፈጥሮው የረሃብና የጥም ፣የበቀልና የመሳሰለው ፍልጎቱ ሁሉ እንዲፈጸምለት ይፈልጋል፤ነገርግን ማህበሩ እያንዳንዱ ሰው የተፈጥሮ ፍላጎቱን ለመፈጸም ሲል ሌሎቹን ሰዎች እንዳይጎዳ የሚወስንበት የጽህፈትና የልማድ ሕግ ሠራ፡፡ስለዚህ የተፈጥሮ ፍልጎቱን ለመፈጸም የማህበበሩን የጽህፈትና የልማድ ሕግ የተላለፈ ነውረኛ ተብሎ ይፈረድበታል፡፡\nአንድ ሰው ከሌላው የሚያስቆጣ ነገር ቢደርስበትና ለቁጣው ምክንያት የሆነውን ሰው ለማጥፋት ቢወድ፣ በማህበሩ ህግ ቅጣት እንደሚያስከትል ስለሚያውቅ ቁጣውን ለማብረድ ፣ሌላ የሚበቀልበት አማራጭ መንገድ መመፈለግ አለበት፡፡ስለዚህ የሰው ሰውነት የነጻነትና የጭቆና ውጤት ነው ማለት ይቻላል፡፡ይህ ነጻነትና ጭቆና ማህበሩ በረጅም ዘመን ዕድሜው ከልማዱ፣ከወጉ፣ከህጉ አዋህዶና አስማምቶ የሰራው ነው፡፡ስለዚህ እያንዳንዱ ሰው ተወልዶ ውስጡ ሲገባ በሱ ተመርቶ መኖር አለበት፤ከማህበሩ ስርዓት አንድ ነቁጥ እንኳን አይተላለፍም፡፡\nበጠቅላላው የማህበር ትምህርት እያንዳንዱ ሰው ሲወለድ ይዟቸው የሚወለደውን ጠቃሚ ውጥኖች ነጻነት በመስጠትና በልዩልዩ መንገድ በመርዳት ጎጂዎቹነንም እንዲሁ በልዩልዩ መንገድ በመጠቆምና በማረም ሰውዬውን ማህበራዊ እንዲሆን ያደርገዋል\n\nA) የማበረሰቡ\nB) የተፈጥሮ ፍላጎቱ\nC) የግለሰቦች\nD) ነጻነቱ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: D",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: D",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 2191,
+          "output_tokens": 4,
+          "total_tokens": 2195
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 22,
+      "epoch": 1,
+      "input": "ከዚህ በታች የቀረበውን ምንባብ መሰረት አድርጋችሁ ለሚከተለው ጥያቄ ከተሰጡት አማራጮች መካከል ትክክለኛውን መልስ ምረጡ፡፡\n\nነጻነትና ጭቆና የ-----------------ዘመን ውጤት ናቸው፡፡\n\nምንባብ:\nሰው በተፈጥሮው የረሃብና የጥም ፣የበቀልና የመሳሰለው ፍልጎቱ ሁሉ እንዲፈጸምለት ይፈልጋል፤ነገርግን ማህበሩ እያንዳንዱ ሰው የተፈጥሮ ፍላጎቱን ለመፈጸም ሲል ሌሎቹን ሰዎች እንዳይጎዳ የሚወስንበት የጽህፈትና የልማድ ሕግ ሠራ፡፡ስለዚህ የተፈጥሮ ፍልጎቱን ለመፈጸም የማህበበሩን የጽህፈትና የልማድ ሕግ የተላለፈ ነውረኛ ተብሎ ይፈረድበታል፡፡\nአንድ ሰው ከሌላው የሚያስቆጣ ነገር ቢደርስበትና ለቁጣው ምክንያት የሆነውን ሰው ለማጥፋት ቢወድ፣ በማህበሩ ህግ ቅጣት እንደሚያስከትል ስለሚያውቅ ቁጣውን ለማብረድ ፣ሌላ የሚበቀልበት አማራጭ መንገድ መመፈለግ አለበት፡፡ስለዚህ የሰው ሰውነት የነጻነትና የጭቆና ውጤት ነው ማለት ይቻላል፡፡ይህ ነጻነትና ጭቆና ማህበሩ በረጅም ዘመን ዕድሜው ከልማዱ፣ከወጉ፣ከህጉ አዋህዶና አስማምቶ የሰራው ነው፡፡ስለዚህ እያንዳንዱ ሰው ተወልዶ ውስጡ ሲገባ በሱ ተመርቶ መኖር አለበት፤ከማህበሩ ስርዓት አንድ ነቁጥ እንኳን አይተላለፍም፡፡\nበጠቅላላው የማህበር ትምህርት እያንዳንዱ ሰው ሲወለድ ይዟቸው የሚወለደውን ጠቃሚ ውጥኖች ነጻነት በመስጠትና በልዩልዩ መንገድ በመርዳት ጎጂዎቹነንም እንዲሁ በልዩልዩ መንገድ በመጠቆምና በማረም ሰውዬውን ማህበራዊ እንዲሆን ያደርገዋል",
+      "choices": [
+        "የረጅም",
+        "የአጭር",
+        "የአንድ",
+        "የመቶ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከዚህ በታች የቀረበውን ምንባብ መሰረት አድርጋችሁ ለሚከተለው ጥያቄ ከተሰጡት አማራጮች መካከል ትክክለኛውን መልስ ምረጡ፡፡\n\nነጻነትና ጭቆና የ-----------------ዘመን ውጤት ናቸው፡፡\n\nምንባብ:\nሰው በተፈጥሮው የረሃብና የጥም ፣የበቀልና የመሳሰለው ፍልጎቱ ሁሉ እንዲፈጸምለት ይፈልጋል፤ነገርግን ማህበሩ እያንዳንዱ ሰው የተፈጥሮ ፍላጎቱን ለመፈጸም ሲል ሌሎቹን ሰዎች እንዳይጎዳ የሚወስንበት የጽህፈትና የልማድ ሕግ ሠራ፡፡ስለዚህ የተፈጥሮ ፍልጎቱን ለመፈጸም የማህበበሩን የጽህፈትና የልማድ ሕግ የተላለፈ ነውረኛ ተብሎ ይፈረድበታል፡፡\nአንድ ሰው ከሌላው የሚያስቆጣ ነገር ቢደርስበትና ለቁጣው ምክንያት የሆነውን ሰው ለማጥፋት ቢወድ፣ በማህበሩ ህግ ቅጣት እንደሚያስከትል ስለሚያውቅ ቁጣውን ለማብረድ ፣ሌላ የሚበቀልበት አማራጭ መንገድ መመፈለግ አለበት፡፡ስለዚህ የሰው ሰውነት የነጻነትና የጭቆና ውጤት ነው ማለት ይቻላል፡፡ይህ ነጻነትና ጭቆና ማህበሩ በረጅም ዘመን ዕድሜው ከልማዱ፣ከወጉ፣ከህጉ አዋህዶና አስማምቶ የሰራው ነው፡፡ስለዚህ እያንዳንዱ ሰው ተወልዶ ውስጡ ሲገባ በሱ ተመርቶ መኖር አለበት፤ከማህበሩ ስርዓት አንድ ነቁጥ እንኳን አይተላለፍም፡፡\nበጠቅላላው የማህበር ትምህርት እያንዳንዱ ሰው ሲወለድ ይዟቸው የሚወለደውን ጠቃሚ ውጥኖች ነጻነት በመስጠትና በልዩልዩ መንገድ በመርዳት ጎጂዎቹነንም እንዲሁ በልዩልዩ መንገድ በመጠቆምና በማረም ሰውዬውን ማህበራዊ እንዲሆን ያደርገዋል\n\nA) የረጅም\nB) የአጭር\nC) የአንድ\nD) የመቶ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 2053,
+          "output_tokens": 4,
+          "total_tokens": 2057
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 23,
+      "epoch": 1,
+      "input": "ሰዎች እቅድ አውጥተው ፣ጊዜና ቦታን በመወሰን በተለያዩ ርዕሰ ጉዳዮች ላይ ሐሳብ የሚለዋወጡበትና ከጋራ መግባባት ላይ የሚደርሱበት ክንውን ምንድን ነው?",
+      "choices": [
+        "ውይይት",
+        "ክርክር",
+        "ጭውውት",
+        "ትያትር"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nሰዎች እቅድ አውጥተው ፣ጊዜና ቦታን በመወሰን በተለያዩ ርዕሰ ጉዳዮች ላይ ሐሳብ የሚለዋወጡበትና ከጋራ መግባባት ላይ የሚደርሱበት ክንውን ምንድን ነው?\n\nA) ውይይት\nB) ክርክር\nC) ጭውውት\nD) ትያትር",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 335,
+          "output_tokens": 17,
+          "total_tokens": 352
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 24,
+      "epoch": 1,
+      "input": "የሰንጎ መገን ቤት የሚባለው የግጥም ቤት በሐረግ ስንት ስንኞች ያሉት ነው፡፡",
+      "choices": [
+        "አምስት",
+        "ሶስት",
+        "ስድስት",
+        "አራት"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nየሰንጎ መገን ቤት የሚባለው የግጥም ቤት በሐረግ ስንት ስንኞች ያሉት ነው፡፡\n\nA) አምስት\nB) ሶስት\nC) ስድስት\nD) አራት",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 216,
+          "output_tokens": 17,
+          "total_tokens": 233
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 25,
+      "epoch": 1,
+      "input": "ከሚከተሉት መካከል በውይይት አቀራረብ ጊዜ የሚከናወን ተግባር የሆነው የቱ ነው?",
+      "choices": [
+        "የርዕሱን ዓላማ ባጭሩ ማስቀመጥ",
+        "ስለ ርዕሱ ዋናዋና ሃሳቦችን መያዝ ",
+        "ርዕሱን በሚገባ መረዳት",
+        "የርዕሱን ወቅታዊነት መገምገም"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከሚከተሉት መካከል በውይይት አቀራረብ ጊዜ የሚከናወን ተግባር የሆነው የቱ ነው?\n\nA) የርዕሱን ዓላማ ባጭሩ ማስቀመጥ\nB) ስለ ርዕሱ ዋናዋና ሃሳቦችን መያዝ \nC) ርዕሱን በሚገባ መረዳት\nD) የርዕሱን ወቅታዊነት መገምገም",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 359,
+          "output_tokens": 4,
+          "total_tokens": 363
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 26,
+      "epoch": 1,
+      "input": "እናንተ የአባቶቻችሁ ልጆች የአያቶቻችሁ ቅድመአያቶች ናችሁ፡፡ ተብሎ ቢገለጽ በየትኛው ዘይቤ የቀረበ ነው?",
+      "choices": [
+        "በአያዎ",
+        "በእንቶኔ",
+        "በሰውኛ",
+        "በምጸት"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nእናንተ የአባቶቻችሁ ልጆች የአያቶቻችሁ ቅድመአያቶች ናችሁ፡፡ ተብሎ ቢገለጽ በየትኛው ዘይቤ የቀረበ ነው?\n\nA) በአያዎ\nB) በእንቶኔ\nC) በሰውኛ\nD) በምጸት",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 273,
+          "output_tokens": 20,
+          "total_tokens": 293
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 27,
+      "epoch": 1,
+      "input": "አቶ ተኮላ ስለ ወንድማቸው ድንገት በሰሙት ወሬ አዝነዋል ፡፡ ብንል የተሰመረበትን ቃል ሊተካ የሚችለው ከሚከተሉት የትኛው ነው?",
+      "choices": [
+        "ልባቸው ተነክቷል",
+        "ድርቅ ብለዋል",
+        "ቅቤ ጠጥተዋል",
+        "እፎይታ አግኝተዋል፡፡"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nአቶ ተኮላ ስለ ወንድማቸው ድንገት በሰሙት ወሬ አዝነዋል ፡፡ ብንል የተሰመረበትን ቃል ሊተካ የሚችለው ከሚከተሉት የትኛው ነው?\n\nA) ልባቸው ተነክቷል\nB) ድርቅ ብለዋል\nC) ቅቤ ጠጥተዋል\nD) እፎይታ አግኝተዋል፡፡",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 354,
+          "output_tokens": 4,
+          "total_tokens": 358
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 28,
+      "epoch": 1,
+      "input": "ከሚከተሉት መካከል የስነቃል ዘርፍ ያልሆነው የቱ ነው?",
+      "choices": [
+        "የልብወለድ መጻህፍት",
+        "አፈታሪክ",
+        "ሐተታ ተፈጥሮ",
+        "ቃላዊ ግጥሞች"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከሚከተሉት መካከል የስነቃል ዘርፍ ያልሆነው የቱ ነው?\n\nA) የልብወለድ መጻህፍት\nB) አፈታሪክ\nC) ሐተታ ተፈጥሮ\nD) ቃላዊ ግጥሞች",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 230,
+          "output_tokens": 4,
+          "total_tokens": 234
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 29,
+      "epoch": 1,
+      "input": "ውስን መቼትና ጥቂት ገጸባህሪያት የሚታዩበት የስነጽሁፍ ዘርፍ ምን ይባላል ?",
+      "choices": [
+        "ድራማ",
+        "ተውኔት",
+        "አጭር ልብወለድ",
+        "ረጅም ልብወለድ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nውስን መቼትና ጥቂት ገጸባህሪያት የሚታዩበት የስነጽሁፍ ዘርፍ ምን ይባላል ?\n\nA) ድራማ\nB) ተውኔት\nC) አጭር ልብወለድ\nD) ረጅም ልብወለድ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 243,
+          "output_tokens": 17,
+          "total_tokens": 260
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 30,
+      "epoch": 1,
+      "input": "ከክሂሎች መካከል በተፈጥሮ የምናገኛቸው ክሂሎች የትኞቹ ናቸው?",
+      "choices": [
+        "ማዳመጥና መናገር",
+        "መናገርና መጻፍ",
+        "መጻፍና ማንበብ",
+        "ማንበብናማዳመጥ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከክሂሎች መካከል በተፈጥሮ የምናገኛቸው ክሂሎች የትኞቹ ናቸው?\n\nA) ማዳመጥና መናገር\nB) መናገርና መጻፍ\nC) መጻፍና ማንበብ\nD) ማንበብናማዳመጥ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 252,
+          "output_tokens": 4,
+          "total_tokens": 256
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 31,
+      "epoch": 1,
+      "input": "ሞክሼ ፊደላት ___ ቅርፅ አላቸው፡፡",
+      "choices": [
+        "ተመሳሳይ",
+        "የተለያየ",
+        "ሁለቱም መልስ ይሆናሉ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C.\n\nሞክሼ ፊደላት ___ ቅርፅ አላቸው፡፡\n\nA) ተመሳሳይ\nB) የተለያየ\nC) ሁለቱም መልስ ይሆናሉ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 167,
+          "output_tokens": 4,
+          "total_tokens": 171
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 32,
+      "epoch": 1,
+      "input": "በዓረፍተነገሮች ውስጥ የቃላቶች ሚና ከፍተኛ ነው፡፡ በሚለው ዓረፍተነገር ውስጥ ስህተት እንዲኖር ያደረገው ቃል የትኛው ነው;",
+      "choices": [
+        "ቃላቶች ",
+        "ከፍተኛ ",
+        "ሚና ",
+        "ዓረፍተነገረ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nበዓረፍተነገሮች ውስጥ የቃላቶች ሚና ከፍተኛ ነው፡፡ በሚለው ዓረፍተነገር ውስጥ ስህተት እንዲኖር ያደረገው ቃል የትኛው ነው;\n\nA) ቃላቶች \nB) ከፍተኛ \nC) ሚና \nD) ዓረፍተነገረ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 302,
+          "output_tokens": 4,
+          "total_tokens": 306
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 33,
+      "epoch": 1,
+      "input": "ከዚህ በታች የቀረበውን ምንባብ መሰረት አድርጋችሁ ለሚከተለው ጥያቄ ከተሰጡት አማራጮች መካከል ትክክለኛውን መልስ ምረጡ፡፡\n\n… ከማህበሩ ስርዓት አንድ ነቁጥ እንኳን አይተላለፍም፡፡ በሚለው ሃሳብ ላይ ለተሰመረበት ቃል አቻ የሚሆነው ቃል ከሚከተሉት መካከል የትኛው ነው?\n\nምንባብ:\nሰው በተፈጥሮው የረሃብና የጥም ፣የበቀልና የመሳሰለው ፍልጎቱ ሁሉ እንዲፈጸምለት ይፈልጋል፤ነገርግን ማህበሩ እያንዳንዱ ሰው የተፈጥሮ ፍላጎቱን ለመፈጸም ሲል ሌሎቹን ሰዎች እንዳይጎዳ የሚወስንበት የጽህፈትና የልማድ ሕግ ሠራ፡፡ስለዚህ የተፈጥሮ ፍልጎቱን ለመፈጸም የማህበበሩን የጽህፈትና የልማድ ሕግ የተላለፈ ነውረኛ ተብሎ ይፈረድበታል፡፡\nአንድ ሰው ከሌላው የሚያስቆጣ ነገር ቢደርስበትና ለቁጣው ምክንያት የሆነውን ሰው ለማጥፋት ቢወድ፣ በማህበሩ ህግ ቅጣት እንደሚያስከትል ስለሚያውቅ ቁጣውን ለማብረድ ፣ሌላ የሚበቀልበት አማራጭ መንገድ መመፈለግ አለበት፡፡ስለዚህ የሰው ሰውነት የነጻነትና የጭቆና ውጤት ነው ማለት ይቻላል፡፡ይህ ነጻነትና ጭቆና ማህበሩ በረጅም ዘመን ዕድሜው ከልማዱ፣ከወጉ፣ከህጉ አዋህዶና አስማምቶ የሰራው ነው፡፡ስለዚህ እያንዳንዱ ሰው ተወልዶ ውስጡ ሲገባ በሱ ተመርቶ መኖር አለበት፤ከማህበሩ ስርዓት አንድ ነቁጥ እንኳን አይተላለፍም፡፡\nበጠቅላላው የማህበር ትምህርት እያንዳንዱ ሰው ሲወለድ ይዟቸው የሚወለደውን ጠቃሚ ውጥኖች ነጻነት በመስጠትና በልዩልዩ መንገድ በመርዳት ጎጂዎቹነንም እንዲሁ በልዩልዩ መንገድ በመጠቆምና በማረም ሰውዬውን ማህበራዊ እንዲሆን ያደርገዋል",
+      "choices": [
+        "ነጥብ",
+        "ስርዓት",
+        "ትዕዛዝ",
+        "ምልክት"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከዚህ በታች የቀረበውን ምንባብ መሰረት አድርጋችሁ ለሚከተለው ጥያቄ ከተሰጡት አማራጮች መካከል ትክክለኛውን መልስ ምረጡ፡፡\n\n… ከማህበሩ ስርዓት አንድ ነቁጥ እንኳን አይተላለፍም፡፡ በሚለው ሃሳብ ላይ ለተሰመረበት ቃል አቻ የሚሆነው ቃል ከሚከተሉት መካከል የትኛው ነው?\n\nምንባብ:\nሰው በተፈጥሮው የረሃብና የጥም ፣የበቀልና የመሳሰለው ፍልጎቱ ሁሉ እንዲፈጸምለት ይፈልጋል፤ነገርግን ማህበሩ እያንዳንዱ ሰው የተፈጥሮ ፍላጎቱን ለመፈጸም ሲል ሌሎቹን ሰዎች እንዳይጎዳ የሚወስንበት የጽህፈትና የልማድ ሕግ ሠራ፡፡ስለዚህ የተፈጥሮ ፍልጎቱን ለመፈጸም የማህበበሩን የጽህፈትና የልማድ ሕግ የተላለፈ ነውረኛ ተብሎ ይፈረድበታል፡፡\nአንድ ሰው ከሌላው የሚያስቆጣ ነገር ቢደርስበትና ለቁጣው ምክንያት የሆነውን ሰው ለማጥፋት ቢወድ፣ በማህበሩ ህግ ቅጣት እንደሚያስከትል ስለሚያውቅ ቁጣውን ለማብረድ ፣ሌላ የሚበቀልበት አማራጭ መንገድ መመፈለግ አለበት፡፡ስለዚህ የሰው ሰውነት የነጻነትና የጭቆና ውጤት ነው ማለት ይቻላል፡፡ይህ ነጻነትና ጭቆና ማህበሩ በረጅም ዘመን ዕድሜው ከልማዱ፣ከወጉ፣ከህጉ አዋህዶና አስማምቶ የሰራው ነው፡፡ስለዚህ እያንዳንዱ ሰው ተወልዶ ውስጡ ሲገባ በሱ ተመርቶ መኖር አለበት፤ከማህበሩ ስርዓት አንድ ነቁጥ እንኳን አይተላለፍም፡፡\nበጠቅላላው የማህበር ትምህርት እያንዳንዱ ሰው ሲወለድ ይዟቸው የሚወለደውን ጠቃሚ ውጥኖች ነጻነት በመስጠትና በልዩልዩ መንገድ በመርዳት ጎጂዎቹነንም እንዲሁ በልዩልዩ መንገድ በመጠቆምና በማረም ሰውዬውን ማህበራዊ እንዲሆን ያደርገዋል\n\nA) ነጥብ\nB) ስርዓት\nC) ትዕዛዝ\nD) ምልክት",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 2205,
+          "output_tokens": 4,
+          "total_tokens": 2209
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 34,
+      "epoch": 1,
+      "input": "ከዚህ በታች የቀረበውን ምንባብ መሰረት አድርጋችሁ ለሚከተለው ጥያቄ ከተሰጡት አማራጮች መካከል ትክክለኛውን መልስ ምረጡ፡፡\n\nሰው በተፈጥሮው ---------------------\n\nምንባብ:\nሰው በተፈጥሮው የረሃብና የጥም ፣የበቀልና የመሳሰለው ፍልጎቱ ሁሉ እንዲፈጸምለት ይፈልጋል፤ነገርግን ማህበሩ እያንዳንዱ ሰው የተፈጥሮ ፍላጎቱን ለመፈጸም ሲል ሌሎቹን ሰዎች እንዳይጎዳ የሚወስንበት የጽህፈትና የልማድ ሕግ ሠራ፡፡ስለዚህ የተፈጥሮ ፍልጎቱን ለመፈጸም የማህበበሩን የጽህፈትና የልማድ ሕግ የተላለፈ ነውረኛ ተብሎ ይፈረድበታል፡፡\nአንድ ሰው ከሌላው የሚያስቆጣ ነገር ቢደርስበትና ለቁጣው ምክንያት የሆነውን ሰው ለማጥፋት ቢወድ፣ በማህበሩ ህግ ቅጣት እንደሚያስከትል ስለሚያውቅ ቁጣውን ለማብረድ ፣ሌላ የሚበቀልበት አማራጭ መንገድ መመፈለግ አለበት፡፡ስለዚህ የሰው ሰውነት የነጻነትና የጭቆና ውጤት ነው ማለት ይቻላል፡፡ይህ ነጻነትና ጭቆና ማህበሩ በረጅም ዘመን ዕድሜው ከልማዱ፣ከወጉ፣ከህጉ አዋህዶና አስማምቶ የሰራው ነው፡፡ስለዚህ እያንዳንዱ ሰው ተወልዶ ውስጡ ሲገባ በሱ ተመርቶ መኖር አለበት፤ከማህበሩ ስርዓት አንድ ነቁጥ እንኳን አይተላለፍም፡፡\nበጠቅላላው የማህበር ትምህርት እያንዳንዱ ሰው ሲወለድ ይዟቸው የሚወለደውን ጠቃሚ ውጥኖች ነጻነት በመስጠትና በልዩልዩ መንገድ በመርዳት ጎጂዎቹነንም እንዲሁ በልዩልዩ መንገድ በመጠቆምና በማረም ሰውዬውን ማህበራዊ እንዲሆን ያደርገዋል",
+      "choices": [
+        "ግላዊ ነው ፡፡",
+        "ማህበራዊ ነው",
+        "ማህበራዊነትን ይዞ ይወለዳል፡፡",
+        "በቀለኛ ነው፡፡"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከዚህ በታች የቀረበውን ምንባብ መሰረት አድርጋችሁ ለሚከተለው ጥያቄ ከተሰጡት አማራጮች መካከል ትክክለኛውን መልስ ምረጡ፡፡\n\nሰው በተፈጥሮው ---------------------\n\nምንባብ:\nሰው በተፈጥሮው የረሃብና የጥም ፣የበቀልና የመሳሰለው ፍልጎቱ ሁሉ እንዲፈጸምለት ይፈልጋል፤ነገርግን ማህበሩ እያንዳንዱ ሰው የተፈጥሮ ፍላጎቱን ለመፈጸም ሲል ሌሎቹን ሰዎች እንዳይጎዳ የሚወስንበት የጽህፈትና የልማድ ሕግ ሠራ፡፡ስለዚህ የተፈጥሮ ፍልጎቱን ለመፈጸም የማህበበሩን የጽህፈትና የልማድ ሕግ የተላለፈ ነውረኛ ተብሎ ይፈረድበታል፡፡\nአንድ ሰው ከሌላው የሚያስቆጣ ነገር ቢደርስበትና ለቁጣው ምክንያት የሆነውን ሰው ለማጥፋት ቢወድ፣ በማህበሩ ህግ ቅጣት እንደሚያስከትል ስለሚያውቅ ቁጣውን ለማብረድ ፣ሌላ የሚበቀልበት አማራጭ መንገድ መመፈለግ አለበት፡፡ስለዚህ የሰው ሰውነት የነጻነትና የጭቆና ውጤት ነው ማለት ይቻላል፡፡ይህ ነጻነትና ጭቆና ማህበሩ በረጅም ዘመን ዕድሜው ከልማዱ፣ከወጉ፣ከህጉ አዋህዶና አስማምቶ የሰራው ነው፡፡ስለዚህ እያንዳንዱ ሰው ተወልዶ ውስጡ ሲገባ በሱ ተመርቶ መኖር አለበት፤ከማህበሩ ስርዓት አንድ ነቁጥ እንኳን አይተላለፍም፡፡\nበጠቅላላው የማህበር ትምህርት እያንዳንዱ ሰው ሲወለድ ይዟቸው የሚወለደውን ጠቃሚ ውጥኖች ነጻነት በመስጠትና በልዩልዩ መንገድ በመርዳት ጎጂዎቹነንም እንዲሁ በልዩልዩ መንገድ በመጠቆምና በማረም ሰውዬውን ማህበራዊ እንዲሆን ያደርገዋል\n\nA) ግላዊ ነው ፡፡\nB) ማህበራዊ ነው\nC) ማህበራዊነትን ይዞ ይወለዳል፡፡\nD) በቀለኛ ነው፡፡",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 2090,
+          "output_tokens": 4,
+          "total_tokens": 2094
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 35,
+      "epoch": 1,
+      "input": "ከሚከተሉት መካከል ‹‹ትዳር ›› የሚለው ቃል በእማሬያዊ ፍችው የገባው በየትኛው ዓረፍተነገር ነው፡፡",
+      "choices": [
+        "ትዳር ይዛለች፡፡",
+        "የሞቀ ትዳር አለኝ፡፡",
+        "ትዳሩ ፈርሷል፡፡",
+        "ትዳሩ ተናግቷል፡፡"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከሚከተሉት መካከል ‹‹ትዳር ›› የሚለው ቃል በእማሬያዊ ፍችው የገባው በየትኛው ዓረፍተነገር ነው፡፡\n\nA) ትዳር ይዛለች፡፡\nB) የሞቀ ትዳር አለኝ፡፡\nC) ትዳሩ ፈርሷል፡፡\nD) ትዳሩ ተናግቷል፡፡",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: D",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: D",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 327,
+          "output_tokens": 4,
+          "total_tokens": 331
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 36,
+      "epoch": 1,
+      "input": "ሁሉአማረሽን----------------- በባዶ ቦታው ሊገባ የሚችለው አባባል ከሚከተሉት የትኛው ነው?",
+      "choices": [
+        "ገበያ አታውጧት",
+        "ገበያ ላኳት"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B.\n\nሁሉአማረሽን----------------- በባዶ ቦታው ሊገባ የሚችለው አባባል ከሚከተሉት የትኛው ነው?\n\nA) ገበያ አታውጧት\nB) ገበያ ላኳት",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 208,
+          "output_tokens": 4,
+          "total_tokens": 212
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 37,
+      "epoch": 1,
+      "input": "ከሚከተሉት መካከል የግጥም ባህርይ ያልሆነው የትኛው ነው?",
+      "choices": [
+        "ስድጽሁፋዊነት",
+        "ምዕናባዊነት",
+        "ተጨባጭነት",
+        "ሙዚቃዊነት"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከሚከተሉት መካከል የግጥም ባህርይ ያልሆነው የትኛው ነው?\n\nA) ስድጽሁፋዊነት\nB) ምዕናባዊነት\nC) ተጨባጭነት\nD) ሙዚቃዊነት",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 227,
+          "output_tokens": 4,
+          "total_tokens": 231
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 38,
+      "epoch": 1,
+      "input": "የሶስተኛን ሰው ንግግር ለመግለጽ የሚገለግል የስርዓተነጥብ ዓይነት ምንድን ነው?",
+      "choices": [
+        "ትዕምርተ ጥቅስ",
+        "ትዕምርት ጥያቄ",
+        "ትዕምርተ አንክሮ",
+        "ትዕምርተ ስላቅ "
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nየሶስተኛን ሰው ንግግር ለመግለጽ የሚገለግል የስርዓተነጥብ ዓይነት ምንድን ነው?\n\nA) ትዕምርተ ጥቅስ\nB) ትዕምርት ጥያቄ\nC) ትዕምርተ አንክሮ\nD) ትዕምርተ ስላቅ ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 282,
+          "output_tokens": 4,
+          "total_tokens": 286
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 39,
+      "epoch": 1,
+      "input": "ከሚከተሉት መካከል የስራ ደብዳቤ ውስጥ ብቻ የሚገኝ የቱ ነው?",
+      "choices": [
+        "ቁጥር",
+        "ቀን",
+        "መግቢያ",
+        "ሐተታ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከሚከተሉት መካከል የስራ ደብዳቤ ውስጥ ብቻ የሚገኝ የቱ ነው?\n\nA) ቁጥር\nB) ቀን\nC) መግቢያ\nD) ሐተታ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 185,
+          "output_tokens": 16,
+          "total_tokens": 201
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 40,
+      "epoch": 1,
+      "input": "ከአጋም የተጠጋች ቁልቋል ዘላለም--------------------፡፡",
+      "choices": [
+        "ስታነባ ትኖራለች",
+        "ስትቀጥፍ ትኖራለች፡፡",
+        "ስታብብ ትኖራለች",
+        "አጋም አጋም ትሸታለች፡፡"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከአጋም የተጠጋች ቁልቋል ዘላለም--------------------፡፡\n\nA) ስታነባ ትኖራለች\nB) ስትቀጥፍ ትኖራለች፡፡\nC) ስታብብ ትኖራለች\nD) አጋም አጋም ትሸታለች፡፡",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 248,
+          "output_tokens": 4,
+          "total_tokens": 252
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 41,
+      "epoch": 1,
+      "input": "ከኳስ ጨዋታ ውስጥ ጨዋታው ሲደራ፣ \nአይቀርም መድረሱ ፈጽሞ ግፍተራ፡፡ የዚህ ቅኔ ወርቅ የቱ ነው?",
+      "choices": [
+        "ግፍተራ የሚባል ቦታ መጠራቱ አይቀርም፡፡ ",
+        "መገፋፋት አይቀርም፡፡",
+        "መገፋፋት በፍጹም መኖር የለበትም፡፡",
+        "ግፍ የሰራ ሰው ተራው መድረሱ አይቀርም፡"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከኳስ ጨዋታ ውስጥ ጨዋታው ሲደራ፣ \nአይቀርም መድረሱ ፈጽሞ ግፍተራ፡፡ የዚህ ቅኔ ወርቅ የቱ ነው?\n\nA) ግፍተራ የሚባል ቦታ መጠራቱ አይቀርም፡፡ \nB) መገፋፋት አይቀርም፡፡\nC) መገፋፋት በፍጹም መኖር የለበትም፡፡\nD) ግፍ የሰራ ሰው ተራው መድረሱ አይቀርም፡",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: D",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: D",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 411,
+          "output_tokens": 4,
+          "total_tokens": 415
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 42,
+      "epoch": 1,
+      "input": "መልዕክትን ለመቀበያነት የምንጠቀምባቸው የክሂል ዓይነቶች የትኞች ናቸው?",
+      "choices": [
+        "ማዳመጥናማንበብ",
+        "ማዳመጥና መናገር",
+        "መጻፍና ማንበብ",
+        "ማንበብናመጻፍ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nመልዕክትን ለመቀበያነት የምንጠቀምባቸው የክሂል ዓይነቶች የትኞች ናቸው?\n\nA) ማዳመጥናማንበብ\nB) ማዳመጥና መናገር\nC) መጻፍና ማንበብ\nD) ማንበብናመጻፍ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: D",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: D",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 270,
+          "output_tokens": 4,
+          "total_tokens": 274
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 43,
+      "epoch": 1,
+      "input": "ከሚከተሉት መካከል ምዕላድ የሆነው የቱ ነው?",
+      "choices": [
+        "ሰው",
+        "ሰውነት",
+        "ሰዎች",
+        "ሰዋዊ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከሚከተሉት መካከል ምዕላድ የሆነው የቱ ነው?\n\nA) ሰው\nB) ሰውነት\nC) ሰዎች\nD) ሰዋዊ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 162,
+          "output_tokens": 4,
+          "total_tokens": 166
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 44,
+      "epoch": 1,
+      "input": "ልጁ እንደእስስት ባህሪው ይቀያየራል፡፡ በሚለው አገላለፅ ውስጥ ለልጁና ለእስስት የጋራ የሆነው ባህሪይ የቱ ነው?",
+      "choices": [
+        "ተቀያያሪነት",
+        "እስስትነት",
+        "ልጅነት",
+        "ተንኮለኝነት"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nልጁ እንደእስስት ባህሪው ይቀያየራል፡፡ በሚለው አገላለፅ ውስጥ ለልጁና ለእስስት የጋራ የሆነው ባህሪይ የቱ ነው?\n\nA) ተቀያያሪነት\nB) እስስትነት\nC) ልጅነት\nD) ተንኮለኝነት",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: D",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: D",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 304,
+          "output_tokens": 4,
+          "total_tokens": 308
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 45,
+      "epoch": 1,
+      "input": "ከሚከተሉት ዐረፍተነገሮች አንዱ ትክክለኛ ሃሳብ አልያዘም፡፡",
+      "choices": [
+        "እንስሳት ቋንቋ ስለሌላቸው በደመነፍስ አይግባቡም ፡፡",
+        "ቋንቋ ለሰው ልጆች ብቻ የተሰጠ ጸጋ ነው፡፡",
+        "ንግግር በድምጸ አልባ እንቅስቃሴ ይደገፋል፡፡",
+        "የቋንቋ ክሂሎች አራት ናቸው፡፡"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከሚከተሉት ዐረፍተነገሮች አንዱ ትክክለኛ ሃሳብ አልያዘም፡፡\n\nA) እንስሳት ቋንቋ ስለሌላቸው በደመነፍስ አይግባቡም ፡፡\nB) ቋንቋ ለሰው ልጆች ብቻ የተሰጠ ጸጋ ነው፡፡\nC) ንግግር በድምጸ አልባ እንቅስቃሴ ይደገፋል፡፡\nD) የቋንቋ ክሂሎች አራት ናቸው፡፡",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 423,
+          "output_tokens": 4,
+          "total_tokens": 427
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 46,
+      "epoch": 1,
+      "input": "ለተሾመ ይመሰከርለታል፤ለተሻረ ይመሰከርበታል ብንል የተሰመረባቸው ቃላት ምንን ይገልጻሉ፡፡",
+      "choices": [
+        "ተሿሚው አካል ሲጠቀም ፣ከሹመት የወረደው ይጎዳል ማለት ነው፡፡",
+        "ተሿሚው አካል ተጠቃሚ ፣ከሹመት የወረደው ጥቅም ፈላጊ መሆናቸውን ይገልጻል፡፡ ",
+        "ተሿሚው አካል ተጠቃሚ ፣ከሹመት የወረደው ጠቃሚ ነው ማለት ነው፡፡",
+        "ተሿሚው አካል ጠቃሚ ፣ ከሹመት የወረደው ተጠቃሚ ነው ማለት ነው፡፡"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nለተሾመ ይመሰከርለታል፤ለተሻረ ይመሰከርበታል ብንል የተሰመረባቸው ቃላት ምንን ይገልጻሉ፡፡\n\nA) ተሿሚው አካል ሲጠቀም ፣ከሹመት የወረደው ይጎዳል ማለት ነው፡፡\nB) ተሿሚው አካል ተጠቃሚ ፣ከሹመት የወረደው ጥቅም ፈላጊ መሆናቸውን ይገልጻል፡፡ \nC) ተሿሚው አካል ተጠቃሚ ፣ከሹመት የወረደው ጠቃሚ ነው ማለት ነው፡፡\nD) ተሿሚው አካል ጠቃሚ ፣ ከሹመት የወረደው ተጠቃሚ ነው ማለት ነው፡፡",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 614,
+          "output_tokens": 4,
+          "total_tokens": 618
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 47,
+      "epoch": 1,
+      "input": "ከዚህ በታች የቀረበውን ምንባብ መሰረት አድርጋችሁ ለሚከተለው ጥያቄ ከተሰጡት አማራጮች መካከል ትክክለኛውን መልስ ምረጡ፡፡\n\nየጽሁፉ ርዕስ ምን ሊሆን ይችላል፡፡\n\nምንባብ:\nሰው በተፈጥሮው የረሃብና የጥም ፣የበቀልና የመሳሰለው ፍልጎቱ ሁሉ እንዲፈጸምለት ይፈልጋል፤ነገርግን ማህበሩ እያንዳንዱ ሰው የተፈጥሮ ፍላጎቱን ለመፈጸም ሲል ሌሎቹን ሰዎች እንዳይጎዳ የሚወስንበት የጽህፈትና የልማድ ሕግ ሠራ፡፡ስለዚህ የተፈጥሮ ፍልጎቱን ለመፈጸም የማህበበሩን የጽህፈትና የልማድ ሕግ የተላለፈ ነውረኛ ተብሎ ይፈረድበታል፡፡\nአንድ ሰው ከሌላው የሚያስቆጣ ነገር ቢደርስበትና ለቁጣው ምክንያት የሆነውን ሰው ለማጥፋት ቢወድ፣ በማህበሩ ህግ ቅጣት እንደሚያስከትል ስለሚያውቅ ቁጣውን ለማብረድ ፣ሌላ የሚበቀልበት አማራጭ መንገድ መመፈለግ አለበት፡፡ስለዚህ የሰው ሰውነት የነጻነትና የጭቆና ውጤት ነው ማለት ይቻላል፡፡ይህ ነጻነትና ጭቆና ማህበሩ በረጅም ዘመን ዕድሜው ከልማዱ፣ከወጉ፣ከህጉ አዋህዶና አስማምቶ የሰራው ነው፡፡ስለዚህ እያንዳንዱ ሰው ተወልዶ ውስጡ ሲገባ በሱ ተመርቶ መኖር አለበት፤ከማህበሩ ስርዓት አንድ ነቁጥ እንኳን አይተላለፍም፡፡\nበጠቅላላው የማህበር ትምህርት እያንዳንዱ ሰው ሲወለድ ይዟቸው የሚወለደውን ጠቃሚ ውጥኖች ነጻነት በመስጠትና በልዩልዩ መንገድ በመርዳት ጎጂዎቹነንም እንዲሁ በልዩልዩ መንገድ በመጠቆምና በማረም ሰውዬውን ማህበራዊ እንዲሆን ያደርገዋል",
+      "choices": [
+        "ተፈጥሯዊ ፍላጎትና ስነስርዓት",
+        "የአስተሳሰብ ለውጥ",
+        "የተፈጥሮ ስጦታ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C.\n\nከዚህ በታች የቀረበውን ምንባብ መሰረት አድርጋችሁ ለሚከተለው ጥያቄ ከተሰጡት አማራጮች መካከል ትክክለኛውን መልስ ምረጡ፡፡\n\nየጽሁፉ ርዕስ ምን ሊሆን ይችላል፡፡\n\nምንባብ:\nሰው በተፈጥሮው የረሃብና የጥም ፣የበቀልና የመሳሰለው ፍልጎቱ ሁሉ እንዲፈጸምለት ይፈልጋል፤ነገርግን ማህበሩ እያንዳንዱ ሰው የተፈጥሮ ፍላጎቱን ለመፈጸም ሲል ሌሎቹን ሰዎች እንዳይጎዳ የሚወስንበት የጽህፈትና የልማድ ሕግ ሠራ፡፡ስለዚህ የተፈጥሮ ፍልጎቱን ለመፈጸም የማህበበሩን የጽህፈትና የልማድ ሕግ የተላለፈ ነውረኛ ተብሎ ይፈረድበታል፡፡\nአንድ ሰው ከሌላው የሚያስቆጣ ነገር ቢደርስበትና ለቁጣው ምክንያት የሆነውን ሰው ለማጥፋት ቢወድ፣ በማህበሩ ህግ ቅጣት እንደሚያስከትል ስለሚያውቅ ቁጣውን ለማብረድ ፣ሌላ የሚበቀልበት አማራጭ መንገድ መመፈለግ አለበት፡፡ስለዚህ የሰው ሰውነት የነጻነትና የጭቆና ውጤት ነው ማለት ይቻላል፡፡ይህ ነጻነትና ጭቆና ማህበሩ በረጅም ዘመን ዕድሜው ከልማዱ፣ከወጉ፣ከህጉ አዋህዶና አስማምቶ የሰራው ነው፡፡ስለዚህ እያንዳንዱ ሰው ተወልዶ ውስጡ ሲገባ በሱ ተመርቶ መኖር አለበት፤ከማህበሩ ስርዓት አንድ ነቁጥ እንኳን አይተላለፍም፡፡\nበጠቅላላው የማህበር ትምህርት እያንዳንዱ ሰው ሲወለድ ይዟቸው የሚወለደውን ጠቃሚ ውጥኖች ነጻነት በመስጠትና በልዩልዩ መንገድ በመርዳት ጎጂዎቹነንም እንዲሁ በልዩልዩ መንገድ በመጠቆምና በማረም ሰውዬውን ማህበራዊ እንዲሆን ያደርገዋል\n\nA) ተፈጥሯዊ ፍላጎትና ስነስርዓት\nB) የአስተሳሰብ ለውጥ\nC) የተፈጥሮ ስጦታ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 2100,
+          "output_tokens": 4,
+          "total_tokens": 2104
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 48,
+      "epoch": 1,
+      "input": "ከሚከተሉት መካከል የምክንያትና ውጤት ትስስር የሌለው ሃሳብ የቱ ነው?",
+      "choices": [
+        "ቋንቋ በተፈጥሮና በሰው ሰራሽ አደጋ ተናጋሪ ሲያጣ እሱም አብሮ ይጠፋል፡፡",
+        "በርትቶ የሚያጠና ተማሪ ተገቢውን እውቀት ይቀስማል፡፡",
+        "የሰው ልጅ ቋንቋ ና የእንስሳት አንድነትም ልዩነትም አላቸው፡፡",
+        "ለስኬት ጥረት ወሳኝነት አለው፡፡"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከሚከተሉት መካከል የምክንያትና ውጤት ትስስር የሌለው ሃሳብ የቱ ነው?\n\nA) ቋንቋ በተፈጥሮና በሰው ሰራሽ አደጋ ተናጋሪ ሲያጣ እሱም አብሮ ይጠፋል፡፡\nB) በርትቶ የሚያጠና ተማሪ ተገቢውን እውቀት ይቀስማል፡፡\nC) የሰው ልጅ ቋንቋ ና የእንስሳት አንድነትም ልዩነትም አላቸው፡፡\nD) ለስኬት ጥረት ወሳኝነት አለው፡፡",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 507,
+          "output_tokens": 4,
+          "total_tokens": 511
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 49,
+      "epoch": 1,
+      "input": "ጭራሽ ሰነፍ የሆነን ሰው መግለፅ ብንፈልግ የትኛውን ፈሊጣዊ አነጋገር መጠቀም እንችላለን?",
+      "choices": [
+        "እጅ አደር",
+        "እጀ ሰባራ",
+        "እጅ አጠረው",
+        "አጀ አመድ አፋሽ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nጭራሽ ሰነፍ የሆነን ሰው መግለፅ ብንፈልግ የትኛውን ፈሊጣዊ አነጋገር መጠቀም እንችላለን?\n\nA) እጅ አደር\nB) እጀ ሰባራ\nC) እጅ አጠረው\nD) አጀ አመድ አፋሽ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: D",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: D",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 263,
+          "output_tokens": 27,
+          "total_tokens": 290
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 50,
+      "epoch": 1,
+      "input": "ጥርሱን ነከሰ ለሚለው ፈሊጥ ተመሳሳይ የሚሆነው የትኛው ነው?",
+      "choices": [
+        "ዛተ",
+        "ጥርሱን አደማ",
+        "ደፈረ",
+        "ተተናኮለ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nጥርሱን ነከሰ ለሚለው ፈሊጥ ተመሳሳይ የሚሆነው የትኛው ነው?\n\nA) ዛተ\nB) ጥርሱን አደማ\nC) ደፈረ\nD) ተተናኮለ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: D",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: D",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 201,
+          "output_tokens": 4,
+          "total_tokens": 205
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 51,
+      "epoch": 1,
+      "input": "ሞክሼ ፊደላት ___ ድምፅ አላቸው፡፡",
+      "choices": [
+        "ተመሳሳይ",
+        "የተለያየ",
+        "ሁለቱም መልስ ይሆናሉ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C.\n\nሞክሼ ፊደላት ___ ድምፅ አላቸው፡፡\n\nA) ተመሳሳይ\nB) የተለያየ\nC) ሁለቱም መልስ ይሆናሉ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 167,
+          "output_tokens": 4,
+          "total_tokens": 171
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 52,
+      "epoch": 1,
+      "input": "‹‹ልጅ የጫረው እሳት ለጎረቤት ይተርፋል›› ቢባል ምሳሌያዊ አነጋገሩ የያዘው ትርጉም ከሚከተሉት የትኛው ነው?",
+      "choices": [
+        "በልጅ የመጣ ጠብ ቶሎ አይበርድም፡፡",
+        "ልጅ ያለ ልጅ ጨመረ፡፡",
+        "የመልካም ልጅ ጎረቤት በብርድ አይጠቃም፡፡",
+        "ታታሪ ልጅ ለጎረቤቱ በረከት ነው፡፡"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\n‹‹ልጅ የጫረው እሳት ለጎረቤት ይተርፋል›› ቢባል ምሳሌያዊ አነጋገሩ የያዘው ትርጉም ከሚከተሉት የትኛው ነው?\n\nA) በልጅ የመጣ ጠብ ቶሎ አይበርድም፡፡\nB) ልጅ ያለ ልጅ ጨመረ፡፡\nC) የመልካም ልጅ ጎረቤት በብርድ አይጠቃም፡፡\nD) ታታሪ ልጅ ለጎረቤቱ በረከት ነው፡፡",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 426,
+          "output_tokens": 4,
+          "total_tokens": 430
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 53,
+      "epoch": 1,
+      "input": "ነገረ ውሽልሽል ማለት -------------- ማለት ነው፡፡",
+      "choices": [
+        "ቁምነገር የሌለበት",
+        "በደንብ የተሰራ ",
+        "ቁምነገረኛ",
+        "መናኛ ስራ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nነገረ ውሽልሽል ማለት -------------- ማለት ነው፡፡\n\nA) ቁምነገር የሌለበት\nB) በደንብ የተሰራ \nC) ቁምነገረኛ\nD) መናኛ ስራ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: D",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: D",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 203,
+          "output_tokens": 4,
+          "total_tokens": 207
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 54,
+      "epoch": 1,
+      "input": "ትምህርትቤት ከገባን በኋላ የምንናገኛቸው የክሂል ዓይነቶች ከሚከተሉት የትኞቹ ናቸው?",
+      "choices": [
+        "ማንበብና መጻፍ",
+        "መናገርና መጻፍ",
+        "መጻፍና ማዳመጥ",
+        "ማዳመጥና መናገር"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nትምህርትቤት ከገባን በኋላ የምንናገኛቸው የክሂል ዓይነቶች ከሚከተሉት የትኞቹ ናቸው?\n\nA) ማንበብና መጻፍ\nB) መናገርና መጻፍ\nC) መጻፍና ማዳመጥ\nD) ማዳመጥና መናገር",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: D",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: D",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 285,
+          "output_tokens": 4,
+          "total_tokens": 289
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 55,
+      "epoch": 1,
+      "input": "ከዚህ በታች የቀረበውን ምንባብ መሰረት አድርጋችሁ ለሚከተለው ጥያቄ ከተሰጡት አማራጮች መካከል ትክክለኛውን መልስ ምረጡ፡፡\n\nበማህበሩ ህግ መሰረት ነውረኛ የሚል ስያሜ የሚሰጠው የትኛው ክፍል ነው?\n\nምንባብ:\nሰው በተፈጥሮው የረሃብና የጥም ፣የበቀልና የመሳሰለው ፍልጎቱ ሁሉ እንዲፈጸምለት ይፈልጋል፤ነገርግን ማህበሩ እያንዳንዱ ሰው የተፈጥሮ ፍላጎቱን ለመፈጸም ሲል ሌሎቹን ሰዎች እንዳይጎዳ የሚወስንበት የጽህፈትና የልማድ ሕግ ሠራ፡፡ስለዚህ የተፈጥሮ ፍልጎቱን ለመፈጸም የማህበበሩን የጽህፈትና የልማድ ሕግ የተላለፈ ነውረኛ ተብሎ ይፈረድበታል፡፡\nአንድ ሰው ከሌላው የሚያስቆጣ ነገር ቢደርስበትና ለቁጣው ምክንያት የሆነውን ሰው ለማጥፋት ቢወድ፣ በማህበሩ ህግ ቅጣት እንደሚያስከትል ስለሚያውቅ ቁጣውን ለማብረድ ፣ሌላ የሚበቀልበት አማራጭ መንገድ መመፈለግ አለበት፡፡ስለዚህ የሰው ሰውነት የነጻነትና የጭቆና ውጤት ነው ማለት ይቻላል፡፡ይህ ነጻነትና ጭቆና ማህበሩ በረጅም ዘመን ዕድሜው ከልማዱ፣ከወጉ፣ከህጉ አዋህዶና አስማምቶ የሰራው ነው፡፡ስለዚህ እያንዳንዱ ሰው ተወልዶ ውስጡ ሲገባ በሱ ተመርቶ መኖር አለበት፤ከማህበሩ ስርዓት አንድ ነቁጥ እንኳን አይተላለፍም፡፡\nበጠቅላላው የማህበር ትምህርት እያንዳንዱ ሰው ሲወለድ ይዟቸው የሚወለደውን ጠቃሚ ውጥኖች ነጻነት በመስጠትና በልዩልዩ መንገድ በመርዳት ጎጂዎቹነንም እንዲሁ በልዩልዩ መንገድ በመጠቆምና በማረም ሰውዬውን ማህበራዊ እንዲሆን ያደርገዋል",
+      "choices": [
+        "የማህበሩን ስርዓት የጣሰ ",
+        "የማህበሩን ስርዓት ያስተዳደረ ",
+        "የማህበሩን ስርዓት በእኩል ዐይን ያልተመለከተ",
+        "የማህበሩን ስርዓት ያከበረ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከዚህ በታች የቀረበውን ምንባብ መሰረት አድርጋችሁ ለሚከተለው ጥያቄ ከተሰጡት አማራጮች መካከል ትክክለኛውን መልስ ምረጡ፡፡\n\nበማህበሩ ህግ መሰረት ነውረኛ የሚል ስያሜ የሚሰጠው የትኛው ክፍል ነው?\n\nምንባብ:\nሰው በተፈጥሮው የረሃብና የጥም ፣የበቀልና የመሳሰለው ፍልጎቱ ሁሉ እንዲፈጸምለት ይፈልጋል፤ነገርግን ማህበሩ እያንዳንዱ ሰው የተፈጥሮ ፍላጎቱን ለመፈጸም ሲል ሌሎቹን ሰዎች እንዳይጎዳ የሚወስንበት የጽህፈትና የልማድ ሕግ ሠራ፡፡ስለዚህ የተፈጥሮ ፍልጎቱን ለመፈጸም የማህበበሩን የጽህፈትና የልማድ ሕግ የተላለፈ ነውረኛ ተብሎ ይፈረድበታል፡፡\nአንድ ሰው ከሌላው የሚያስቆጣ ነገር ቢደርስበትና ለቁጣው ምክንያት የሆነውን ሰው ለማጥፋት ቢወድ፣ በማህበሩ ህግ ቅጣት እንደሚያስከትል ስለሚያውቅ ቁጣውን ለማብረድ ፣ሌላ የሚበቀልበት አማራጭ መንገድ መመፈለግ አለበት፡፡ስለዚህ የሰው ሰውነት የነጻነትና የጭቆና ውጤት ነው ማለት ይቻላል፡፡ይህ ነጻነትና ጭቆና ማህበሩ በረጅም ዘመን ዕድሜው ከልማዱ፣ከወጉ፣ከህጉ አዋህዶና አስማምቶ የሰራው ነው፡፡ስለዚህ እያንዳንዱ ሰው ተወልዶ ውስጡ ሲገባ በሱ ተመርቶ መኖር አለበት፤ከማህበሩ ስርዓት አንድ ነቁጥ እንኳን አይተላለፍም፡፡\nበጠቅላላው የማህበር ትምህርት እያንዳንዱ ሰው ሲወለድ ይዟቸው የሚወለደውን ጠቃሚ ውጥኖች ነጻነት በመስጠትና በልዩልዩ መንገድ በመርዳት ጎጂዎቹነንም እንዲሁ በልዩልዩ መንገድ በመጠቆምና በማረም ሰውዬውን ማህበራዊ እንዲሆን ያደርገዋል\n\nA) የማህበሩን ስርዓት የጣሰ \nB) የማህበሩን ስርዓት ያስተዳደረ \nC) የማህበሩን ስርዓት በእኩል ዐይን ያልተመለከተ\nD) የማህበሩን ስርዓት ያከበረ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 2252,
+          "output_tokens": 4,
+          "total_tokens": 2256
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 56,
+      "epoch": 1,
+      "input": "መጨነቅ መጠበብ ለጠጅ ብቻ ነው፣\nለጠላ መድሐኒት ተወት ማድረግ ነው፡፡ የዚህ ቅኔ ህብረቃል ምን የሚለው ነው?",
+      "choices": [
+        "መድሐኒት",
+        "ተወት ማድረግ ነው፡፡",
+        "ለጠላ",
+        "ለጠጅ ብቻ ነው፡፡"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nመጨነቅ መጠበብ ለጠጅ ብቻ ነው፣\nለጠላ መድሐኒት ተወት ማድረግ ነው፡፡ የዚህ ቅኔ ህብረቃል ምን የሚለው ነው?\n\nA) መድሐኒት\nB) ተወት ማድረግ ነው፡፡\nC) ለጠላ\nD) ለጠጅ ብቻ ነው፡፡",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 300,
+          "output_tokens": 19,
+          "total_tokens": 319
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 57,
+      "epoch": 1,
+      "input": "‹‹ካልታረደ አይታይስባቱ ካልተናገረ አይታወቅ ብልሃቱ›› የሚለው ምሳሌያዊ አባባል ምንን ይገልጻል፡፡",
+      "choices": [
+        "የንግግርን ትልቅነት",
+        "የማዳመጥና የመስማትን",
+        "የማንበብን ትልቅነት",
+        "የመጻፍን አግባብነት"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\n‹‹ካልታረደ አይታይስባቱ ካልተናገረ አይታወቅ ብልሃቱ›› የሚለው ምሳሌያዊ አባባል ምንን ይገልጻል፡፡\n\nA) የንግግርን ትልቅነት\nB) የማዳመጥና የመስማትን\nC) የማንበብን ትልቅነት\nD) የመጻፍን አግባብነት",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: D",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: D",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 349,
+          "output_tokens": 4,
+          "total_tokens": 353
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 58,
+      "epoch": 1,
+      "input": "ከተከለከለው ከጨፌ እየዋለች፣\nአልታለብ ብላ ያቺስ ላም እምቢ አለች፡፡የዚህ ቅኔ ወርቅ ከሚከተሉት የትኛው ነው?",
+      "choices": [
+        "እስላሟ ሃይማኖቷን ጣለች፡፡",
+        "ላሚቱ አልታለብ አለቸ፡፡",
+        "ላሚቷ የሰው ክልል ጣሰች ፡፡",
+        "የተጠየቀችውን እስላሟ ሴት ከለከለች ፡፡"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከተከለከለው ከጨፌ እየዋለች፣\nአልታለብ ብላ ያቺስ ላም እምቢ አለች፡፡የዚህ ቅኔ ወርቅ ከሚከተሉት የትኛው ነው?\n\nA) እስላሟ ሃይማኖቷን ጣለች፡፡\nB) ላሚቱ አልታለብ አለቸ፡፡\nC) ላሚቷ የሰው ክልል ጣሰች ፡፡\nD) የተጠየቀችውን እስላሟ ሴት ከለከለች ፡፡",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 418,
+          "output_tokens": 4,
+          "total_tokens": 422
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 59,
+      "epoch": 1,
+      "input": "የስነቃልን ባለቤት በተመለከተ የትኛው ትክክል ነው?",
+      "choices": [
+        "የማህበረሰቡ የወል ሃብት ነው፡፡",
+        "ደራሲዎች በጋራ የፈጠሩት ነው፡፡ ",
+        "ታላላቅ አባቶች በስምምነት የፈጠሩት ነው፡፡",
+        "የታሪክ ምሁራን የፈጠሩት ነው፡፡"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nየስነቃልን ባለቤት በተመለከተ የትኛው ትክክል ነው?\n\nA) የማህበረሰቡ የወል ሃብት ነው፡፡\nB) ደራሲዎች በጋራ የፈጠሩት ነው፡፡ \nC) ታላላቅ አባቶች በስምምነት የፈጠሩት ነው፡፡\nD) የታሪክ ምሁራን የፈጠሩት ነው፡፡",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 361,
+          "output_tokens": 4,
+          "total_tokens": 365
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 60,
+      "epoch": 1,
+      "input": "አቶ ደግአረገ ልበሙሉነቴ ጠቀመኝ ቢሉ፣የተሰመረበት ቃልአገባባዊ ፍችው ምንድን ነው?",
+      "choices": [
+        "ደፋርነቴ",
+        "ሚስጢር ጠባቂነቴ",
+        "ጀግንነቴ",
+        "ትዕግስተኛነቴ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nአቶ ደግአረገ ልበሙሉነቴ ጠቀመኝ ቢሉ፣የተሰመረበት ቃልአገባባዊ ፍችው ምንድን ነው?\n\nA) ደፋርነቴ\nB) ሚስጢር ጠባቂነቴ\nC) ጀግንነቴ\nD) ትዕግስተኛነቴ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 268,
+          "output_tokens": 4,
+          "total_tokens": 272
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 61,
+      "epoch": 1,
+      "input": "አሁን ምን ያደርጋል ነገር መለቃቀም፣\nባባቷ ያልሆነ ባያት ምን ልጠቀም፡፡የዚህ ቅኔ ህብረቃል የቱ ነው?",
+      "choices": [
+        "ባያት",
+        "ምን ልጠቀም",
+        "ባባቷ",
+        "መለቃቀም"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nአሁን ምን ያደርጋል ነገር መለቃቀም፣\nባባቷ ያልሆነ ባያት ምን ልጠቀም፡፡የዚህ ቅኔ ህብረቃል የቱ ነው?\n\nA) ባያት\nB) ምን ልጠቀም\nC) ባባቷ\nD) መለቃቀም",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: D",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: D",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 264,
+          "output_tokens": 4,
+          "total_tokens": 268
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 62,
+      "epoch": 1,
+      "input": "በአንድ ዓረፍተነገር ውስጥ የዓረፍተነገሩ ባለቤት የሚገኝበት የሐረግ ዓይነት ምን ይባላል;",
+      "choices": [
+        "ስማዊ ሐረግ",
+        "ቅጽላዊ ሐረግ",
+        "ግሳዊ ሐረግ",
+        "ግሳዊ ሐረግ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nበአንድ ዓረፍተነገር ውስጥ የዓረፍተነገሩ ባለቤት የሚገኝበት የሐረግ ዓይነት ምን ይባላል;\n\nA) ስማዊ ሐረግ\nB) ቅጽላዊ ሐረግ\nC) ግሳዊ ሐረግ\nD) ግሳዊ ሐረግ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 274,
+          "output_tokens": 4,
+          "total_tokens": 278
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 63,
+      "epoch": 1,
+      "input": "ልብ ወለድ በሚጻፍበት ጊዜ ታሪኩ የሚያወራው ስለማን ነው ብለን ስንጠይቅ የምናገኘው መልስ የትኛውን የልብወለድ አላባ ይመለከታል፡፡",
+      "choices": [
+        "ገጸባህሪያትን",
+        "መቼትን",
+        "አንጻርን",
+        "ታሪክን"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nልብ ወለድ በሚጻፍበት ጊዜ ታሪኩ የሚያወራው ስለማን ነው ብለን ስንጠይቅ የምናገኘው መልስ የትኛውን የልብወለድ አላባ ይመለከታል፡፡\n\nA) ገጸባህሪያትን\nB) መቼትን\nC) አንጻርን\nD) ታሪክን",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: D",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: D",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 322,
+          "output_tokens": 4,
+          "total_tokens": 326
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 64,
+      "epoch": 1,
+      "input": "የቋንቋ ክሂሎች በቅደምተከተል ሲቀመጡ ከሚከተሉት የትኛው ትክክል ነው?",
+      "choices": [
+        "ማዳመጥ፣መጻፍ፣መናገር፣ማንበብ ",
+        "መናገር ፣ማዳመጥ፣መጻፍ፣ማንበብ",
+        "ማዳመጥ፣መናገር፣ማንበብ፣መጻፍ",
+        "ማዳመጥ፣መጻፍ፣መናገር፣ማንበብ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nየቋንቋ ክሂሎች በቅደምተከተል ሲቀመጡ ከሚከተሉት የትኛው ትክክል ነው?\n\nA) ማዳመጥ፣መጻፍ፣መናገር፣ማንበብ \nB) መናገር ፣ማዳመጥ፣መጻፍ፣ማንበብ\nC) ማዳመጥ፣መናገር፣ማንበብ፣መጻፍ\nD) ማዳመጥ፣መጻፍ፣መናገር፣ማንበብ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 372,
+          "output_tokens": 4,
+          "total_tokens": 376
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 65,
+      "epoch": 1,
+      "input": "ቀጥሎ የቀረበውን ግጥም መሰረት አድርጋችሁ ለሚከተለው ጥያቄ ከተሰጡት አማራጮች መካከል ትክክለኛውን መልስ የያዘውን ፊደል ምረጡ፡፡\n\n‹‹ደንቆሮ›› የሚለው ቃል በጥቅስ ምልክት የተቀመጠበት ምክንያት ምንድን ነው?\n\nግጥም:\n\nየሞተው ወዳጄ እኔ የማልናፍቀው፣\nያነሳኛል አሉ ሲጨንቀው ሲጠበው፣\nመቆያው ማደሪያው ከቤቴ ከደጄ\nምንድን ይሻ ይሆን ትልቁ ወዳጄ?\nታዲያ ምን ይሉታል እንዲህ ያለውን\nከመቃብር በታች ነፍስ የዘራውን፡፡\nምናልባት ሲቀበር ዐፈር አልባሾቹ፣\nኮረትና ድንጋይ አልጫኑት ከታቹ፡፡\nነፍስ እንዳለው ፍጡር እንዳልተቀበረ፣\nምነዋ ወዳጄ ብዙ ቀባጠረ?\nመኖርም መሞትም አንዴ ጥርስን ነክሶ፣\nወይ በምግባር ከብሮ ወይ በምግባር ረክሶ፣\nእንጅ እንደ ወዳጄ መች መቃብር ምሶ፣\nእንጅ እንደ ወዳጄ መች ለራስ አልቅሶ፣\nየቁም ሞትን ሙቶ በተንኮል ጨንብሶ፣\nካልሆነ በስተቀር የ‹‹ደንቆሮ››ለቅሶ፣\nመልሶ መልሶ መልሶ መላልሶ፡፡",
+      "choices": [
+        "ሟቹ የአዋቂ አጥፊ ስለሆነ",
+        "የሟቹ ንግግር ስለሆነ",
+        "የተራኪው ንግግር ስለሆነ",
+        "አባባል ስለሆነ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nቀጥሎ የቀረበውን ግጥም መሰረት አድርጋችሁ ለሚከተለው ጥያቄ ከተሰጡት አማራጮች መካከል ትክክለኛውን መልስ የያዘውን ፊደል ምረጡ፡፡\n\n‹‹ደንቆሮ›› የሚለው ቃል በጥቅስ ምልክት የተቀመጠበት ምክንያት ምንድን ነው?\n\nግጥም:\n\nየሞተው ወዳጄ እኔ የማልናፍቀው፣\nያነሳኛል አሉ ሲጨንቀው ሲጠበው፣\nመቆያው ማደሪያው ከቤቴ ከደጄ\nምንድን ይሻ ይሆን ትልቁ ወዳጄ?\nታዲያ ምን ይሉታል እንዲህ ያለውን\nከመቃብር በታች ነፍስ የዘራውን፡፡\nምናልባት ሲቀበር ዐፈር አልባሾቹ፣\nኮረትና ድንጋይ አልጫኑት ከታቹ፡፡\nነፍስ እንዳለው ፍጡር እንዳልተቀበረ፣\nምነዋ ወዳጄ ብዙ ቀባጠረ?\nመኖርም መሞትም አንዴ ጥርስን ነክሶ፣\nወይ በምግባር ከብሮ ወይ በምግባር ረክሶ፣\nእንጅ እንደ ወዳጄ መች መቃብር ምሶ፣\nእንጅ እንደ ወዳጄ መች ለራስ አልቅሶ፣\nየቁም ሞትን ሙቶ በተንኮል ጨንብሶ፣\nካልሆነ በስተቀር የ‹‹ደንቆሮ››ለቅሶ፣\nመልሶ መልሶ መልሶ መላልሶ፡፡\n\nA) ሟቹ የአዋቂ አጥፊ ስለሆነ\nB) የሟቹ ንግግር ስለሆነ\nC) የተራኪው ንግግር ስለሆነ\nD) አባባል ስለሆነ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 1416,
+          "output_tokens": 4,
+          "total_tokens": 1420
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 66,
+      "epoch": 1,
+      "input": "በፊደል ‹‹ፀ ›› ___ የሚል ቃል ይመሰረታል፡፡",
+      "choices": [
+        "ፀሀይ",
+        "ዐይን",
+        "ወርቅ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C.\n\nበፊደል ‹‹ፀ ›› ___ የሚል ቃል ይመሰረታል፡፡\n\nA) ፀሀይ\nB) ዐይን\nC) ወርቅ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 144,
+          "output_tokens": 4,
+          "total_tokens": 148
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 67,
+      "epoch": 1,
+      "input": "ስሚ አንቺ እማማ ኢትዮጵያ በጀግኖች ልጆች የታፈርሽ ነሽ እኮ ፡፡ \n\nብንል በየትኛው የዘይቤ ዓይነት ተጻፈ፡፡",
+      "choices": [
+        "እንቶኔ",
+        "ሰውኛ",
+        "ተምሳሌት",
+        "ተለዋጭ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nስሚ አንቺ እማማ ኢትዮጵያ በጀግኖች ልጆች የታፈርሽ ነሽ እኮ ፡፡ \n\nብንል በየትኛው የዘይቤ ዓይነት ተጻፈ፡፡\n\nA) እንቶኔ\nB) ሰውኛ\nC) ተምሳሌት\nD) ተለዋጭ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 268,
+          "output_tokens": 4,
+          "total_tokens": 272
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 68,
+      "epoch": 1,
+      "input": "በስነቃል ክዋኔ ጊዜ የተደራስያን ተግባር ያልሆነው የቱ ነው?",
+      "choices": [
+        "ስነቃሉን መምራት",
+        "ማዳመጥ",
+        "የሚከውነውን አካል ማጀብ",
+        "ምላሽ መስጠት"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nበስነቃል ክዋኔ ጊዜ የተደራስያን ተግባር ያልሆነው የቱ ነው?\n\nA) ስነቃሉን መምራት\nB) ማዳመጥ\nC) የሚከውነውን አካል ማጀብ\nD) ምላሽ መስጠት",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 246,
+          "output_tokens": 4,
+          "total_tokens": 250
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 69,
+      "epoch": 1,
+      "input": "ተረበኛ ለሚለው ቃል ሊመሳሳለው የሚችለው የትኛው ነው?",
+      "choices": [
+        "ቀልደኛ",
+        "ወገኛ",
+        "ጉረኛ",
+        "መተተኛ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nተረበኛ ለሚለው ቃል ሊመሳሳለው የሚችለው የትኛው ነው?\n\nA) ቀልደኛ\nB) ወገኛ\nC) ጉረኛ\nD) መተተኛ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 182,
+          "output_tokens": 4,
+          "total_tokens": 186
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 70,
+      "epoch": 1,
+      "input": "ከሚከተሉት አማራጮች መካከል ስማዊ ሐረግ የሆነው የትኛው ነው?",
+      "choices": [
+        "ትናንት ያየኋት ቀይ መኪና",
+        "ከወንድሙ ጋር",
+        "እንደ እህቷ በጣም ቀልጣፋ",
+        "ትህትናዋ የሚማርከው አስተናጋጅ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከሚከተሉት አማራጮች መካከል ስማዊ ሐረግ የሆነው የትኛው ነው?\n\nA) ትናንት ያየኋት ቀይ መኪና\nB) ከወንድሙ ጋር\nC) እንደ እህቷ በጣም ቀልጣፋ\nD) ትህትናዋ የሚማርከው አስተናጋጅ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 302,
+          "output_tokens": 44,
+          "total_tokens": 346
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 71,
+      "epoch": 1,
+      "input": "በተራ ቁጥር‹‹ 12›› የተጠቀሰው ስህተት ዓይነት ምንድን ነው?",
+      "choices": [
+        "የቁጥር ",
+        "የተሳቢ",
+        "የመደብ ",
+        "የቃላት ምርጫ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nበተራ ቁጥር‹‹ 12›› የተጠቀሰው ስህተት ዓይነት ምንድን ነው?\n\nA) የቁጥር \nB) የተሳቢ\nC) የመደብ \nD) የቃላት ምርጫ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 204,
+          "output_tokens": 4,
+          "total_tokens": 208
+        }
+      },
+      "score": {
+        "value": "C",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 72,
+      "epoch": 1,
+      "input": "ቀጥሎ ከተዘረዘሩት ቃላት መካከል ቅጽል የሆነው ቃል የትኛው ነው?",
+      "choices": [
+        "ትኩስ",
+        "እሸት",
+        "ድንገት",
+        "ዛሬ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nቀጥሎ ከተዘረዘሩት ቃላት መካከል ቅጽል የሆነው ቃል የትኛው ነው?\n\nA) ትኩስ\nB) እሸት\nC) ድንገት\nD) ዛሬ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: D",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: D",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 192,
+          "output_tokens": 10,
+          "total_tokens": 202
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 73,
+      "epoch": 1,
+      "input": "ለጤንነት የበለጠ ጠቀሜታ ያለው አትክልት ወይስ ስጋ ? የሚለው ዓረፍተነገር ለየትኛው የድርሰት ዓይነት ምሳሌ ሊሆን ይችላል?",
+      "choices": [
+        "ለአመዛዛኝ",
+        "ለገላጭ",
+        "ለተራኪ",
+        "ለስዕላዊ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nለጤንነት የበለጠ ጠቀሜታ ያለው አትክልት ወይስ ስጋ ? የሚለው ዓረፍተነገር ለየትኛው የድርሰት ዓይነት ምሳሌ ሊሆን ይችላል?\n\nA) ለአመዛዛኝ\nB) ለገላጭ\nC) ለተራኪ\nD) ለስዕላዊ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 301,
+          "output_tokens": 4,
+          "total_tokens": 305
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 74,
+      "epoch": 1,
+      "input": "ከዚህ በታች የቀረበውን ምንባብ መሰረት አድርጋችሁ ለሚከተለው ጥያቄ ከተሰጡት አማራጮች መካከል ትክክለኛውን መልስ ምረጡ፡፡\n\nሰው በተፈጥሮው እንዲፈጸምለት የሚፈልጋቸው ነገሮች ምንድን ናቸው?\n\nምንባብ:\nሰው በተፈጥሮው የረሃብና የጥም ፣የበቀልና የመሳሰለው ፍልጎቱ ሁሉ እንዲፈጸምለት ይፈልጋል፤ነገርግን ማህበሩ እያንዳንዱ ሰው የተፈጥሮ ፍላጎቱን ለመፈጸም ሲል ሌሎቹን ሰዎች እንዳይጎዳ የሚወስንበት የጽህፈትና የልማድ ሕግ ሠራ፡፡ስለዚህ የተፈጥሮ ፍልጎቱን ለመፈጸም የማህበበሩን የጽህፈትና የልማድ ሕግ የተላለፈ ነውረኛ ተብሎ ይፈረድበታል፡፡\nአንድ ሰው ከሌላው የሚያስቆጣ ነገር ቢደርስበትና ለቁጣው ምክንያት የሆነውን ሰው ለማጥፋት ቢወድ፣ በማህበሩ ህግ ቅጣት እንደሚያስከትል ስለሚያውቅ ቁጣውን ለማብረድ ፣ሌላ የሚበቀልበት አማራጭ መንገድ መመፈለግ አለበት፡፡ስለዚህ የሰው ሰውነት የነጻነትና የጭቆና ውጤት ነው ማለት ይቻላል፡፡ይህ ነጻነትና ጭቆና ማህበሩ በረጅም ዘመን ዕድሜው ከልማዱ፣ከወጉ፣ከህጉ አዋህዶና አስማምቶ የሰራው ነው፡፡ስለዚህ እያንዳንዱ ሰው ተወልዶ ውስጡ ሲገባ በሱ ተመርቶ መኖር አለበት፤ከማህበሩ ስርዓት አንድ ነቁጥ እንኳን አይተላለፍም፡፡\nበጠቅላላው የማህበር ትምህርት እያንዳንዱ ሰው ሲወለድ ይዟቸው የሚወለደውን ጠቃሚ ውጥኖች ነጻነት በመስጠትና በልዩልዩ መንገድ በመርዳት ጎጂዎቹነንም እንዲሁ በልዩልዩ መንገድ በመጠቆምና በማረም ሰውዬውን ማህበራዊ እንዲሆን ያደርገዋል",
+      "choices": [
+        "ሁሉም",
+        "የረሃብ ፍላጎቱ",
+        "የመበቀል ፍላጎቱ",
+        "ነጻ የመሆን ፍላጎቱ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከዚህ በታች የቀረበውን ምንባብ መሰረት አድርጋችሁ ለሚከተለው ጥያቄ ከተሰጡት አማራጮች መካከል ትክክለኛውን መልስ ምረጡ፡፡\n\nሰው በተፈጥሮው እንዲፈጸምለት የሚፈልጋቸው ነገሮች ምንድን ናቸው?\n\nምንባብ:\nሰው በተፈጥሮው የረሃብና የጥም ፣የበቀልና የመሳሰለው ፍልጎቱ ሁሉ እንዲፈጸምለት ይፈልጋል፤ነገርግን ማህበሩ እያንዳንዱ ሰው የተፈጥሮ ፍላጎቱን ለመፈጸም ሲል ሌሎቹን ሰዎች እንዳይጎዳ የሚወስንበት የጽህፈትና የልማድ ሕግ ሠራ፡፡ስለዚህ የተፈጥሮ ፍልጎቱን ለመፈጸም የማህበበሩን የጽህፈትና የልማድ ሕግ የተላለፈ ነውረኛ ተብሎ ይፈረድበታል፡፡\nአንድ ሰው ከሌላው የሚያስቆጣ ነገር ቢደርስበትና ለቁጣው ምክንያት የሆነውን ሰው ለማጥፋት ቢወድ፣ በማህበሩ ህግ ቅጣት እንደሚያስከትል ስለሚያውቅ ቁጣውን ለማብረድ ፣ሌላ የሚበቀልበት አማራጭ መንገድ መመፈለግ አለበት፡፡ስለዚህ የሰው ሰውነት የነጻነትና የጭቆና ውጤት ነው ማለት ይቻላል፡፡ይህ ነጻነትና ጭቆና ማህበሩ በረጅም ዘመን ዕድሜው ከልማዱ፣ከወጉ፣ከህጉ አዋህዶና አስማምቶ የሰራው ነው፡፡ስለዚህ እያንዳንዱ ሰው ተወልዶ ውስጡ ሲገባ በሱ ተመርቶ መኖር አለበት፤ከማህበሩ ስርዓት አንድ ነቁጥ እንኳን አይተላለፍም፡፡\nበጠቅላላው የማህበር ትምህርት እያንዳንዱ ሰው ሲወለድ ይዟቸው የሚወለደውን ጠቃሚ ውጥኖች ነጻነት በመስጠትና በልዩልዩ መንገድ በመርዳት ጎጂዎቹነንም እንዲሁ በልዩልዩ መንገድ በመጠቆምና በማረም ሰውዬውን ማህበራዊ እንዲሆን ያደርገዋል\n\nA) ሁሉም\nB) የረሃብ ፍላጎቱ\nC) የመበቀል ፍላጎቱ\nD) ነጻ የመሆን ፍላጎቱ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 2138,
+          "output_tokens": 4,
+          "total_tokens": 2142
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 75,
+      "epoch": 1,
+      "input": "ፊደል ‹‹ሰ ›› እና ፊደል ‹‹ሠ ›› ___ ፊደላት ናቸው፡፡",
+      "choices": [
+        "ሞክሼ",
+        "መንታ",
+        "ዘመድ"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C.\n\nፊደል ‹‹ሰ ›› እና ፊደል ‹‹ሠ ›› ___ ፊደላት ናቸው፡፡\n\nA) ሞክሼ\nB) መንታ\nC) ዘመድ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 152,
+          "output_tokens": 4,
+          "total_tokens": 156
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 76,
+      "epoch": 1,
+      "input": "የአንቀጽ ቅርጽ የሚወሰነው በምን መነሻነት ነው?",
+      "choices": [
+        "ኃይለቃሉ በሚገኝበት ስፍራ",
+        "አንቀጹ በሸፈነው ሃሳብ",
+        "በአንቀጹ መዘርዝር ዓረፍተነገሮች አማካኝነት",
+        "በዓረፍተነገሮች ብዛት"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nየአንቀጽ ቅርጽ የሚወሰነው በምን መነሻነት ነው?\n\nA) ኃይለቃሉ በሚገኝበት ስፍራ\nB) አንቀጹ በሸፈነው ሃሳብ\nC) በአንቀጹ መዘርዝር ዓረፍተነገሮች አማካኝነት\nD) በዓረፍተነገሮች ብዛት",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 317,
+          "output_tokens": 4,
+          "total_tokens": 321
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 77,
+      "epoch": 1,
+      "input": "ቀጥሎ የቀረበውን ግጥም መሰረት አድርጋችሁ ለሚከተለው ጥያቄ ከተሰጡት አማራጮች መካከል ትክክለኛውን መልስ የያዘውን ፊደል ምረጡ፡፡\n\nተራኪው ስለ ሟቹ ስላለው አመለካከት ምን ማለት ይቻላል?\n\nግጥም:\n\nየሞተው ወዳጄ እኔ የማልናፍቀው፣\nያነሳኛል አሉ ሲጨንቀው ሲጠበው፣\nመቆያው ማደሪያው ከቤቴ ከደጄ\nምንድን ይሻ ይሆን ትልቁ ወዳጄ?\nታዲያ ምን ይሉታል እንዲህ ያለውን\nከመቃብር በታች ነፍስ የዘራውን፡፡\nምናልባት ሲቀበር ዐፈር አልባሾቹ፣\nኮረትና ድንጋይ አልጫኑት ከታቹ፡፡\nነፍስ እንዳለው ፍጡር እንዳልተቀበረ፣\nምነዋ ወዳጄ ብዙ ቀባጠረ?\nመኖርም መሞትም አንዴ ጥርስን ነክሶ፣\nወይ በምግባር ከብሮ ወይ በምግባር ረክሶ፣\nእንጅ እንደ ወዳጄ መች መቃብር ምሶ፣\nእንጅ እንደ ወዳጄ መች ለራስ አልቅሶ፣\nየቁም ሞትን ሙቶ በተንኮል ጨንብሶ፣\nካልሆነ በስተቀር የ‹‹ደንቆሮ››ለቅሶ፣\nመልሶ መልሶ መልሶ መላልሶ፡፡",
+      "choices": [
+        "እንደማይወደው መናገር ይቻላል፡፡",
+        "እንደሚወደው መናገር ይቻላል፡፡",
+        "እንደማያውቀው መናገር ይቻላል፡፡",
+        "እንደረሳው መናገር ይቻላል፡፡"
+      ],
+      "target": [
+        "A"
+      ],
+      "messages": [
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nቀጥሎ የቀረበውን ግጥም መሰረት አድርጋችሁ ለሚከተለው ጥያቄ ከተሰጡት አማራጮች መካከል ትክክለኛውን መልስ የያዘውን ፊደል ምረጡ፡፡\n\nተራኪው ስለ ሟቹ ስላለው አመለካከት ምን ማለት ይቻላል?\n\nግጥም:\n\nየሞተው ወዳጄ እኔ የማልናፍቀው፣\nያነሳኛል አሉ ሲጨንቀው ሲጠበው፣\nመቆያው ማደሪያው ከቤቴ ከደጄ\nምንድን ይሻ ይሆን ትልቁ ወዳጄ?\nታዲያ ምን ይሉታል እንዲህ ያለውን\nከመቃብር በታች ነፍስ የዘራውን፡፡\nምናልባት ሲቀበር ዐፈር አልባሾቹ፣\nኮረትና ድንጋይ አልጫኑት ከታቹ፡፡\nነፍስ እንዳለው ፍጡር እንዳልተቀበረ፣\nምነዋ ወዳጄ ብዙ ቀባጠረ?\nመኖርም መሞትም አንዴ ጥርስን ነክሶ፣\nወይ በምግባር ከብሮ ወይ በምግባር ረክሶ፣\nእንጅ እንደ ወዳጄ መች መቃብር ምሶ፣\nእንጅ እንደ ወዳጄ መች ለራስ አልቅሶ፣\nየቁም ሞትን ሙቶ በተንኮል ጨንብሶ፣\nካልሆነ በስተቀር የ‹‹ደንቆሮ››ለቅሶ፣\nመልሶ መልሶ መልሶ መላልሶ፡፡\n\nA) እንደማይወደው መናገር ይቻላል፡፡\nB) እንደሚወደው መናገር ይቻላል፡፡\nC) እንደማያውቀው መናገር ይቻላል፡፡\nD) እንደረሳው መናገር ይቻላል፡፡",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: D",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-3.5-turbo-0125",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: D",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 1451,
+          "output_tokens": 4,
+          "total_tokens": 1455
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answers: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    }
+  ],
+  "logging": [
+    {
+      "level": "info",
+      "message": "PyTorch version 2.3.1 available.",
+      "created": 1721623318798.509
+    }
+  ]
+}

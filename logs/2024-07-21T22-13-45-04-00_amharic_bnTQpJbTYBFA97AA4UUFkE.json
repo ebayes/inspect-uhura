@@ -1,0 +1,2511 @@
+{
+  "version": 1,
+  "status": "cancelled",
+  "eval": {
+    "task": "amharic",
+    "task_version": 0,
+    "task_file": "arc.py",
+    "task_id": "bnTQpJbTYBFA97AA4UUFkE",
+    "run_id": "c7v6xUy9rozH67cNNLANNu",
+    "created": "2024-07-21T22:13:45-04:00",
+    "dataset": {
+      "name": "ebayes/uhura-arc-easy",
+      "location": "ebayes/uhura-arc-easy",
+      "samples": 518,
+      "shuffled": false
+    },
+    "model": "openai/gpt-4o-mini",
+    "task_attribs": {},
+    "task_args": {},
+    "model_args": {},
+    "config": {},
+    "revision": {
+      "type": "git",
+      "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
+      "commit": "c759f45"
+    },
+    "packages": {
+      "inspect_ai": "0.3.15"
+    }
+  },
+  "plan": {
+    "name": "plan",
+    "steps": [
+      {
+        "solver": "system_message",
+        "params": {
+          "message": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options."
+        }
+      },
+      {
+        "solver": "multiple_choice",
+        "params": {}
+      }
+    ],
+    "config": {}
+  },
+  "stats": {
+    "started_at": "2024-07-21T22:13:45-04:00",
+    "completed_at": "2024-07-21T22:13:48-04:00",
+    "model_usage": {
+      "openai/gpt-4o-mini": {
+        "input_tokens": 17833,
+        "output_tokens": 141,
+        "total_tokens": 17974
+      }
+    }
+  },
+  "samples": [
+    {
+      "id": 1,
+      "epoch": 1,
+      "input": "ጠጣር አካላት፣ ፈሳሾች እና ጋዞች ሁሉም ከዚህ በታች ከተዘረዘሩት የየትኛው ሁኔታ የተለዩ ናቸው?",
+      "choices": [
+        "ክብደት",
+        "ቁስ",
+        "መጠን",
+        "ይዘት"
+      ],
+      "target": "B",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nጠጣር አካላት፣ ፈሳሾች እና ጋዞች ሁሉም ከዚህ በታች ከተዘረዘሩት የየትኛው ሁኔታ የተለዩ ናቸው?\n\nA) ክብደት\nB) ቁስ\nC) መጠን\nD) ይዘት",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 243,
+          "output_tokens": 3,
+          "total_tokens": 246
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answer: ['B'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 2,
+      "epoch": 1,
+      "input": "የሀሞት ከረጢት ተግባር የቱ ነው?",
+      "choices": [
+        "ሃሞት ለመያዝ ",
+        "ሀሞት ለማምረት \r",
+        "የልመት ኢንዛይሞች ለመያዝ   ",
+        "የልመት ኢንዛይሞች ለማምረት"
+      ],
+      "target": "A",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nየሀሞት ከረጢት ተግባር የቱ ነው?\n\nA) ሃሞት ለመያዝ \nB) ሀሞት ለማምረት \r\nC) የልመት ኢንዛይሞች ለመያዝ   \nD) የልመት ኢንዛይሞች ለማምረት",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 241,
+          "output_tokens": 3,
+          "total_tokens": 244
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answer: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 3,
+      "epoch": 1,
+      "input": "የፕላኔቶች ቅደም ተከተል ከፀሐይ አቅራቢያ እስከ ሩቅ ድረስ ያለው የትኛው ነው?",
+      "choices": [
+        "ሜርኩሪ፣ ቬኑስ፣ ምድር፣ ማርስ",
+        "ማርስ፣ ሜርኩሪ፣ ምድር፣ ቬኑስ",
+        "ምድር፣ ቬኑስ፣ ሜርኩሪ፣ ማርስ",
+        "ቬኑስ፣ ምድር፣ ማርስ፣ ሜርኩሪ"
+      ],
+      "target": "A",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nየፕላኔቶች ቅደም ተከተል ከፀሐይ አቅራቢያ እስከ ሩቅ ድረስ ያለው የትኛው ነው?\n\nA) ሜርኩሪ፣ ቬኑስ፣ ምድር፣ ማርስ\nB) ማርስ፣ ሜርኩሪ፣ ምድር፣ ቬኑስ\nC) ምድር፣ ቬኑስ፣ ሜርኩሪ፣ ማርስ\nD) ቬኑስ፣ ምድር፣ ማርስ፣ ሜርኩሪ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 339,
+          "output_tokens": 3,
+          "total_tokens": 342
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answer: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 4,
+      "epoch": 1,
+      "input": "ጠፍጣፋ በሆነ መንገድ ላይ ፍጥነት እየጨመረ በሚሄድ መኪና ላይ ምን ሊከሰት ይችላል?",
+      "choices": [
+        "የእንቅስቃሴው ጉልበት እየጨመረ ነው",
+        "የእንቅስቃሴ ኃይሉ እየቀነሰ ነው።",
+        "የእሱ እምቅ ኃይል እየጨመረ ነው።",
+        "የማይንቀሳቀስ ሀይሉ እየቀነሰ ነው።"
+      ],
+      "target": "A",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nጠፍጣፋ በሆነ መንገድ ላይ ፍጥነት እየጨመረ በሚሄድ መኪና ላይ ምን ሊከሰት ይችላል?\n\nA) የእንቅስቃሴው ጉልበት እየጨመረ ነው\nB) የእንቅስቃሴ ኃይሉ እየቀነሰ ነው።\nC) የእሱ እምቅ ኃይል እየጨመረ ነው።\nD) የማይንቀሳቀስ ሀይሉ እየቀነሰ ነው።",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 363,
+          "output_tokens": 3,
+          "total_tokens": 366
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answer: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 5,
+      "epoch": 1,
+      "input": "የትኛው የንድፈ ሃሳብ ምሳሌ ነው?",
+      "choices": [
+        "ትላልቅ አይጦች ከትንሽ አይጦች የበለጠ ምግብ ይበላሉ።",
+        "አንድ አበባ 13 ሴንቲ ሜትር ቁመት ይለካል።",
+        "በጨለማ ምሽት አንድ ተማሪ በመቶዎች የሚቆጠሩ ኮከቦችን ቆጥሯል.",
+        "ሰዎች ሊጠፉ የተቃረቡ እንስሳትን ለመጠበቅ ጥንቃቄ ማድረግ አለባቸው።"
+      ],
+      "target": "A",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nየትኛው የንድፈ ሃሳብ ምሳሌ ነው?\n\nA) ትላልቅ አይጦች ከትንሽ አይጦች የበለጠ ምግብ ይበላሉ።\nB) አንድ አበባ 13 ሴንቲ ሜትር ቁመት ይለካል።\nC) በጨለማ ምሽት አንድ ተማሪ በመቶዎች የሚቆጠሩ ኮከቦችን ቆጥሯል.\nD) ሰዎች ሊጠፉ የተቃረቡ እንስሳትን ለመጠበቅ ጥንቃቄ ማድረግ አለባቸው።",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 406,
+          "output_tokens": 3,
+          "total_tokens": 409
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answer: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 6,
+      "epoch": 1,
+      "input": "የፀሐይን መጠን በተሻለ ሁኔታ የሚገልጸው ሃሳብ የትኛው ነው?",
+      "choices": [
+        "ፀሐይ ከሌሎች ከዋክብት ጋር ስትነጻጸር ባለመካከለኛ መጠን ናት።",
+        "ፀሐይ በአጽናፈ ሰማይ ውስጥ ትልቁ እና ብሩህ ኮከብ ነች።",
+        "በአጽናፈ ሰማይ ውስጥ ያሉ አብዛኛዎቹ ከዋክብት በፀሐይ ውስጥ ይጋጠማሉ።",
+        "በአጽናፈ ሰማይ ውስጥ ያሉ አብዛኛዎቹ ከዋክብት ከፀሐይ ያነሱ ናቸው።"
+      ],
+      "target": "A",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nየፀሐይን መጠን በተሻለ ሁኔታ የሚገልጸው ሃሳብ የትኛው ነው?\n\nA) ፀሐይ ከሌሎች ከዋክብት ጋር ስትነጻጸር ባለመካከለኛ መጠን ናት።\nB) ፀሐይ በአጽናፈ ሰማይ ውስጥ ትልቁ እና ብሩህ ኮከብ ነች።\nC) በአጽናፈ ሰማይ ውስጥ ያሉ አብዛኛዎቹ ከዋክብት በፀሐይ ውስጥ ይጋጠማሉ።\nD) በአጽናፈ ሰማይ ውስጥ ያሉ አብዛኛዎቹ ከዋክብት ከፀሐይ ያነሱ ናቸው።",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 475,
+          "output_tokens": 3,
+          "total_tokens": 478
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answer: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 7,
+      "epoch": 1,
+      "input": "አሪስጣጣሊስ አንድ አካል እንቅስቃሴውን እንዲቀጥል ሁልጊዜም ኃይል ያስፈልጋል በማለት አስተምሯል፡፡ ከሚከተሉት ሁኔታዎች ውስጥ ኒውተን የሚያምንበት የትኛው ነው?",
+      "choices": [
+        "አሪስጣጣሊስ ትክክል ነበር፡፡",
+        "አሪስጣጣሊስ በመሬት ላይ ስላሉ ነገሮች ያስተማረው ነገር ትከክል ቢሆንም በህዋ ውስጥ ግን ይህ አይሆንም፡፡",
+        "ያልተመጣጠነ ኃይል እስካልቆመ ድረስ አካሉ አይቆምም፡፡",
+        "ያልተመጣጠነ ኃይል ቢቀጥልም ተንቀሳቃሽ አካሉ በመጨረሻ ይቆማል፡፡"
+      ],
+      "target": "C",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nአሪስጣጣሊስ አንድ አካል እንቅስቃሴውን እንዲቀጥል ሁልጊዜም ኃይል ያስፈልጋል በማለት አስተምሯል፡፡ ከሚከተሉት ሁኔታዎች ውስጥ ኒውተን የሚያምንበት የትኛው ነው?\n\nA) አሪስጣጣሊስ ትክክል ነበር፡፡\nB) አሪስጣጣሊስ በመሬት ላይ ስላሉ ነገሮች ያስተማረው ነገር ትከክል ቢሆንም በህዋ ውስጥ ግን ይህ አይሆንም፡፡\nC) ያልተመጣጠነ ኃይል እስካልቆመ ድረስ አካሉ አይቆምም፡፡\nD) ያልተመጣጠነ ኃይል ቢቀጥልም ተንቀሳቃሽ አካሉ በመጨረሻ ይቆማል፡፡",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 589,
+          "output_tokens": 3,
+          "total_tokens": 592
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answer: ['C'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 8,
+      "epoch": 1,
+      "input": "ዋሸንዳዎች ደንዳና ግድግዳ አላቸው፡፡ እነሱም አብዛኛውን የዛፍ ቅርፊትና ቅርንጫፎች ይፈጥራሉ፡፡ በዛፍ ላይ እንደታየው ተመሳሳይ ዋሸንዳዎች ተግባር በገበሎ አስተኔዎች ላይ ይህንን ተግባር የሚያከናውነው ስርአት ምንድን ነው? ",
+      "choices": [
+        "ስርዓተ አጽም",
+        "ስርዓተ ዝግ ",
+        "ስርዓተ ትንፈሳ",
+        "ስርዓተ ልባስ"
+      ],
+      "target": "A",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nዋሸንዳዎች ደንዳና ግድግዳ አላቸው፡፡ እነሱም አብዛኛውን የዛፍ ቅርፊትና ቅርንጫፎች ይፈጥራሉ፡፡ በዛፍ ላይ እንደታየው ተመሳሳይ ዋሸንዳዎች ተግባር በገበሎ አስተኔዎች ላይ ይህንን ተግባር የሚያከናውነው ስርአት ምንድን ነው? \n\nA) ስርዓተ አጽም\nB) ስርዓተ ዝግ \nC) ስርዓተ ትንፈሳ\nD) ስርዓተ ልባስ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 426,
+          "output_tokens": 3,
+          "total_tokens": 429
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answer: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 9,
+      "epoch": 1,
+      "input": "አንድ ብረት ሰሪ አንድ የብረት ዘንግን በመቆልመም ወደ ተሸከርካሪ ቀየረው፡፡ ተሸከርካሪውን የበለጠ የሚገልጸው የትኛው አረፍተ ነገር ነው?",
+      "choices": [
+        "ተሸከርካሪው ክብደቱ ከዘንጉ ያንሳል፡፡",
+        "የተሸከርካሪው ክብደት ከዘንጉ ክብደት ይበልጣል፡፡",
+        "ተሸከርካሪው እና ዘንጉ የተሰራበት ቁስ ተመሳሳየይ ነው፡",
+        "ተሸከርካሪው የተሰራበት ቁስ ዘንጉ ከተሰራበት ቁስ የተለየ ነው፡፡ "
+      ],
+      "target": "C",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nአንድ ብረት ሰሪ አንድ የብረት ዘንግን በመቆልመም ወደ ተሸከርካሪ ቀየረው፡፡ ተሸከርካሪውን የበለጠ የሚገልጸው የትኛው አረፍተ ነገር ነው?\n\nA) ተሸከርካሪው ክብደቱ ከዘንጉ ያንሳል፡፡\nB) የተሸከርካሪው ክብደት ከዘንጉ ክብደት ይበልጣል፡፡\nC) ተሸከርካሪው እና ዘንጉ የተሰራበት ቁስ ተመሳሳየይ ነው፡\nD) ተሸከርካሪው የተሰራበት ቁስ ዘንጉ ከተሰራበት ቁስ የተለየ ነው፡፡ ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 510,
+          "output_tokens": 3,
+          "total_tokens": 513
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answer: ['C'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 10,
+      "epoch": 1,
+      "input": "በመሬት ከባቢ አየር ውስጥ በብዛት የሚገኜው ጋዝ የትኛው ነው?",
+      "choices": [
+        "ኦክስጅን",
+        "ናይትሮጅን",
+        "የውሃ ትነት",
+        "ካርቦንዳይኦክሳይድ"
+      ],
+      "target": "B",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nበመሬት ከባቢ አየር ውስጥ በብዛት የሚገኜው ጋዝ የትኛው ነው?\n\nA) ኦክስጅን\nB) ናይትሮጅን\nC) የውሃ ትነት\nD) ካርቦንዳይኦክሳይድ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 236,
+          "output_tokens": 3,
+          "total_tokens": 239
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answer: ['B'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 11,
+      "epoch": 1,
+      "input": "በውስጥ አካል መዋቅርና በአካባቢ መካከል ገደብን የሚፈጥር የሰው ስርዓተ አካል የትኛው ነው?",
+      "choices": [
+        "ነርቭ ",
+        "እንሽርሽሪት",
+        "ዝውር",
+        "ልባስ"
+      ],
+      "target": "D",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nበውስጥ አካል መዋቅርና በአካባቢ መካከል ገደብን የሚፈጥር የሰው ስርዓተ አካል የትኛው ነው?\n\nA) ነርቭ \nB) እንሽርሽሪት\nC) ዝውር\nD) ልባስ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 246,
+          "output_tokens": 3,
+          "total_tokens": 249
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answer: ['D'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 12,
+      "epoch": 1,
+      "input": "የሰውን ጽንስ እድገት የሚገልጸው የትኛው አረፍተ ነገር ነው?",
+      "choices": [
+        "አንድ ህዋስ ብዙ ህዋሶች ይሆናል፡፡",
+        "እያንዳንዱ ህዋስ የተለያየ ተግባር አለው፡፡",
+        "በርካታ ህዋሶች አንድን ህዋስ ለመፍጠር ይቀናጃሉ፡፡",
+        "ሁሉም ህዋሶች ተመሳሳይ ተግባር አላቸው፡፡"
+      ],
+      "target": "A",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nየሰውን ጽንስ እድገት የሚገልጸው የትኛው አረፍተ ነገር ነው?\n\nA) አንድ ህዋስ ብዙ ህዋሶች ይሆናል፡፡\nB) እያንዳንዱ ህዋስ የተለያየ ተግባር አለው፡፡\nC) በርካታ ህዋሶች አንድን ህዋስ ለመፍጠር ይቀናጃሉ፡፡\nD) ሁሉም ህዋሶች ተመሳሳይ ተግባር አላቸው፡፡",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 375,
+          "output_tokens": 3,
+          "total_tokens": 378
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answer: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 13,
+      "epoch": 1,
+      "input": "ፒታርሚጋን የሚባለው ወፍ ላባ ያላቸው እግሮች አሉት። የፕታርሚጋን እግሮች ላይ ያሉት ላባዎች ይህ ወፍ_ __ በሚያደርግበት ጊዜ በጣም ይጠቅማሉ።",
+      "choices": [
+        "ለምግብ ይቆፍራል",
+        "በጥልቅ በረዶ ውስጥ ይራመዳል",
+        "ድንጋያማ ቋጥኞች ይወጣል",
+        "ከቁጥቋጦዎች በታች ይሮጣል"
+      ],
+      "target": "B",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nፒታርሚጋን የሚባለው ወፍ ላባ ያላቸው እግሮች አሉት። የፕታርሚጋን እግሮች ላይ ያሉት ላባዎች ይህ ወፍ_ __ በሚያደርግበት ጊዜ በጣም ይጠቅማሉ።\n\nA) ለምግብ ይቆፍራል\nB) በጥልቅ በረዶ ውስጥ ይራመዳል\nC) ድንጋያማ ቋጥኞች ይወጣል\nD) ከቁጥቋጦዎች በታች ይሮጣል",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 380,
+          "output_tokens": 3,
+          "total_tokens": 383
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answer: ['B'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 14,
+      "epoch": 1,
+      "input": "የዳክየ ጫጩቶች እናታቸውን ተከትለው አንድ ኩሬን በማቋረጥ የሚዋኙበትን ምክንያት የሚገልጸው የትኛው አረፍተ ነገር ነው?\r\n",
+      "choices": [
+        "ከእናትየዋ ዳክየ ጋር በሚደረግ ግንኙነት ራስን ማኖር የሚቻልበትን ባህሪ እውቀት ይገበያሉ፡፡",
+        "ራስን ማኖር የሚቻልበትን ባህሪከአካባቢያቸው ጋር በሚኖራቸው መስተጋብር ይማራሉ፡፡",
+        "በውርስ የሚገኝ ባህሪ በበራሄ አማካይነት ከአካባቢ ይገኛል፡፡",
+        "በውርስ የሚገኝ ባህሪ በጠቅላላው ከወላጆች ወደ ልጅ በበራሄ አማካየይነት ይተላለፋል፡፡"
+      ],
+      "target": "D",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nየዳክየ ጫጩቶች እናታቸውን ተከትለው አንድ ኩሬን በማቋረጥ የሚዋኙበትን ምክንያት የሚገልጸው የትኛው አረፍተ ነገር ነው?\r\n\n\nA) ከእናትየዋ ዳክየ ጋር በሚደረግ ግንኙነት ራስን ማኖር የሚቻልበትን ባህሪ እውቀት ይገበያሉ፡፡\nB) ራስን ማኖር የሚቻልበትን ባህሪከአካባቢያቸው ጋር በሚኖራቸው መስተጋብር ይማራሉ፡፡\nC) በውርስ የሚገኝ ባህሪ በበራሄ አማካይነት ከአካባቢ ይገኛል፡፡\nD) በውርስ የሚገኝ ባህሪ በጠቅላላው ከወላጆች ወደ ልጅ በበራሄ አማካየይነት ይተላለፋል፡፡",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: D",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: D",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 618,
+          "output_tokens": 3,
+          "total_tokens": 621
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answer: ['D'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 15,
+      "epoch": 1,
+      "input": "የደም ዝውውሩና የመተንፈሻ ስርአት እርስ በርስ የሚደጋገፉት እንዴት ነው?",
+      "choices": [
+        "በመተንፈሻ ስርአት የሚሰበሰበው ኦክስጅን በመላ ሰውነት ውስጥ በደም ዝውውር ሥርዓት ይጓዛል።",
+        "በደም ዝውውር ሥርዓት የሚሰበሰቡት ጠጣር ቆሻሻዎች በመላው ሰውነት በመተንፈሻ አካላት በኩል ይወሰዳሉ።",
+        "የመተንፈሻ አካላት የሚሰበስቧቸው ንጥረ ነገሮች በሰውነት ውስጥ በሙሉ የሚጓዙት በደም ዝውውር ሥርዓት ነው።",
+        "በደም ዝውውር ስርዓት የሚሰበሰበው ካርቦን ዳይኦክሳይድ በመተንፈሻ አካላት አማካኝነት በመላ ሰውነት ውስጥ ይካሄዳል።"
+      ],
+      "target": "A",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nየደም ዝውውሩና የመተንፈሻ ስርአት እርስ በርስ የሚደጋገፉት እንዴት ነው?\n\nA) በመተንፈሻ ስርአት የሚሰበሰበው ኦክስጅን በመላ ሰውነት ውስጥ በደም ዝውውር ሥርዓት ይጓዛል።\nB) በደም ዝውውር ሥርዓት የሚሰበሰቡት ጠጣር ቆሻሻዎች በመላው ሰውነት በመተንፈሻ አካላት በኩል ይወሰዳሉ።\nC) የመተንፈሻ አካላት የሚሰበስቧቸው ንጥረ ነገሮች በሰውነት ውስጥ በሙሉ የሚጓዙት በደም ዝውውር ሥርዓት ነው።\nD) በደም ዝውውር ስርዓት የሚሰበሰበው ካርቦን ዳይኦክሳይድ በመተንፈሻ አካላት አማካኝነት በመላ ሰውነት ውስጥ ይካሄዳል።",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 672,
+          "output_tokens": 3,
+          "total_tokens": 675
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answer: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 16,
+      "epoch": 1,
+      "input": "አሸዋ ደቃቅ ከሆኑ ቁሶች የተሰራ የአፈር አይነት ነው፡፡የትኛው ሂደት የአሸዋ አፈር አፈጣጠር ሊሆን ይችላል?",
+      "choices": [
+        "የመሬት ዙረት\r",
+        "የእንስሳት እድገት",
+        "የትላለቅ ዘፎች ብስባሽ",
+        "የአለቶች መሰባበር"
+      ],
+      "target": "D",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nአሸዋ ደቃቅ ከሆኑ ቁሶች የተሰራ የአፈር አይነት ነው፡፡የትኛው ሂደት የአሸዋ አፈር አፈጣጠር ሊሆን ይችላል?\n\nA) የመሬት ዙረት\r\nB) የእንስሳት እድገት\nC) የትላለቅ ዘፎች ብስባሽ\nD) የአለቶች መሰባበር",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 315,
+          "output_tokens": 3,
+          "total_tokens": 318
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answer: ['D'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 17,
+      "epoch": 1,
+      "input": "የትኛው ዝርዝር የኮንቴይነር ቅርጽ ሊይዙ የሚችሉ የቁሳቁስ ምሳሌዎችን ብቻ ያካትታል?",
+      "choices": [
+        "ዘይት, አየር እና ድንጋይ",
+        "ውሃ, አየር እና ወተት",
+        "አሸዋ, በረዶ እና እንጨት",
+        "ጥፍር, ዱላ እና ወረቀት"
+      ],
+      "target": "B",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nየትኛው ዝርዝር የኮንቴይነር ቅርጽ ሊይዙ የሚችሉ የቁሳቁስ ምሳሌዎችን ብቻ ያካትታል?\n\nA) ዘይት, አየር እና ድንጋይ\nB) ውሃ, አየር እና ወተት\nC) አሸዋ, በረዶ እና እንጨት\nD) ጥፍር, ዱላ እና ወረቀት",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 312,
+          "output_tokens": 3,
+          "total_tokens": 315
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answer: ['B'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 18,
+      "epoch": 1,
+      "input": "ተማሪው በአንድ ክፍል ውስጥ ከወለሉ እስከ ጣራው ድረስ ያለውን ከፍታ እንዲለካ ተጠየቀ፡፡ ርቀቱን በትክክል ለመለካት ከሚከተሉት ውስጥ የትኛውን አሃድ ሊጠቀም ይችላል?",
+      "choices": [
+        "ሊትር",
+        "ኪሎሊትር",
+        "ሜትር",
+        "ኪሎሜትር\r"
+      ],
+      "target": "C",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nተማሪው በአንድ ክፍል ውስጥ ከወለሉ እስከ ጣራው ድረስ ያለውን ከፍታ እንዲለካ ተጠየቀ፡፡ ርቀቱን በትክክል ለመለካት ከሚከተሉት ውስጥ የትኛውን አሃድ ሊጠቀም ይችላል?\n\nA) ሊትር\nB) ኪሎሊትር\nC) ሜትር\nD) ኪሎሜትር\r",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 332,
+          "output_tokens": 3,
+          "total_tokens": 335
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answer: ['C'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 19,
+      "epoch": 1,
+      "input": "የስርዓተ ዝውር  እና ስርዓተ ትንፈሳ እንዴት በጋራ እንደሚሰሩ የበለጠ የሚገልጸው የትኛው አረፍተ ነገር ነው?",
+      "choices": [
+        "ህምዞችን በጉበት አማካይነት ከደም ውስጥ ማስወገድ፡፡",
+        "ጨጓራ የጋስትሪክ ፈሳሾች መመረታቸውን ምልክት ይሰጣል፡፡",
+        "የምግብ ሞለኪውሎች ወደ ብልቶች መጓጓዝ፡፡",
+        "የጋዞች ልውውጥ በሳንባና በደም ስሮች መካከል መካሄድ፡፡"
+      ],
+      "target": "D",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nየስርዓተ ዝውር  እና ስርዓተ ትንፈሳ እንዴት በጋራ እንደሚሰሩ የበለጠ የሚገልጸው የትኛው አረፍተ ነገር ነው?\n\nA) ህምዞችን በጉበት አማካይነት ከደም ውስጥ ማስወገድ፡፡\nB) ጨጓራ የጋስትሪክ ፈሳሾች መመረታቸውን ምልክት ይሰጣል፡፡\nC) የምግብ ሞለኪውሎች ወደ ብልቶች መጓጓዝ፡፡\nD) የጋዞች ልውውጥ በሳንባና በደም ስሮች መካከል መካሄድ፡፡",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: D",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: D",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 471,
+          "output_tokens": 3,
+          "total_tokens": 474
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answer: ['D'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 20,
+      "epoch": 1,
+      "input": "ከእነዚህ ውስጥ በፕላኔቶች ዙሪያ የሚሽከረከረው የትኛው ነው?",
+      "choices": [
+        "አስትሮይድ።",
+        "ኮከብ።",
+        "ኮሜት ።",
+        "ጨረቃ ።"
+      ],
+      "target": "D",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከእነዚህ ውስጥ በፕላኔቶች ዙሪያ የሚሽከረከረው የትኛው ነው?\n\nA) አስትሮይድ።\nB) ኮከብ።\nC) ኮሜት ።\nD) ጨረቃ ።",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 219,
+          "output_tokens": 3,
+          "total_tokens": 222
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answer: ['D'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 21,
+      "epoch": 1,
+      "input": "ሁሉም ሕይወት ያላቸው ነገሮች ሊይዙት የሚችሉት ንጥረ ነገር የትኛው ነው? ",
+      "choices": [
+        "ሂሊየም",
+        "ሶዲየም",
+        "መዳብ",
+        "ካርቦን"
+      ],
+      "target": "D",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nሁሉም ሕይወት ያላቸው ነገሮች ሊይዙት የሚችሉት ንጥረ ነገር የትኛው ነው? \n\nA) ሂሊየም\nB) ሶዲየም\nC) መዳብ\nD) ካርቦን",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: D",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: D",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 223,
+          "output_tokens": 3,
+          "total_tokens": 226
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answer: ['D'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 22,
+      "epoch": 1,
+      "input": "የፀሐይ ሥርዓታችን ማዕከል ምንድን ነው?",
+      "choices": [
+        "ከባቢ አየር ጋር መካከለኛ ፕላኔት።",
+        "ከካርቦን እና ከናይትሮጅን የተዋቀረ ኮከብ።",
+        "በአንድ ወቅት ኮከብ የነበረ ጥቁር ጉድጓድ።",
+        "በሃይድሮጅን እና በሂሊየም የተዋቀረ ኮከብ።"
+      ],
+      "target": "D",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nየፀሐይ ሥርዓታችን ማዕከል ምንድን ነው?\n\nA) ከባቢ አየር ጋር መካከለኛ ፕላኔት።\nB) ከካርቦን እና ከናይትሮጅን የተዋቀረ ኮከብ።\nC) በአንድ ወቅት ኮከብ የነበረ ጥቁር ጉድጓድ።\nD) በሃይድሮጅን እና በሂሊየም የተዋቀረ ኮከብ።",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 344,
+          "output_tokens": 3,
+          "total_tokens": 347
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answer: ['D'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 23,
+      "epoch": 1,
+      "input": "ከሚከተሉት ውህዶች ውስጥ የትኛው የሕያዋን ፍጥረታት አካል የመሆን ዕድሉ ከፍተኛ ነው?",
+      "choices": [
+        "ሲ?ኤች?ኦ?",
+        "ቢኤፍ?",
+        "ኤምኦሲኤል?",
+        "ሲኤስኤል"
+      ],
+      "target": "A",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nከሚከተሉት ውህዶች ውስጥ የትኛው የሕያዋን ፍጥረታት አካል የመሆን ዕድሉ ከፍተኛ ነው?\n\nA) ሲ?ኤች?ኦ?\nB) ቢኤፍ?\nC) ኤምኦሲኤል?\nD) ሲኤስኤል",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 245,
+          "output_tokens": 3,
+          "total_tokens": 248
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answer: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 24,
+      "epoch": 1,
+      "input": "የስበት ኃይል ሃላፊነት የሚወስደው ለ___።",
+      "choices": [
+        "በፀሐይ ዙሪያ ያሉ የፕላኔቶች መዞር",
+        "የፕላኔቷ በዛቢያዋ ላይ መዞር",
+        "የምድር ዘንግ ዘንበል",
+        "የጨረቃ ደረጃዎች"
+      ],
+      "target": "A",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nየስበት ኃይል ሃላፊነት የሚወስደው ለ___።\n\nA) በፀሐይ ዙሪያ ያሉ የፕላኔቶች መዞር\nB) የፕላኔቷ በዛቢያዋ ላይ መዞር\nC) የምድር ዘንግ ዘንበል\nD) የጨረቃ ደረጃዎች",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 272,
+          "output_tokens": 3,
+          "total_tokens": 275
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answer: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 25,
+      "epoch": 1,
+      "input": "ጋላክሲ በተሻለ ሁኔታ የተገለጸው እንደ ምን ስብስብ ነው",
+      "choices": [
+        "በመቶዎች የሚቆጠሩ ኮከቦች።",
+        "በሺዎች የሚቆጠሩ ኮከቦች.",
+        "በሚሊዮን የሚቆጠሩ ኮከቦች።",
+        "በቢሊዮን የሚቆጠሩ ኮከቦች።"
+      ],
+      "target": "D",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nጋላክሲ በተሻለ ሁኔታ የተገለጸው እንደ ምን ስብስብ ነው\n\nA) በመቶዎች የሚቆጠሩ ኮከቦች።\nB) በሺዎች የሚቆጠሩ ኮከቦች.\nC) በሚሊዮን የሚቆጠሩ ኮከቦች።\nD) በቢሊዮን የሚቆጠሩ ኮከቦች።",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: D",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: D",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 298,
+          "output_tokens": 3,
+          "total_tokens": 301
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answer: ['D'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 27,
+      "epoch": 1,
+      "input": "የእመቤት ሄንደርሰን ክፍል አምስት ትናንሽ የተሸፈኑ ሳጥኖች አሉት። አንደኛው ሽቶ ይዟል፤ ሌላኛው ደግሞ የደረቀ ሽንኵርት ይዟል። በተጨማሪም የፒን መርፌዎች ሣጥን፣ የሎሚ ቍርጥራጮች ሣጥን እና በቫኒላ ጣዕም የተለወሰ የወረቀት ፎጣ ያለው ሣጥን አለ። በእያንዳንዱ ሳጥን ውስጥ ስላለው ነገር ምርጥ መረጃ ለማግኘት ምን ማድረግ አለባቸው?",
+      "choices": [
+        "ሳጥኖቹን ያንገጫግጩ",
+        "ሳጥኖቹን ያሽቱ።",
+        "ሳጥኖቹን ያዳምጡ።",
+        "ሳጥኖቹን ይመዝኑ።"
+      ],
+      "target": "B",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nየእመቤት ሄንደርሰን ክፍል አምስት ትናንሽ የተሸፈኑ ሳጥኖች አሉት። አንደኛው ሽቶ ይዟል፤ ሌላኛው ደግሞ የደረቀ ሽንኵርት ይዟል። በተጨማሪም የፒን መርፌዎች ሣጥን፣ የሎሚ ቍርጥራጮች ሣጥን እና በቫኒላ ጣዕም የተለወሰ የወረቀት ፎጣ ያለው ሣጥን አለ። በእያንዳንዱ ሳጥን ውስጥ ስላለው ነገር ምርጥ መረጃ ለማግኘት ምን ማድረግ አለባቸው?\n\nA) ሳጥኖቹን ያንገጫግጩ\nB) ሳጥኖቹን ያሽቱ።\nC) ሳጥኖቹን ያዳምጡ።\nD) ሳጥኖቹን ይመዝኑ።",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: D",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: D",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 573,
+          "output_tokens": 3,
+          "total_tokens": 576
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answer: ['B'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 28,
+      "epoch": 1,
+      "input": "የካርማይን እናት በየቀኑ አራት ጣሳ ለስላሳ መጠጦችን ትጠጣለች፡፡ ለስላሳ መጠጦቹን ከጠጣች በኋላ፣ የካርማይን እናት ማድረግ የሚገባት",
+      "choices": [
+        "ወደ ቆሻሻ ማጠራቀሚያው ጣሳዎቹን መወርወር፡፡\r",
+        " ጣሳዎቹ እንዲቀበሩ መላክ፡፡",
+        "ዳግም ለሌላ ጥቅም እንዲውሉ መውሰድ፡፡",
+        "በቆሻሻ ማጠራቀሚያው ውስጥ ከመቀመጣቸው በፊት ማጨራመት፡፡"
+      ],
+      "target": "C",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nየካርማይን እናት በየቀኑ አራት ጣሳ ለስላሳ መጠጦችን ትጠጣለች፡፡ ለስላሳ መጠጦቹን ከጠጣች በኋላ፣ የካርማይን እናት ማድረግ የሚገባት\n\nA) ወደ ቆሻሻ ማጠራቀሚያው ጣሳዎቹን መወርወር፡፡\r\nB)  ጣሳዎቹ እንዲቀበሩ መላክ፡፡\nC) ዳግም ለሌላ ጥቅም እንዲውሉ መውሰድ፡፡\nD) በቆሻሻ ማጠራቀሚያው ውስጥ ከመቀመጣቸው በፊት ማጨራመት፡፡",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 460,
+          "output_tokens": 3,
+          "total_tokens": 463
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answer: ['C'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 29,
+      "epoch": 1,
+      "input": "አንድ የገበያ ማዕከል ለመገንባት አንድ እርጥብ መሬት ደርቋኀዕ። ከሁለት ዓመት በኋላ በዚያ አካባቢ ምንም እንቁራሪቶች አልነበሩም። እንቁራሪቶቹ ለምን ጠፉ?",
+      "choices": [
+        "እንቁራሪቶቹ በግንባታ መሳሪያው ወድመዋል።",
+        "እንቁራሪቶች ከውኃ ውጪ መተንፈስ ስለማይችሉ እንቁራሪቶቹ ሞተዋል።",
+        "እንቁራሪቶቹ ፈሩና ወደ ጫካው ገቡ።",
+        "እንቁራሪቶቹ ምግባቸውን የሚያገኙት ከእርጥብ መሬት ስነ-ምህዳር ነው።"
+      ],
+      "target": "D",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nአንድ የገበያ ማዕከል ለመገንባት አንድ እርጥብ መሬት ደርቋኀዕ። ከሁለት ዓመት በኋላ በዚያ አካባቢ ምንም እንቁራሪቶች አልነበሩም። እንቁራሪቶቹ ለምን ጠፉ?\n\nA) እንቁራሪቶቹ በግንባታ መሳሪያው ወድመዋል።\nB) እንቁራሪቶች ከውኃ ውጪ መተንፈስ ስለማይችሉ እንቁራሪቶቹ ሞተዋል።\nC) እንቁራሪቶቹ ፈሩና ወደ ጫካው ገቡ።\nD) እንቁራሪቶቹ ምግባቸውን የሚያገኙት ከእርጥብ መሬት ስነ-ምህዳር ነው።",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 531,
+          "output_tokens": 3,
+          "total_tokens": 534
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answer: ['D'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 30,
+      "epoch": 1,
+      "input": "የሌስሊ የሳይንስ መምህር ችግሮችን ለመፍታት ተለዋዋጭ የሆነ አቀራረብ መከተል እንዳለባት ነግሯታል። የሌስሊ አስተማሪ በትክክል ምን ማለቱ  ነው?",
+      "choices": [
+        "ሌስሊ የሙከራ መመሪያዎችን በትክክል መከተል የለባትም።",
+        "ሌስሊ ትክክለኛ የሚመስሉ የላብራቶሪ ውጤቶችን ብቻ መፃፍ አለባት።",
+        "ሌስሊ ሁሉም ሳይንሳዊ ንድፈ ሐሳቦች የተሳሳቱ ቢሆኑም እንኳ መቀበል አለባት።",
+        "ሌስሊ ለአስተያየቷ ብዙ ሊሆኑ የሚችሉ ምክንያቶችን ለማገናዘብ ፈቃደኛ መሆን አለባት።"
+      ],
+      "target": "D",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nየሌስሊ የሳይንስ መምህር ችግሮችን ለመፍታት ተለዋዋጭ የሆነ አቀራረብ መከተል እንዳለባት ነግሯታል። የሌስሊ አስተማሪ በትክክል ምን ማለቱ  ነው?\n\nA) ሌስሊ የሙከራ መመሪያዎችን በትክክል መከተል የለባትም።\nB) ሌስሊ ትክክለኛ የሚመስሉ የላብራቶሪ ውጤቶችን ብቻ መፃፍ አለባት።\nC) ሌስሊ ሁሉም ሳይንሳዊ ንድፈ ሐሳቦች የተሳሳቱ ቢሆኑም እንኳ መቀበል አለባት።\nD) ሌስሊ ለአስተያየቷ ብዙ ሊሆኑ የሚችሉ ምክንያቶችን ለማገናዘብ ፈቃደኛ መሆን አለባት።",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: D",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: D",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 596,
+          "output_tokens": 3,
+          "total_tokens": 599
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answer: ['D'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 31,
+      "epoch": 1,
+      "input": "ስለ እፅዋትና ስለ እንስሳት ህዋሳት የተነገረው የትኛው ሃሳብ እውነት ነው?",
+      "choices": [
+        "ሁለቱም ድጋፍ ለመስጠት የሕዋስ ግድግዳ አላቸው።",
+        "ሁለቱም ውሃ ለማጠራቀም ትልቅ ቫኩዩል አላቸው።",
+        "ሁለቱም ሃይል ለማምረት ሚቶኮንድሪያ ይጠቀማሉ።",
+        "ሁለቱም ሃይል ለማጠራቀም ክሎሮፕላስት ይጠቀማሉ።"
+      ],
+      "target": "C",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nስለ እፅዋትና ስለ እንስሳት ህዋሳት የተነገረው የትኛው ሃሳብ እውነት ነው?\n\nA) ሁለቱም ድጋፍ ለመስጠት የሕዋስ ግድግዳ አላቸው።\nB) ሁለቱም ውሃ ለማጠራቀም ትልቅ ቫኩዩል አላቸው።\nC) ሁለቱም ሃይል ለማምረት ሚቶኮንድሪያ ይጠቀማሉ።\nD) ሁለቱም ሃይል ለማጠራቀም ክሎሮፕላስት ይጠቀማሉ።",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 412,
+          "output_tokens": 3,
+          "total_tokens": 415
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answer: ['C'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 32,
+      "epoch": 1,
+      "input": "በአንድ ጫካ በሚደረግ  የመስክ ጉዞ አንድ እንግዳና ትንሽ ቁስ ተመለከትክ፡፡ አንተም ህይወት ያለው ነገር ይሆን አይሆን በማለት ተገረምክ፡፡ ሁኔታውን ለማጣራት የተሻለው መንገድ ",
+      "choices": [
+        "ሽታ እንዳለው ",
+        "የተለያ ክፍሎች እንዳሉት \t",
+        "ድምጽ ማሰማቱንና አለማሰማቱን እና የህያውነት መልክ ያለው መሆኑን",
+        "መሰረታዊ የህይወት ተግባራት ማከናወኑን "
+      ],
+      "target": "D",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nበአንድ ጫካ በሚደረግ  የመስክ ጉዞ አንድ እንግዳና ትንሽ ቁስ ተመለከትክ፡፡ አንተም ህይወት ያለው ነገር ይሆን አይሆን በማለት ተገረምክ፡፡ ሁኔታውን ለማጣራት የተሻለው መንገድ \n\nA) ሽታ እንዳለው \nB) የተለያ ክፍሎች እንዳሉት \t\nC) ድምጽ ማሰማቱንና አለማሰማቱን እና የህያውነት መልክ ያለው መሆኑን\nD) መሰረታዊ የህይወት ተግባራት ማከናወኑን ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: D",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: D",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 475,
+          "output_tokens": 3,
+          "total_tokens": 478
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "D",
+        "explanation": "Model answer: D, Correct answer: ['D'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 33,
+      "epoch": 1,
+      "input": "የሴሉላር የመተንፈሻ ሂደት የሚከሰተው",
+      "choices": [
+        "ሁለቱም የእፅዋት እና የእንስሳት ሕዋሳት።",
+        "የእፅዋት ሕዋሳት ብቻ።",
+        "የእንስሳት ሕዋሳት ብቻ።",
+        "የእፅዋትም ሆነ የእንስሳት ህዋሳት አይደሉም።"
+      ],
+      "target": "A",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nየሴሉላር የመተንፈሻ ሂደት የሚከሰተው\n\nA) ሁለቱም የእፅዋት እና የእንስሳት ሕዋሳት።\nB) የእፅዋት ሕዋሳት ብቻ።\nC) የእንስሳት ሕዋሳት ብቻ።\nD) የእፅዋትም ሆነ የእንስሳት ህዋሳት አይደሉም።",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 308,
+          "output_tokens": 3,
+          "total_tokens": 311
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answer: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 34,
+      "epoch": 1,
+      "input": "ሰዎች አካባቢያቸውን ሊያግዙ የሚችሉበት አንዱ መንገድ ምንድን ነው?",
+      "choices": [
+        "በተቆረጡ ዛፎች ፈንታ ዛፎችን ይተክላሉ፡፡",
+        "ብዙ መንገዶችን በመገንባት ሰዎች የተፈጥሮ አካባቢዎችን እንዲየዩ ማድረግ ይችላሉ፡፡",
+        "የፈጥርናቸውን ቆሻሾች የሚይዙ የቆሻሻ ማጠራቀሚያ ይገነባሉ፡፡",
+        "መድረስ የሚፈልጉባቸው ቦታዎች ቶሎ ለመድረስ ብዙ ጊዜ መኪኖቻቸውን ይጠቀማሉ፡፡"
+      ],
+      "target": "A",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nሰዎች አካባቢያቸውን ሊያግዙ የሚችሉበት አንዱ መንገድ ምንድን ነው?\n\nA) በተቆረጡ ዛፎች ፈንታ ዛፎችን ይተክላሉ፡፡\nB) ብዙ መንገዶችን በመገንባት ሰዎች የተፈጥሮ አካባቢዎችን እንዲየዩ ማድረግ ይችላሉ፡፡\nC) የፈጥርናቸውን ቆሻሾች የሚይዙ የቆሻሻ ማጠራቀሚያ ይገነባሉ፡፡\nD) መድረስ የሚፈልጉባቸው ቦታዎች ቶሎ ለመድረስ ብዙ ጊዜ መኪኖቻቸውን ይጠቀማሉ፡፡",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 491,
+          "output_tokens": 3,
+          "total_tokens": 494
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answer: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 35,
+      "epoch": 1,
+      "input": "ጸሐይና ጨረቃ በሰማይ ላይ ሲንቀሳቀሱ ይታያሉ?",
+      "choices": [
+        "የስርዓተ ጸሐይ መሽከርከር ጸሐይና ጨረቃ የሚንቀሳቀሱ መስለው እንዲታዩን ያደርጋል፡፡",
+        "የመሬት መሽከርከር ጸሐይና ጨረቃ የሚንቀሳቀሱ መስለው እንዲታዩን ያደርጋል፡፡ ",
+        "ፀሐይና ጨረቃ በመሬት ዙሪያ ይዞራሉ፡፡",
+        "መሬት በፀሐይና በጨረቃ ዙሪያ ትዞራለች፡፡"
+      ],
+      "target": "B",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nጸሐይና ጨረቃ በሰማይ ላይ ሲንቀሳቀሱ ይታያሉ?\n\nA) የስርዓተ ጸሐይ መሽከርከር ጸሐይና ጨረቃ የሚንቀሳቀሱ መስለው እንዲታዩን ያደርጋል፡፡\nB) የመሬት መሽከርከር ጸሐይና ጨረቃ የሚንቀሳቀሱ መስለው እንዲታዩን ያደርጋል፡፡ \nC) ፀሐይና ጨረቃ በመሬት ዙሪያ ይዞራሉ፡፡\nD) መሬት በፀሐይና በጨረቃ ዙሪያ ትዞራለች፡፡",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 441,
+          "output_tokens": 3,
+          "total_tokens": 444
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answer: ['B'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 36,
+      "epoch": 1,
+      "input": "ማታ አንፖል ሲበራ ምን አይነት የኃይል ለውጥ ይከናወናል?",
+      "choices": [
+        "ኬሚካዊ ኃይል ወደ በርሃን ኃይል ይቀየራል፡፡",
+        "ኬሚካዊ ኃይል ወደ ሙቀት ኃይል ይቀየራል፡፡",
+        "አሌክትሪካዊ ኃይል ወደ ብርሃን ኃይል የይቀየራል፡፡",
+        "ኤሌክትሪካዊ ኃይል ወደ ኪሚካዊ ኃይል ይቀየራል፡፡"
+      ],
+      "target": "C",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nማታ አንፖል ሲበራ ምን አይነት የኃይል ለውጥ ይከናወናል?\n\nA) ኬሚካዊ ኃይል ወደ በርሃን ኃይል ይቀየራል፡፡\nB) ኬሚካዊ ኃይል ወደ ሙቀት ኃይል ይቀየራል፡፡\nC) አሌክትሪካዊ ኃይል ወደ ብርሃን ኃይል የይቀየራል፡፡\nD) ኤሌክትሪካዊ ኃይል ወደ ኪሚካዊ ኃይል ይቀየራል፡፡",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 390,
+          "output_tokens": 3,
+          "total_tokens": 393
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answer: ['C'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 37,
+      "epoch": 1,
+      "input": "የአብዛኞቹ መሬት መንቀጥቀጦች መንስኤ ምንድን ነው?",
+      "choices": [
+        "የመሬት ዙረት",
+        "የነፋስ አቅጣጫ",
+        "የመሬት ስበት ጉተታ",
+        "የቅርፊተ ምድር ሰሃኖች እንቅስቃሴ"
+      ],
+      "target": "D",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nየአብዛኞቹ መሬት መንቀጥቀጦች መንስኤ ምንድን ነው?\n\nA) የመሬት ዙረት\nB) የነፋስ አቅጣጫ\nC) የመሬት ስበት ጉተታ\nD) የቅርፊተ ምድር ሰሃኖች እንቅስቃሴ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 261,
+          "output_tokens": 3,
+          "total_tokens": 264
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answer: ['D'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 38,
+      "epoch": 1,
+      "input": "አንዲ፣ ሙቀት በእጽዋት እድገት ላይ የሚያሳድረውን ተጽዕኖ ለማጥናት ተመሳሳይ የሆኑ አሥር ችግኞችን በቡድን ከፋፍላለች። አንደኛውን ቡድን በመስኮት ጠረጴዛ ላይ ፀሐይ ላይ ሌላውን ቡድን ደግሞ በቤቱ ቀዝቃዛ( ሰሜናዊ) ክፍል ውስጥ በጨለማ ክፍል ውስጥ አስቀመጠች። ከላይ ያለው ሙከራ ምን ችግር አለው?",
+      "choices": [
+        "በሁለቱ ቡድኖች መካከል ያለው የሙቀት ልዩነት በቂ አልነበረም።",
+        "ለሁለቱ ቡድኖች የብርሃን መጠን የተለየ ነበር።",
+        "አንድ የችግኝ ቡድን ከሌላው ያነሰ ውሃ ያገኛል።",
+        "በሙከራው ምንም ችግር የለውም።"
+      ],
+      "target": "B",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nአንዲ፣ ሙቀት በእጽዋት እድገት ላይ የሚያሳድረውን ተጽዕኖ ለማጥናት ተመሳሳይ የሆኑ አሥር ችግኞችን በቡድን ከፋፍላለች። አንደኛውን ቡድን በመስኮት ጠረጴዛ ላይ ፀሐይ ላይ ሌላውን ቡድን ደግሞ በቤቱ ቀዝቃዛ( ሰሜናዊ) ክፍል ውስጥ በጨለማ ክፍል ውስጥ አስቀመጠች። ከላይ ያለው ሙከራ ምን ችግር አለው?\n\nA) በሁለቱ ቡድኖች መካከል ያለው የሙቀት ልዩነት በቂ አልነበረም።\nB) ለሁለቱ ቡድኖች የብርሃን መጠን የተለየ ነበር።\nC) አንድ የችግኝ ቡድን ከሌላው ያነሰ ውሃ ያገኛል።\nD) በሙከራው ምንም ችግር የለውም።",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 660,
+          "output_tokens": 3,
+          "total_tokens": 663
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answer: ['B'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 39,
+      "epoch": 1,
+      "input": "የፀሀይ ግርዶሽ የሚፈጠረው",
+      "choices": [
+        "ጨረቃ መሬትን ከፀሀይ ስትጋርዳት",
+        "በስርዓተ ጸሀይ ውስጥ የመጀመሪዎቹ ፕላኔቶች በተመሳሳይ ረድፍ ውስጥ ሲሆኑ",
+        "መሬት ጨረቃን ከፀሀይ ስትጋርዳት",
+        "የመሬት ጥላ በፀሀይ ላይ ሲያርፍ"
+      ],
+      "target": "A",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nየፀሀይ ግርዶሽ የሚፈጠረው\n\nA) ጨረቃ መሬትን ከፀሀይ ስትጋርዳት\nB) በስርዓተ ጸሀይ ውስጥ የመጀመሪዎቹ ፕላኔቶች በተመሳሳይ ረድፍ ውስጥ ሲሆኑ\nC) መሬት ጨረቃን ከፀሀይ ስትጋርዳት\nD) የመሬት ጥላ በፀሀይ ላይ ሲያርፍ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 335,
+          "output_tokens": 3,
+          "total_tokens": 338
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answer: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 40,
+      "epoch": 1,
+      "input": "በቁልቋል ላይ ያሉ እሾሆች የቁልቋሉ ቅጠሎች ናቸው፡፡ እነዚህ እሾሆች ለተtክሉ ህልውና የሚጠቅሙት ",
+      "choices": [
+        "ምግብ በመያዝ",
+        "ትነትን በመከላከል",
+        "በቦታው ላይ እንዲቆይ በማድረግ",
+        "በመራቦ"
+      ],
+      "target": "B",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nበቁልቋል ላይ ያሉ እሾሆች የቁልቋሉ ቅጠሎች ናቸው፡፡ እነዚህ እሾሆች ለተtክሉ ህልውና የሚጠቅሙት \n\nA) ምግብ በመያዝ\nB) ትነትን በመከላከል\nC) በቦታው ላይ እንዲቆይ በማድረግ\nD) በመራቦ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 300,
+          "output_tokens": 3,
+          "total_tokens": 303
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answer: ['B'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 41,
+      "epoch": 1,
+      "input": "ቀንና ሌሊት በተለያዩ የምድር ክፍሎች እንዴት እንደሚከሰቱ የሚገልጸው ምንድን ነው?",
+      "choices": [
+        "ምድር በዛቢያዋ ላይ ትዞራለች።",
+        "ምድር በፀሐይ ዙሪያ ትዞራለች።",
+        "ፀሐይ በዛቢያዋ ላይ ትዞራለች።",
+        "ፀሐይ በጋላክሲው ዙሪያ ትሽከረከራለች።"
+      ],
+      "target": "A",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nቀንና ሌሊት በተለያዩ የምድር ክፍሎች እንዴት እንደሚከሰቱ የሚገልጸው ምንድን ነው?\n\nA) ምድር በዛቢያዋ ላይ ትዞራለች።\nB) ምድር በፀሐይ ዙሪያ ትዞራለች።\nC) ፀሐይ በዛቢያዋ ላይ ትዞራለች።\nD) ፀሐይ በጋላክሲው ዙሪያ ትሽከረከራለች።",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 354,
+          "output_tokens": 3,
+          "total_tokens": 357
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answer: ['A'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 42,
+      "epoch": 1,
+      "input": "ቅሪተ አካላትን በማጥናት ምን ልንማር እንችላለን?",
+      "choices": [
+        "ከረጅም ጊዜ በፊት አውሎ ነፋሶች እንዴት እንደተፈጠሩ",
+        "የፀሐይ ስርዓት እንዴት እንደተፈጠረ",
+        "የጠንካራ የመሬት መንቀጥቀጥ መንስኤ",
+        "የምድር አከባቢዎች እንዴት እንደተቀየሩ"
+      ],
+      "target": "D",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nቅሪተ አካላትን በማጥናት ምን ልንማር እንችላለን?\n\nA) ከረጅም ጊዜ በፊት አውሎ ነፋሶች እንዴት እንደተፈጠሩ\nB) የፀሐይ ስርዓት እንዴት እንደተፈጠረ\nC) የጠንካራ የመሬት መንቀጥቀጥ መንስኤ\nD) የምድር አከባቢዎች እንዴት እንደተቀየሩ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 353,
+          "output_tokens": 3,
+          "total_tokens": 356
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answer: ['D'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 44,
+      "epoch": 1,
+      "input": "የሳይንስ ሊቁ የአሲዳማ ዝናብ በዋንዛ ዛፎች ላይ የሚያስከትለውን ተጽእኖ ያጠናል፡፡ የሳይንስ ሊቁ አስተማማኝ መረጃ የሚያገኘው ከሚከተሉት ቁጥሮች ምን ያህል የዋንዛ ዛፎችን ቢያጠና ነው?",
+      "choices": [
+        "1",
+        "2",
+        "20",
+        "200"
+      ],
+      "target": "D",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nየሳይንስ ሊቁ የአሲዳማ ዝናብ በዋንዛ ዛፎች ላይ የሚያስከትለውን ተጽእኖ ያጠናል፡፡ የሳይንስ ሊቁ አስተማማኝ መረጃ የሚያገኘው ከሚከተሉት ቁጥሮች ምን ያህል የዋንዛ ዛፎችን ቢያጠና ነው?\n\nA) 1\nB) 2\nC) 20\nD) 200",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 325,
+          "output_tokens": 3,
+          "total_tokens": 328
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answer: ['D'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 45,
+      "epoch": 1,
+      "input": "መረጃ መመስጠር፣ማስተላለፍ፣ ማከማቸት፣የተመሰጠረን መረጃ መፍታት፣ መረጃን መልሶ የማግኜት ሂደት፤",
+      "choices": [
+        "ከጥሬ እቃ ወደ አለቀለት ምርት የማድረስ ቴክኖሎጂ",
+        "የማጓጓዣ ቴክኖሎጂ",
+        "የግንባታ ቴክኖሎጂ",
+        "የመገናኛ ቴክኖሎጂ"
+      ],
+      "target": "D",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nመረጃ መመስጠር፣ማስተላለፍ፣ ማከማቸት፣የተመሰጠረን መረጃ መፍታት፣ መረጃን መልሶ የማግኜት ሂደት፤\n\nA) ከጥሬ እቃ ወደ አለቀለት ምርት የማድረስ ቴክኖሎጂ\nB) የማጓጓዣ ቴክኖሎጂ\nC) የግንባታ ቴክኖሎጂ\nD) የመገናኛ ቴክኖሎጂ",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 344,
+          "output_tokens": 3,
+          "total_tokens": 347
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answer: ['D'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 46,
+      "epoch": 1,
+      "input": "አንድ አይነት መንታዎች ለምን ተመሳሳይ ሆኑ?",
+      "choices": [
+        "በአንድ ቀን በመወለዳቸው፡፡",
+        "አንድ አይነት ፍላጎቶች ስላሏቸው፡፡",
+        "ተመሳሳይ ባህሪ ከወላጆቻቸው ስለወረሱ፡፡",
+        "በቤታቸው ተመሳሳይ ነገሮችን ስለተማሩ፡፡\r"
+      ],
+      "target": "C",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nአንድ አይነት መንታዎች ለምን ተመሳሳይ ሆኑ?\n\nA) በአንድ ቀን በመወለዳቸው፡፡\nB) አንድ አይነት ፍላጎቶች ስላሏቸው፡፡\nC) ተመሳሳይ ባህሪ ከወላጆቻቸው ስለወረሱ፡፡\nD) በቤታቸው ተመሳሳይ ነገሮችን ስለተማሩ፡፡\r",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 328,
+          "output_tokens": 3,
+          "total_tokens": 331
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answer: ['C'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 47,
+      "epoch": 1,
+      "input": "ዘሮችን የሚያመርቱ የዕፅዋት ክፍሎች የሆኑት",
+      "choices": [
+        "ስር።",
+        "ግንዶች።",
+        "አበቦች።",
+        "ቅጠሎች።"
+      ],
+      "target": "C",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nዘሮችን የሚያመርቱ የዕፅዋት ክፍሎች የሆኑት\n\nA) ስር።\nB) ግንዶች።\nC) አበቦች።\nD) ቅጠሎች።",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: A",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: A",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 197,
+          "output_tokens": 3,
+          "total_tokens": 200
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "A",
+        "explanation": "Model answer: A, Correct answer: ['C'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 48,
+      "epoch": 1,
+      "input": "በዩናይትድ ስቴትስ በየእለቱ ጸሐይ ",
+      "choices": [
+        "በምዕራብ ወጥታ በምስራቅ ተጠልቃለች፡፡",
+        "በምስራቅ ወጥታ በምዕራብ ትጠልቃለች፡፡",
+        "በሰሜን ወጥታ በደቡብ ተጠልቃለች፡፡",
+        "በደቡብ ወጥታ በሰሜን ተጠልቃለች፡፡"
+      ],
+      "target": "B",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nበዩናይትድ ስቴትስ በየእለቱ ጸሐይ \n\nA) በምዕራብ ወጥታ በምስራቅ ተጠልቃለች፡፡\nB) በምስራቅ ወጥታ በምዕራብ ትጠልቃለች፡፡\nC) በሰሜን ወጥታ በደቡብ ተጠልቃለች፡፡\nD) በደቡብ ወጥታ በሰሜን ተጠልቃለች፡፡",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: B",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: B",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 322,
+          "output_tokens": 3,
+          "total_tokens": 325
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "B",
+        "explanation": "Model answer: B, Correct answer: ['B'], No logprobs available"
+      },
+      "metadata": {}
+    },
+    {
+      "id": 49,
+      "epoch": 1,
+      "input": "የትኛው ባሕርይ በሰው ልጆች ዘንድ የተለመደ አይደለም?",
+      "choices": [
+        "ጉልበት ይጠይቃል",
+        "ማራባት",
+        "ግትርነት",
+        "የዲ ኤን ኤ መኖር"
+      ],
+      "target": "C",
+      "messages": [
+        {
+          "content": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options.",
+          "role": "system"
+        },
+        {
+          "content": "Answer the following multiple choice question. The entire content of your response should be of the following format: 'ANSWER: $LETTER' (without quotes) where LETTER is one of A,B,C,D.\n\nየትኛው ባሕርይ በሰው ልጆች ዘንድ የተለመደ አይደለም?\n\nA) ጉልበት ይጠይቃል\nB) ማራባት\nC) ግትርነት\nD) የዲ ኤን ኤ መኖር",
+          "source": "input",
+          "role": "user"
+        },
+        {
+          "content": "ANSWER: C",
+          "source": "generate",
+          "role": "assistant"
+        }
+      ],
+      "output": {
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "message": {
+              "content": "ANSWER: C",
+              "source": "generate",
+              "role": "assistant"
+            },
+            "stop_reason": "stop"
+          }
+        ],
+        "usage": {
+          "input_tokens": 227,
+          "output_tokens": 3,
+          "total_tokens": 230
+        }
+      },
+      "score": {
+        "value": "I",
+        "answer": "C",
+        "explanation": "Model answer: C, Correct answer: ['C'], No logprobs available"
+      },
+      "metadata": {}
+    }
+  ],
+  "logging": [
+    {
+      "level": "info",
+      "message": "PyTorch version 2.3.1 available.",
+      "created": 1721614424203.451
+    }
+  ]
+}

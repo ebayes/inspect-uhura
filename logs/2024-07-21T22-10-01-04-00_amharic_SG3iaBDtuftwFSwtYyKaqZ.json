@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "status": "error",
+  "eval": {
+    "task": "amharic",
+    "task_version": 0,
+    "task_file": "arc.py",
+    "task_id": "SG3iaBDtuftwFSwtYyKaqZ",
+    "run_id": "Yy22RrDQTQMaTvNWkoWHpT",
+    "created": "2024-07-21T22:10:01-04:00",
+    "dataset": {
+      "name": "ebayes/uhura-arc-easy",
+      "location": "ebayes/uhura-arc-easy",
+      "samples": 518,
+      "shuffled": false
+    },
+    "model": "openai/gpt-4o-mini",
+    "task_attribs": {},
+    "task_args": {},
+    "model_args": {},
+    "config": {},
+    "revision": {
+      "type": "git",
+      "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
+      "commit": "c759f45"
+    },
+    "packages": {
+      "inspect_ai": "0.3.15"
+    }
+  },
+  "plan": {
+    "name": "plan",
+    "steps": [
+      {
+        "solver": "system_message",
+        "params": {
+          "message": "You are an expert AI assistant that speaks Amharic. Maintain proper grammar, spelling, diacritics and punctuation in your responses, and ensure cultural context is appropriate. Please choose the best answer from the given options."
+        }
+      },
+      {
+        "solver": "multiple_choice",
+        "params": {}
+      }
+    ],
+    "config": {}
+  },
+  "stats": {
+    "started_at": "2024-07-21T22:10:01-04:00",
+    "completed_at": "2024-07-21T22:10:01-04:00",
+    "model_usage": {
+      "openai/gpt-4o-mini": {
+        "input_tokens": 243,
+        "output_tokens": 3,
+        "total_tokens": 246
+      }
+    }
+  },
+  "error": {
+    "message": "AttributeError(\"'Target' object has no attribute 'answer'\")",
+    "traceback": "Traceback (most recent call last):\n\n  File \"/opt/homebrew/lib/python3.10/site-packages/inspect_ai/_eval/task/run.py\", line 218, in task_run\n    scores = await asyncio.gather(*tasks)\n\n  File \"/opt/homebrew/lib/python3.10/site-packages/inspect_ai/_eval/task/run.py\", line 360, in task_run_sample\n    result = await scorer(state, Target(sample.target)) if scorer else None\n\n  File \"/Users/edbayes/Desktop/eval/inspect_ai/arc.py\", line 15, in score\n    correct_answer = target.answer.strip().upper()\n\nAttributeError: 'Target' object has no attribute 'answer'\n",
+    "traceback_ansi": "\u001b[31m╭─\u001b[0m\u001b[31m──────────────────────────────\u001b[0m\u001b[31m \u001b[0m\u001b[1;31mTraceback \u001b[0m\u001b[1;2;31m(most recent call last)\u001b[0m\u001b[31m \u001b[0m\u001b[31m───────────────────────────────\u001b[0m\u001b[31m─╮\u001b[0m\n\u001b[31m│\u001b[0m \u001b[2;33m/opt/homebrew/lib/python3.10/site-packages/inspect_ai/_eval/task/\u001b[0m\u001b[1;33mrun.py\u001b[0m:\u001b[94m218\u001b[0m in \u001b[92mtask_run\u001b[0m          \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m                                                                                                  \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[2;33m/opt/homebrew/lib/python3.10/site-packages/inspect_ai/_eval/task/\u001b[0m\u001b[1;33mrun.py\u001b[0m:\u001b[94m360\u001b[0m in \u001b[92mtask_run_sample\u001b[0m   \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m                                                                                                  \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[2;33m/Users/edbayes/Desktop/eval/inspect_ai/\u001b[0m\u001b[1;33marc.py\u001b[0m:\u001b[94m15\u001b[0m in \u001b[92mscore\u001b[0m                                        \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m                                                                                                  \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m   \u001b[2m12 \u001b[0m\u001b[2m│   │   \u001b[0mmodel_answer = state.output.completion.strip().upper()                              \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m   \u001b[2m13 \u001b[0m\u001b[2m│   │   \u001b[0m                                                                                    \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m   \u001b[2m14 \u001b[0m\u001b[2m│   │   \u001b[0m\u001b[2m# Change this line to access the correct attribute of the Target object\u001b[0m             \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m \u001b[31m❱ \u001b[0m15 \u001b[2m│   │   \u001b[0mcorrect_answer = target.answer.strip().upper()                                      \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m   \u001b[2m16 \u001b[0m\u001b[2m│   │   \u001b[0m                                                                                    \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m   \u001b[2m17 \u001b[0m\u001b[2m│   │   \u001b[0mis_correct = model_answer == correct_answer                                         \u001b[31m│\u001b[0m\n\u001b[31m│\u001b[0m   \u001b[2m18 \u001b[0m                                                                                            \u001b[31m│\u001b[0m\n\u001b[31m╰──────────────────────────────────────────────────────────────────────────────────────────────────╯\u001b[0m\n\u001b[1;91mAttributeError: \u001b[0m\u001b[32m'Target'\u001b[0m object has no attribute \u001b[32m'answer'\u001b[0m\n"
+  },
+  "logging": [
+    {
+      "level": "info",
+      "message": "PyTorch version 2.3.1 available.",
+      "created": 1721614199711.086
+    }
+  ]
+}

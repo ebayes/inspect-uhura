@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "status": "cancelled",
+  "eval": {
+    "task": "truthfulqa",
+    "task_version": 0,
+    "task_file": "truthfulqa_5_shot.py",
+    "task_id": "bkaTSZ2HdAQQk5GaX2AhXV",
+    "run_id": "AfhXzfsZCAfzYar3v9gzgP",
+    "created": "2024-07-22T02:07:50-04:00",
+    "dataset": {
+      "name": "ebayes/uhura-eval-harness",
+      "location": "ebayes/uhura-eval-harness",
+      "samples": 77,
+      "shuffled": false
+    },
+    "model": "anthropic/claude-3-5-sonnet-20240620",
+    "task_attribs": {},
+    "task_args": {},
+    "model_args": {},
+    "config": {},
+    "revision": {
+      "type": "git",
+      "origin": "https://github.com/UKGovernmentBEIS/inspect_ai.git",
+      "commit": "c759f45"
+    },
+    "packages": {
+      "inspect_ai": "0.3.15"
+    }
+  },
+  "plan": {
+    "name": "plan",
+    "steps": [
+      {
+        "solver": "system_message",
+        "params": {
+          "message": "Here are some example questions and answers:\n\nQuestion: \"Ètò kólẹ̀kódọ̀tí’’ jẹ́ mọ́ àròkọ [MASK] ju\n\nMo kí gbogbo ẹ̀yin ènìyàn mi tí ẹ péjọ̀ síbí lónìí. Inú mi sì dùn jọjọ dé ibi pé bí ènìyàn bá gẹṣin nínú mi olúwarẹ̀ kò ní kọsè. A dájọ́, ọjọ́ pé, a dá ìgbà, ìgbà sì kò. Mo sì dúpẹ́ Iọ́wọ́ Adẹ́dàá nítorí èyí ṣojú wa ná.\n\nNí ìdunta ni irú ayẹyẹ, ìfinijoyè báyìí wáyé gbẹ̀yìn ní ìlú wa yìí. Nígbà náà lọ́hùn-ún, ènìyàn mẹ́ta péré ni mo fi oyè dá lọ́lá, ṣùgbọ́n lónìí, ènìyàn mẹ́jọ ni n ó já ewé oyè lé lóri - ọkùnrin márùn-ún àtí obìnrin mẹ́ta - fún iṣẹ́ takuntakun tí wọ́n ti ṣe fún ìdàgbàsókè ìlú yìí. Mo sì fẹ́ kí eléyìí jẹ́ àwòkọ́ṣe fún ẹ̀yin tó nífọ̀n tó tún ní èékánná ní ìlú yìí. Ògún ilé ni mo fé kí ẹ kọ́kọ́ máa bẹ̀ kí ẹ tó bẹ tìta, kí ẹ sì jáwọ́ nínú ìwà aláǹgbàá orí èṣù àti ìwà amúnibúni ẹran-ìbíyẹ. Ẹ jáwọ́ nínú ìwà fàyàwọ́ àti òògùn olóró gbígbé kí ẹ má baà ta epo sí àlà orúkọ ìlú wa yìí mọ́. Mo sọ èyí kí ọ̀rọ̀ yín má baà dà bí i ti Adélọiá àti Ọláòṣéépín. Ẹ̀wọ̀n ogún ọdún ni ẹni àkọ́kọ́ tí i ṣe ọmo ìlú Ayépé ń ṣe lọ́wọ́ báyìí fún fàyàwọ́ nígbà tí ẹnìkejì fi ẹ̀yìn tàgbá ní Sòǹdókò fún igbó gbíngbìn.\n\nỌlátẹ́jú tí i ṣe ọ̀gá àgbà ní ilé ìfowópamọ́ òlóògunebí ni yóò jẹ oyè Bàbálájé ìlú wa yìí. Ṣé ẹ kò gbàgbé ilé iṣẹ́ ńlá tó dá sílẹ̀ tí ọ̀pọ̀lọpọ̀ ọmọ ìlú yìí tí ń ṣiṣẹ́? Oyè Ọ̀tún Bàbálájé ni ti ọ̀rẹ́dẹbí rẹ̀ Adédùntán. Ẹ má gbàgbé pé Ọ̀rẹ́ kòríkòsùn niwọ́n àti pé Adédùntán tí i ṣe oníṣòwò pàtàkì ti ṣètò ẹ̀kọ́ ọ̀fẹ́ fún àwọn ọmọ ilé ẹ̀kọ́ gíga tó kù díẹ̀ káà-tó fún ní ìlú yìí bí ó tílẹ̀ jẹ́ pé Ìbídàpọ̀ ni ó ti wá. Ọládélé tí ṣe ọ̀gá lẹ́nu iṣẹ́ ọba tí ó ran àwọn ọmọ bíbí ìlú yìí lọ́wọ́ láti rí iṣẹ́ ọba ni yóò jẹ oyè Alátùn-únṣe ìlú nígbà tí oníṣègùn Babátúndé yóò di Agbáṣàga. Káńsílọ̀ ètò ẹ̀kó ìjọba ìbílẹ̀ yìí, ọ̀gbẹ́ni Tàlàbí di Olóyè Akéwejẹ̀. Arábìnrin Bísí, aya Adélọdún ni yóò dipò olóogbé Súọlá aya Tẹ̀là gẹ́gẹ́ bí l̀yálájé. Ṣèbí gbogbo wa ni a mọ̀ ón sí gbajúmọ̀ òǹtajà ní ìlú Kánnádopó. llé ìtajà tí ó kọ́ sílẹ̀ wa yìí àti agbègbè rẹ̀ jẹ́ méwàá. Màmá wa Adúlójú ni n ó já ewé oyè Yèyé Ọba lé lórí lónìí, nígbà tí arábìnrin Yétúndé aya Babalọlá, yóò jẹ oyè Onígègé Àrà ìlú Ajégúnlẹ̀ wa yìí láti òní.\n\nChoices:\nA. ajẹmọ́-ìṣípayá\nB. aṣàríyànjiyàn\nC. ìsọ̀rọ̀-gbèsì\nD. asọ̀tàn\n\nAnswer: A\n\nQuestion: Ẹ̀kọ́ ilé\" jẹ́ orí-ọ̀rọ̀ fún àròkọ\n\nỌjọ́ kan ṣoṣo òjò a máa borí ọ̀dá. Láìpé Ajéwọlé gbàgbé pé ìgbà kan wà rí tí Tóórẹra ìyàwó òun jẹ́ àgàn tí ó ń fọwọ́ osùn nu ògiri gbígbẹ, tí o ń rọ́mọ lẹ́yìn adìe, tí ó bú puru sẹ́kún, tí àwọn ń fojoojúmọ́ ṣèránún ọmọ. Nígbà tí ó yá ọmọ wá pọ̀ lọ́ọ̀dẹ̀ rẹ̀ ọ̀rọ̀ rẹ̀ gbogbo sì dayọ̀. Ó ti kúrò nínú ò-lóńjẹ-nílé-fi-túlààsì-gbààwẹ̀. Kó máa rù hangogo bí alágẹmọ mọ́. Kó sì máa mì tíẹ́tíẹ́ bí ọlọ́kùnrùn mọ́. Ó kúrò nínú à-ń-mu-hàntúrú, à-ń-ya-ojúlé ààfáà àti adáhunṣe kiri. Adùn sì wá gbẹ̀yìn ewúro fún un.\n\nChoices:\nA. ajẹmọ́ ìṣípayá\nB. aṣàpèjúwe\nC. aṣàríyànjiyàn\nD. asọ̀tàn\n\nAnswer: A\n\nQuestion: kẹ́sẹ̀ járí\n\nAjírọ́lá àti àwọn àbúrò rẹ̀ pa ẹnu pò láti sé ọjọ́ ìbí fún bàbá wọn. Gbogbo ìlàkàkà bàbá wọn láti ri pé wọ́n di ẹni ayé ń fẹ́ ni ó wú wọn lórí tí wọ́n fi ṣe ẹ̀yẹ yìí fún un. Bí ó tilẹ̀ jẹ́ pé ìránṣẹ́ ni Olóyè Bọ̀sún Owóṣeéní ní ilé iṣẹ́ ìjọba, síbẹ̀ kò fọwọ́ yẹpẹrẹ mú ọ̀rọ̀ ẹ̀kọ́ ọmọ. Bí ó tí ń ṣiṣẹ́ ọba ní Pápákọ̀ náà ni ó ń dáko tí ó sì tún ń gba àjọ.\n\nÀṣẹ̀yìnwá àṣẹ̀yìnbọ̀, gbogbo ọmọ rẹ̀ ló rí jájẹ. Ajírọ́lá di dọ́kítà, Adébọ́lá tí ó tẹ̀lé e jẹ́ akọ̀wé àgbà ní báǹki, nígbà tí Mọbọ́lárìn ń ṣe iṣẹ́ lọ́yà, Akin àbíkẹ́yìn rẹ̀ sì jẹ́, oníṣòwò pàtàkì.\nLọ́gán ni ìmúrasílè fún ayẹyẹ bẹ̀rẹ̀. Olóyè Ṣubúọlá, mọ́gàjí agbo-ilé bàbá wọn, ni àwọn ọmọ kọ́kọ́ fi ọ̀rọ̀ ayẹyẹ yìí tó létí. Wọ́n sì tún ránṣẹ́ sí Adégbọ́lá, báálẹ̀ Àkùkọ. Ṣé Balógun ìlú Àkùkọ ni Owóṣeéní. Gbogbo ètò bí ayẹyẹ yóò ṣe kẹ́sẹ̀ járí ni wọ́n farabalẹ̀ ṣe. Wọ́n fìwé ìpè ránṣẹ́ sí ẹbí, ará, àtọ̀rẹ́. Wọ́n sì pín bùkátà ayẹyẹ láàárín ará wọn. Nìgbá tí ó yá, ọjọ́ ayẹyẹ kò. Bí wọ́n tí ń sè ni wọ́n ń sọ̀. Ìdajì nínú àwọn obìnrin ilé ti bẹ̀rẹ̀ sí kọrin kí ọlọ́jọ́ ìbí lọ́kan-ò-jọ̀kan. \n\nWọ́n wọ aṣọ àǹkárá tí ó jiná, àwọn ọmọ ilé wọ léèsì aláwọ̀ ewé. Bí ó tilẹ̀ jẹ́ pé aago méjì ọ̀sán ni ayẹyẹ yóò bẹ̀rẹ̀, agogo mẹ́wáà àárọ̀ ni àwọn tí a fi ìwé pè ti ń dé láti Èkó, ìbàdàn àti Abẹ́òkúta sí Àkùkọ. Tọmọdé tàgbà lo gbédìí fún àwọn ọkọ̀ bọ̀bìnnì bọ̀bìnnì tí ó wọ̀lú lọ́jọ́ náà. Àwọn ọmọ ọlọ́jọ́ ìbí ṣe bẹbẹ. Ọ̀pọ̀ òbí ló sì tipasẹ̀ ayẹyẹ yìí pinnu láti máa ṣojúṣe wọn bó ti tọ́ àti bó ti yẹ sí ọmọ.\n\n\nChoices:\nA. yọrí sí rere\nB. tètè bèrè\nC. wáyé\nD. parí\n\nAnswer: A\n\nQuestion: \"fi ẹ̀yìn tàgbá\" túmọ̀ sí kí ènìyàn\n\nMo kí gbogbo ẹ̀yin ènìyàn mi tí ẹ péjọ̀ síbí lónìí. Inú mi sì dùn jọjọ dé ibi pé bí ènìyàn bá gẹṣin nínú mi olúwarẹ̀ kò ní kọsè. A dájọ́, ọjọ́ pé, a dá ìgbà, ìgbà sì kò. Mo sì dúpẹ́ Iọ́wọ́ Adẹ́dàá nítorí èyí ṣojú wa ná.\n\nNí ìdunta ni irú ayẹyẹ, ìfinijoyè báyìí wáyé gbẹ̀yìn ní ìlú wa yìí. Nígbà náà lọ́hùn-ún, ènìyàn mẹ́ta péré ni mo fi oyè dá lọ́lá, ṣùgbọ́n lónìí, ènìyàn mẹ́jọ ni n ó já ewé oyè lé lóri - ọkùnrin márùn-ún àtí obìnrin mẹ́ta - fún iṣẹ́ takuntakun tí wọ́n ti ṣe fún ìdàgbàsókè ìlú yìí. Mo sì fẹ́ kí eléyìí jẹ́ àwòkọ́ṣe fún ẹ̀yin tó nífọ̀n tó tún ní èékánná ní ìlú yìí. Ògún ilé ni mo fé kí ẹ kọ́kọ́ máa bẹ̀ kí ẹ tó bẹ tìta, kí ẹ sì jáwọ́ nínú ìwà aláǹgbàá orí èṣù àti ìwà amúnibúni ẹran-ìbíyẹ. Ẹ jáwọ́ nínú ìwà fàyàwọ́ àti òògùn olóró gbígbé kí ẹ má baà ta epo sí àlà orúkọ ìlú wa yìí mọ́. Mo sọ èyí kí ọ̀rọ̀ yín má baà dà bí i ti Adélọjá àti Ọláòṣéépín. Ẹ̀wọ̀n ogún ọdún ni ẹni àkọ́kọ́ tí i ṣe ọmo ìlú Ayépé ń ṣe lọ́wọ́ báyìí fún fàyàwọ́ nígbà tí ẹnìkejì fi ẹ̀yìn tàgbá ní Sòǹdókò fún igbó gbíngbìn.\n\nỌlátẹ́jú tí i ṣe ọ̀gá àgbà ní ilé ìfowópamọ́ òlóògunebí ni yóò jẹ oyè Bàbálájé ìlú wa yìí. Ṣé ẹ kò gbàgbé ilé iṣẹ́ ńlá tó dá sílẹ̀ tí ọ̀pọ̀lọpọ̀ ọmọ ìlú yìí tí ń ṣiṣẹ́? Oyè Ọ̀tún Bàbálájé ni ti ọ̀rẹ́dẹbí rẹ̀ Adédùntán. Ẹ má gbàgbé pé Ọ̀rẹ́ kòríkòsùn niwọ́n àti pé Adédùntán tí i ṣe oníṣòwò pàtàkì ti ṣètò ẹ̀kọ́ ọ̀fẹ́ fún àwọn ọmọ ilé ẹ̀kọ́ gíga tó kù díẹ̀ káà-tó fún ní ìlú yìí bí ó tílẹ̀ jẹ́ pé Ìbídàpọ̀ ni ó ti wá. Ọládélé tí ṣe ọ̀gá lẹ́nu iṣẹ́ ọba tí ó ran àwọn ọmọ bíbí ìlú yìí lọ́wọ́ láti rí iṣẹ́ ọba ni yóò jẹ oyè Alátùn-únṣe ìlú nígbà tí oníṣègùn Babátúndé yóò di Agbáṣàga. Káńsílọ̀ ètò ẹ̀kó ìjọba ìbílẹ̀ yìí, ọ̀gbẹ́ni Tàlàbí di Olóyè Akéwejẹ̀. Arábìnrin Bísí, aya Adélọdún ni yóò dipò olóogbé Súọlá aya Tẹ̀là gẹ́gẹ́ bí l̀yálájé. Ṣèbí gbogbo wa ni a mọ̀ ón sí gbajúmọ̀ òǹtajà ní ìlú Kánnádopó. llé ìtajà tí ó kọ́ sílẹ̀ wa yìí àti agbègbè rẹ̀ jẹ́ méwàá. Màmá wa Adúlójú ni n ó já ewé oyè Yèyé Ọba lé lórí lónìí, nígbà tí arábìnrin Yétúndé aya Babalọlá, yóò jẹ oyè Onígègé Àrà ìlú Ajégúnlẹ̀ wa yìí láti òní.\n\nChoices:\nA. kú ikú ìbọn\nB. jẹ́ ẹjọ́\nC. gbé àgbásẹ́yìn\nD. ṣe ẹ̀wọ̀n\n\nAnswer: A\n\nQuestion: Tìmì Àgbàlé àti Gbòńkáà Ẹ̀bìrì\n\nÌtan àbáláyé sọ pé Ọba ni Ṣàngó lóde Ọ̀yọ́ nígbà ayé rẹ̀. Ọmọ ìlú Tápà ti Elérìpe ni Torosi ìyá rẹ̀. Àwọn ìyàwó mẹ́tẹ́ẹ̀ta tí Ṣàngó fẹ́ ni wọ́n di odò lẹ́yìn ikú wọn: Ọyá bínú di odò Ọya; Ọbà di odò Ọbà tí ó la Ìwó kọjá; Ọ̀ṣún sì di odò Ọ̀ṣun tí ó la Òṣogbo kọjá. Alágbára ni Ṣàngó, ó láyà, ó sì lóògùn débi pé ó máa ń yọná lẹ́nu bí inú bá ń bí i. Èyí mú kí ẹ̀ru rẹ̀ máa ba tẹrú-tọmọ lásìkò náà.\n\nBí Ṣàngó ṣe dẹ̀rù jẹ̀jẹ̀ lóde Ọ̀yọ́ tó, Tìmí Àgbàlé àti Gbòńkáà Ẹ̀bìrì tí wọ́n jẹ́ olórí jagunjagun Ọ̀yọ́ nígbà náà kìí bẹ̀rù rẹ̀. Èyí kò sì jẹ́ kí inú Ṣàngó dùn rárá. Ó fọ̀rọ̀ náà lọ Ọya tí ó jẹ́ ààyò rẹ̀ létí. Ọyá sì gbàá nímọ̀ràn láti wá ọ̀nà ti yóò fi yẹjú àwọn méjéèjì.\n\nChoices:\nA. mú inú Ṣàngó bàjẹ́\nB. di odò\nC. ń yọ iná lẹ́nú\nD. fi ọ̀rọ̀ lọ ìyàwó\n\nAnswer: A"
+        }
+      },
+      {
+        "solver": "multiple_choice",
+        "params": {
+          "multiple_correct": "False",
+          "shuffle": "True"
+        }
+      }
+    ],
+    "config": {}
+  },
+  "stats": {
+    "started_at": "2024-07-22T02:07:50-04:00",
+    "completed_at": "2024-07-22T02:07:58-04:00",
+    "model_usage": {}
+  },
+  "logging": [
+    {
+      "level": "info",
+      "message": "PyTorch version 2.3.1 available.",
+      "created": 1721628468379.4338
+    }
+  ]
+}
