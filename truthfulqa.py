@@ -55,10 +55,10 @@ def truthfulqa(target="mc1"):
         )
 
     dataset = hf_dataset(
-        path="truthful_qa",
+        path="ebayes/uhura-truthfulqa",
         name="multiple_choice",
         sample_fields=record_to_sample,
-        split="validation",
+        split="test",
         shuffle=True,
     )
 

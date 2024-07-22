@@ -8,6 +8,7 @@ from inspect_ai.scorer._target import Target
 from inspect_ai.scorer._metric import Score
 
 lang_code = "am" # change this to the language code for the language you want to test - "am" for amharic, "ha" for hausa, "nso" for northern sotho, "sw" for swahili, "yo" for yoruba
+few_shot = 5 # you can change this to any number you want
 
 def sample_to_fewshot(sample):
     choices_text = "\n".join([f"{chr(65 + i)}. {choice}" for i, choice in enumerate(sample.choices)])
@@ -63,13 +64,13 @@ def truthfulqa(target="mc1"):
 
     # Get 5 fewshot examples from the validation split
     fewshots = hf_dataset(
-        path="ebayes/uhura-eval-harness",
+        path="ebayes/uhura-truthfulqa",
         name=f"{lang_code}_multiple_choice",
         sample_fields=record_to_sample,
         split="train",
         shuffle=True,
         seed=42,
-        limit=5,
+        limit=few_shot,
     )
     
     fewshot_examples = "\n\n".join([sample_to_fewshot(sample) for sample in fewshots])
