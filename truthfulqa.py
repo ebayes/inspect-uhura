@@ -7,13 +7,14 @@ from inspect_ai.solver import multiple_choice, system_message, TaskState
 from inspect_ai.scorer._target import Target
 from inspect_ai.scorer._metric import Score
 
+
 @scorer(metrics=[accuracy(), bootstrap_std()])
 def logprob_based_scorer():
     async def score(state: TaskState, target: Target) -> Score:
         model_answer_full = state.output.completion.strip().upper()
         # Extract just the letter from the model's answer
         model_answer = model_answer_full.split(":")[-1].strip()
-        
+
         # Handle the case where target.target is a list
         if isinstance(target.target, list):
             correct_answers = [ans.strip().upper() for ans in target.target]
@@ -28,7 +29,7 @@ def logprob_based_scorer():
             return Score(
                 value="C" if is_correct else "I",
                 answer=model_answer,
-                explanation=f"Model answer: {model_answer}, Correct answers: {correct_answers}, No logprobs available"
+                explanation=f"Model answer: {model_answer}, Correct answers: {correct_answers}, No logprobs available",
             )
 
         avg_logprob = sum(lp.logprob for lp in logprobs.content) / len(logprobs.content)
@@ -37,14 +38,16 @@ def logprob_based_scorer():
             value="C" if is_correct else "I",
             answer=model_answer,
             explanation=f"Model answer: {model_answer}, Correct answers: {correct_answers}, Average log probability: {avg_logprob:.4f}",
-            metadata={"avg_logprob": avg_logprob}
+            metadata={"avg_logprob": avg_logprob},
         )
 
     return score
 
+
 def labels_to_positions(labels: list[int]) -> list[str]:
     return [chr(ord("A") + i) for i, label in enumerate(labels) if label == 1]
- 
+
+
 @task
 def truthfulqa(target="mc1"):
     def record_to_sample(record):
@@ -56,7 +59,7 @@ def truthfulqa(target="mc1"):
 
     dataset = hf_dataset(
         path="ebayes/uhura-truthfulqa",
-        name="multiple_choice",
+        name="ha_multiple_choice",
         sample_fields=record_to_sample,
         split="test",
         shuffle=True,

@@ -1,0 +1,81 @@
+4o-mini
+
+prompt: PROMPT_1, and 0-shot
+am arc easy 4o-mini - 38
+en arc easy 4o-mini - 83.5
+ha arc easy 4o-mini - 57.3
+nso arc easy 4o-mini - 36.1
+sw arc easy 4o-mini - 75.4
+yo arc easy 4o-mini - 41.5
+
+prompt: PROMPT_1, and 5-shot
+am arc easy 4o-mini - 43.6
+en arc easy 4o-mini - 94.1
+ha arc easy 4o-mini - 62.1
+nso arc easy 4o-mini - 38.8
+sw arc easy 4o-mini - 81
+yo arc easy 4o-mini - 44.2
+
+prompt: PROMPT_2, and 0-shot
+am arc easy 4o-mini - 39.8
+en arc easy 4o-mini - 93.7
+ha arc easy 4o-mini - 56.2
+nso arc easy 4o-mini - 36.1
+sw arc easy 4o-mini - 75.4
+yo arc easy 4o-mini - 43.5
+
+prompt: PROMPT_2, and 5-shot
+am arc easy 4o-mini - 42.3
+en arc easy 4o-mini - 94.1
+ha arc easy 4o-mini - 61.5
+nso arc easy 4o-mini - 37.2
+sw arc easy 4o-mini - 79.8
+yo arc easy 4o-mini - 43.8
+
+prompt: PROMPT_3, and 0-shot
+am arc easy 4o-mini - 39.2
+en arc easy 4o-mini - 93.7
+ha arc easy 4o-mini - 56
+nso arc easy 4o-mini - 33.9
+sw arc easy 4o-mini - 75.6
+yo arc easy 4o-mini - 41.3
+
+prompt: PROMPT_3, and 5-shot
+am arc easy 4o-mini - 44
+en arc easy 4o-mini - 94.5
+ha arc easy 4o-mini - 61.9
+nso arc easy 4o-mini - 43.6
+sw arc easy 4o-mini - 80.2
+yo arc easy 4o-mini - 45.4
+
+prompt: PROMPT_4, and 0-shot
+am arc easy 4o-mini - 39.4
+en arc easy 4o-mini - 93.3
+ha arc easy 4o-mini - 57.7
+nso arc easy 4o-mini - 35.7
+sw arc easy 4o-mini - 76.3
+yo arc easy 4o-mini - 41.7
+
+prompt: PROMPT_4, and 5-shot
+am arc easy 4o-mini - 41.9
+en arc easy 4o-mini - 94.1
+ha arc easy 4o-mini - 61.3
+nso arc easy 4o-mini - 41.9
+sw arc easy 4o-mini - 80
+yo arc easy 4o-mini - 43.5
+
+prompt: PROMPT_5, and 0-shot
+am arc easy 4o-mini - 41.3
+en arc easy 4o-mini - 93.7
+ha arc easy 4o-mini - 58.3
+nso arc easy 4o-mini - 
+sw arc easy 4o-mini - 
+yo arc easy 4o-mini - 
+
+prompt: PROMPT_5, and 5-shot
+am arc easy 4o-mini - 
+en arc easy 4o-mini - 
+ha arc easy 4o-mini - 
+nso arc easy 4o-mini - 
+sw arc easy 4o-mini - 
+yo arc easy 4o-mini - 

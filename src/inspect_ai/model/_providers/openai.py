@@ -150,6 +150,11 @@ class OpenAIAPI(ModelAPI):
                 **self.completion_params(config),
             )
             choices = self._chat_choices_from_response(response, tools)
+            # Print logprobs if available
+            for choice in choices:
+                if choice.logprobs:
+                    print(f"Logprobs for choice: {choice.logprobs}")
+
             return ModelOutput(
                 model=response.model,
                 choices=choices,

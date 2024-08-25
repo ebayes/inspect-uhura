@@ -25,6 +25,8 @@ def logprob_based_scorer():
 
         logprobs = state.output.choices[0].logprobs
 
+        # print(f"Logprobs available: {logprobs is not None}")  
+
         if logprobs is None:
             return Score(
                 value="C" if is_correct else "I",

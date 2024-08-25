@@ -18,8 +18,11 @@ from inspect_ai.solver import multiple_choice, system_message
 
 few_shot = 5  # you can change this to any number you want
 
+
 def sample_to_fewshot(sample):
-    choices_text = "\n".join([f"{chr(65 + i)}. {choice}" for i, choice in enumerate(sample.choices)])
+    choices_text = "\n".join(
+        [f"{chr(65 + i)}. {choice}" for i, choice in enumerate(sample.choices)]
+    )
     return f"Question: {sample.input}\n\nChoices:\n{choices_text}\n\nAnswer: {sample.target[0]}"
 
 
@@ -32,7 +35,6 @@ def sample_to_fewshot(sample):
 #     e.g. [0, 1, 1] -> ["B", "C"]
 def labels_to_positions(labels: list[int]) -> list[str]:
     return [chr(ord("A") + i) for i, label in enumerate(labels) if label == 1]
-
 
 
 @task
@@ -54,7 +56,7 @@ def truthfulqa(target="mc1"):
         seed=42,
         limit=few_shot,
     )
-    
+
     fewshot_examples = "\n\n".join([sample_to_fewshot(sample) for sample in fewshots])
 
     # Get the full dataset
@@ -81,7 +83,9 @@ def truthfulqa(target="mc1"):
     return Task(
         dataset=dataset,
         plan=[
-            system_message(f"Here are some example questions and answers:\n\n{fewshot_examples}"),
+            system_message(
+                f"Here are some example questions and answers:\n\n{fewshot_examples}"
+            ),
             multiple_choice(multiple_correct=multiple_correct, shuffle=True),
         ],
         scorer=choice(),
